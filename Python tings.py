@@ -1,0 +1,1 @@
+print("This is kinda crazy, if it works of course.")
