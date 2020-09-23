@@ -1,3 +1,2 @@
 
-hacker man
 print(hackerman)
