@@ -1,17 +1,17 @@
-Company name : Nudge Inc
-    Group :
-    Christina Song
-    Diane Tsang
-    Jessica Nguyen
-    Mohannad Mohamed
-    Nicholas Turbide 
-    Zakaria Oulli          
-Product name : Nudge
-Product type : app / website
+**Company name** : Nudge Inc.  
+    **Group** : 23  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Christina Song  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Diane Tsang  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jessica Nguyen  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mohannad Mohamed  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nicholas Turbide  
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zakaria Oulli            
+**Product name** : Nudge  
+**Product type** : app / website
 
 
 
-Product concept : an app that uses google cloud software (or others, TBD) to map out your bus route and wake you up on arrival to your destination.
+**Product concept** : an app that uses google cloud software (or others, TBD) to map out your bus route and wake you up on arrival to your destination.
 
     - As mentionned, would use google cloud api for maps and app dev tools
         - Browser version would use other methods to create the app
