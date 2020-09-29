@@ -5,7 +5,8 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jessica Nguyen  
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mohannad Mohamed - Student Number: 300195077 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nicholas Turbide  
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zakaria Oulli            
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zakaria Oulli  - Student Number:300203793
+          
 **Product name** : Nudge  
 **Product type** : app / website
 
