@@ -2,7 +2,7 @@
     **Group** : 23  
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Christina Song    - Student Number: 300168292 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Diane Tsang       - Student Number:    
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jessica Nguyen    - Student Number:         
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jessica Nguyen    - Student Number: 300172232       
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mohannad Mohamed  - Student Number: 300195077        
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nicholas Turbide  - Student Number: 300175302        
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zakaria Oulli     - Student Number: 300203793    
