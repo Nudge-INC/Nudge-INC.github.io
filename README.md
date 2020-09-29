@@ -3,8 +3,8 @@
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Christina Song - Student Number: 300168292  
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Diane Tsang  
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jessica Nguyen  
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mohannad Mohamed  
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nicholas Turbide  - Student Number: 300175302
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mohannad Mohamed - Student Number: 300195077 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nicholas Turbide  
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zakaria Oulli            
 **Product name** : Nudge  
 **Product type** : app / website
