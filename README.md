@@ -12,9 +12,9 @@
 
 
 
-**Product concept** : An app that uses google cloud software (or others, TBD) to map out your route and wake you up on arrival to your destination.
+**Product concept** : An application that uses google cloud software (or others, TBD) to map out your route and wake you up on arrival to your destination. It also includes other functionalities such as a general GPS or a speedometer.
 
-    - As mentionned, would use google cloud api for maps and app dev tools
+    - As mentioned, would use google cloud API for maps and app development tools
         - Browser version would use other methods to create the app
 
     - Multi purpose locational service app with built in alarm functionality
@@ -27,10 +27,10 @@
     - If allowed by the user, enables data collection as to run a profit off the app
         - Selling this data would provide us a way to sustainably update the app without extorting to ads
         - Alternative : Ads 
-            - in-app purchase to remove ads ig
+            - May include in-app purchase to remove ads or to acquire other perks (TBD)
 
-    - Can be used as a speedometor 
-        - i.e. walking, running, biking, etc...
+    - Can be used as a speedometer 
+        - i.e. walking, running, biking, etc.
             - Lake data and support is unclear
             
     
