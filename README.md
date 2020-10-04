@@ -12,17 +12,17 @@
 
 
 
-**Product concept** : an app that uses google cloud software (or others, TBD) to map out your bus route and wake you up on arrival to your destination.
+**Product concept** : An app that uses google cloud software (or others, TBD) to map out your route and wake you up on arrival to your destination.
 
     - As mentionned, would use google cloud api for maps and app dev tools
         - Browser version would use other methods to create the app
 
     - Multi purpose locational service app with built in alarm functionality
-        - Gives you the ability to set your bus route on the app and will notify you of when you approach 
-        - Can be used as a general GPS to tell you where you need to drive
-        - Can wake you up if you dozed off and you're nearing your stop
+        - Gives you the ability to set your route on the app and will notify you on approach.
+        - Can be used as a general GPS to give you the recommended routes that will take you to your destination in the fastest and easiest way possible.
+        - Can wake you up if you dozed off and you're nearing your stop;
             - Smart watch compatibility needed
-            - Would send a small electrical current to wake you up
+            - Would send a small electrical current to wake you up. (Alternative ways TBD)
 
     - If allowed by the user, enables data collection as to run a profit off the app
         - Selling this data would provide us a way to sustainably update the app without extorting to ads
