@@ -10,6 +10,23 @@
         <style>
             
         </style>
+
+        <script src="main.js">
+            // CUSTOMER TESTIMONIALS
+            window.onload = generateRandomNums;
+            window.onload = function() {
+                var reloading = sessionStorage.getItem("reloading");
+                if (reloading) {
+                    sessionStorage.removeItem("reloading");
+                    generateRandomNums();
+                }
+            }
+            function reloadP() {
+                sessionStorage.setItem("reloading", "true");
+                document.location.reload();
+            }
+
+        </script>
     </head>
     <body>
         <div class = "home">
@@ -23,6 +40,7 @@
 
 
         <!-- CUSTOMER TESTIMONIALS SECTION -->
+
         <div class = "cust-reviews">
             <h2>User Testimonials</h2>
             <div class = "row">               
