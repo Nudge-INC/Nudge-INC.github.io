@@ -1,6 +1,6 @@
 
 
-.container {
+.container-questions {
     width: 98%;
     overflow: hidden;
     background: url(https://cdn.discordapp.com/attachments/763177317929058326/766010087063289866/pexels-photo-219692.png) no-repeat center center fixed;
@@ -8,11 +8,11 @@
     padding: 20px;
 }
 
-.container ul{
+.container-questions ul{
     padding: 0px;
     margin: 0px;
 }
-.container ul li {
+.container-questions ul li {
     opacity: 0.75;
     list-style: none;
     float: left;
@@ -22,11 +22,11 @@
     margin:  80px 150px 80px 80px;
     box-sizing: border-box;
 }
-.container ul li:hover {
+.container-questions ul li:hover {
     opacity: 1;
 }
 
-.container ul li .title {
+.container-questions ul li .title-questions {
     width: 100%;
     height: 50px;
     line-height: 50px;
@@ -35,12 +35,12 @@
 
 }
 
-.container ul li .title:hover {
+.container-questions ul li .title-questions:hover {
     background: blue;
     color: white;
 }
 
-.container ul li .questions {
+.container-questions ul li .questions {
     color: white;
     width: 100%;
     height: 50px;
@@ -50,7 +50,7 @@
 }
 
 @media screen and (max-width:1250px){
-    .container ul li{
+    .container-questions ul li{
         width:40%;
         margin: 40px;
 
