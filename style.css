@@ -1,4 +1,12 @@
 
+/*
+Yellow: #FFEF20
+Light Blue: #44D6C4
+Grey: #2D2D39
+Off White: #F4F8FD
+Off Black: #171717
+*/
+
 /* CUSTOMER TESTIMONIALS */
 .cust-reviews {
     box-sizing: border-box;    
@@ -7,11 +15,11 @@
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    padding: 40px 0 50px 0;          
+    padding: 40px 0 40px 0;          
 }
 .cust-reviews h2 {
-    background-color: black;
-    color: white;
+    background-color: #171717;
+    color: #FFEF20;
     text-align: center;
     width: 20vw;
     font-size: 30px;
@@ -23,16 +31,16 @@
     justify-content: space-between;
     align-items: center;
 }
-/* Clear floats after the columns */
 .cust-reviews .row:after {
+    /* Clear floats after the columns */
     content: "";
     display: table;
     clear: both;
 }
 .cust-reviews .column {
-    background-color: rgb(0, 40, 66);
+    background-color: #2D2D39;
     box-shadow: 3px 4px 2px black;
-    border: 1px solid rgb(221, 221, 221);
+    border: 1px solid #F4F8FD;
     width: 25vw;
     height: 60vh;                
     padding: 9px;
