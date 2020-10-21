@@ -10,7 +10,7 @@ Off Black: #171717
 /* CUSTOMER TESTIMONIALS */
 .cust-reviews {
     box-sizing: border-box;    
-    background-image: url("/images/city_intersection.jpg");
+    background-image: url("./images/city_intersection.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
