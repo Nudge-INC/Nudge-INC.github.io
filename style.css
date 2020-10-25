@@ -14,18 +14,39 @@ Off Black: #171717
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    position: relative;
+    z-index: 1;
     width: 100%;
-    padding: 40px 0 40px 0;          
+    padding: 40px 0 40px 0;
+    font-size: 16px;          
+}
+.cust-reviews::after {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: '';
+    background: rgba(0,0,0,0.4);
+}
+.cust-reviews .upper-container {
+    padding: 10px 15px;
 }
 .cust-reviews h2 {
-    background-color: #171717;
+    /* background-color: #171717; */
     color: #FFEF20;
     text-align: center;
     width: 20vw;
-    font-size: 30px;
+    font-size: 2rem;
+}
+.cust-reviews p span {
+    /* background-color: #2D2D39; */
+    color: #44D6C4;
+    font-size: 1.5rem;
 }
 .cust-reviews .row {   
-    padding: 30px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -41,9 +62,9 @@ Off Black: #171717
     background-color: #2D2D39;
     box-shadow: 3px 4px 2px black;
     border: 1px solid #F4F8FD;
-    width: 25vw;
-    height: 60vh;                
-    padding: 9px;
+    width: 30vw;
+    height: 35vh;                
+    padding: 7px;
 }
 .cust-reviews .column iframe {
     width: inherit;
