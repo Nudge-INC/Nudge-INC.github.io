@@ -251,34 +251,40 @@ section{
 
 
 /* FAQ Section */
-.container {
-    width: 98%;
-    overflow: hidden;
+
+
+.FAQ-Section{
+    text-align: center;
     background: url(https://cdn.discordapp.com/attachments/763177317929058326/766010087063289866/pexels-photo-219692.png) no-repeat center center fixed;
-    margin-top: 20px auto;
-    padding: 20px;
+    background-size: 100%;
+    background-clip: 50%;
+    width: 100%;
+}
+.container-questions {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
 }
 
-.container ul{
-    padding: 0px;
-    margin: 0px;
+.container-questions ul{
+    padding: 50px;
+    margin: 10px 0px 10px 0px;
+    text-align: center;
 }
-.container ul li {
-    opacity: 0.75;
-    list-style: none;
-    float: left;
-    width: 20%;
+.container-questions ul li {
+
+    text-align: center;
+    display: inline-block;
+    width: 25%;
     height: 300px;
     background: black;
-    margin:  80px 150px 80px 80px;
-    box-sizing: border-box;
-}
-.container ul li:hover {
-    opacity: 1;
+    margin:  0px 142px 142px 0px;
+    padding: 2px;
+
 }
 
-.container ul li .title {
-    width: 100%;
+.container-questions ul li .title-questions {
+    font-family: 'Raleway', sans-serif;
     height: 50px;
     line-height: 50px;
     background:white;
@@ -286,12 +292,9 @@ section{
 
 }
 
-.container ul li .title:hover {
-    background: blue;
-    color: white;
-}
 
-.container ul li .questions {
+.container-questions ul li .questions {
+    font-family: 'Raleway', sans-serif;
     color: white;
     width: 100%;
     height: 50px;
@@ -300,12 +303,19 @@ section{
     margin: 5px 10px 10px 10px;
 }
 
+.searchbar-contour {
+    text-align:center;
+    height: 50%;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px 125px 50px 50px;
+    padding: 100px;
+}
+
 @media screen and (max-width:1250px){
-    .container ul li{
-        width:40%;
+    .container-questions ul li{
+        width: 60%;
+        height: 100%;
         margin: 40px;
 
     }
 }
-
-
