@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-image: url("/images/city_intersection.jpg");
+    
 }
 
 li, a, button{
@@ -65,10 +65,7 @@ box-sizing: border-box;
 font-family: 'Montserrat', sans-serif;
 background-image:src="images/map.png"; 
 }
-.container{
-   
-    
-}
+
 
 /* CUSTOMER TESTIMONIALS */
 .cust-reviews {
