@@ -321,13 +321,6 @@ section{
     }
 }
 /* $$$$$ Section */
-*{
-  margin: 0;
-  padding: 0;
-  font-family: "Alternate Gothic",sans-serif;
-  text-decoration: none;
-  list-style: none;
-}
 
 body{
   min-height: 100vh;
