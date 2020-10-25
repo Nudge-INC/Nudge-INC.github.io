@@ -58,14 +58,24 @@ button:hover{
 }
 
 /* features */
-.features {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Montserrat', sans-serif;
-background-image:src="images/map.png"; 
+.features 
+{
+position: relative;
+width: 1200px;
+height: 300px;
+margin: 240px auto;
+background: #000;
 }
 
+.container2 .locationAlarmBox .SpeedometerBox .GPSBox
+{
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(400px - 30px);
+    background: #ff0;
+    float: left;
+    margin: 15px;
+}
 
 /* CUSTOMER TESTIMONIALS */
 .cust-reviews {
