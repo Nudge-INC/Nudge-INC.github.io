@@ -11,10 +11,10 @@ Off Black: #171717
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 /* Main styles */
 h1 {
-
+    font-family: "Montserrat", sans-serif;
 }
 h2 {
-    
+    font-family: "Montserrat", sans-serif;
 }
 p {
     font-family: 'Raleway', sans-serif;
@@ -105,82 +105,6 @@ button:hover{
     background-size: cover;
 }
 
-
-
-
-/* NavBar stuff */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    
-}
-
-li, a, button{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #edf0fe;
-    text-decoration: none;
-}
-
-header{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-}
-
-.logo{
-    cursor: pointer;
-}
-
-.nav__links {
-    list-style: none;
-}
-
-.nav__links li{
-    display: inline-block;
-    padding: 0px 20px;
-}
-
-.nav__links li{
-    transition: all 0.3s ease 0s;
-}
-.nav__links li a:hover {
-    color: aqua
-}
-
-
-button{
-    padding: 9px 25px;
-    background-color: rgb(231, 215, 66);
-    border: none;
-    border-radius: 50 px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-button:hover{
-    background-color: rgba(113, 223, 238, 0.8);
-
-}
-
-/* features */
-.features {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Montserrat', sans-serif;
-background-image:src="images/map.png"; 
-}
-.container{
-   
-    
-}
-
-
 /* HOME */
 
 html, body{
@@ -188,7 +112,7 @@ html, body{
 }
 
 .home {
-    background-image: url("/images/map.jpg"); 
+    background-image: url("./images/map.jpg"); 
     background-repeat: no-repeat;
     background-size: 100%;
     height: 100%;
@@ -203,13 +127,7 @@ html, body{
     margin: auto;
     position: relative;
     text-align: center;
-    background-color: #2D2D39
-
-}
-
-.home .text{
-    position: relative;
-    margin: auto;
+    background-color: #2D2D39;
     color:#44D6C4;
     /*text-shadow: -1px 0 #171717, 0 1px #171717, 1px 0 #171717, 0 -1px#171717;
     */
@@ -220,32 +138,16 @@ html, body{
 }
 
 .home .text h2{
-    font-size: 30px;
+    font-size: 20px;
 }
 
 /* CUSTOMER TESTIMONIALS */
-.cust-reviews {
-    box-sizing: border-box;    
-    background-image: url("./images/city_intersection.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    position: relative;
-    z-index: 1;
+.cust-reviews {   
     width: 100%;
-    height: 80vh;
-    padding: 40px 0 40px 0;
+    height: 95vh;
+    padding: 40px 20px;
+    background-color: #171717;
     font-size: 16px;          
-}
-.cust-reviews::after {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    content: '';
-    background: rgba(0,0,0,0.4);
 }
 .cust-reviews .upper-container {
     padding: 10px 15px;
@@ -256,6 +158,7 @@ html, body{
     text-align: center;
     font-size: 2.5rem;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 .cust-reviews p {
     /* background-color: #2D2D39; */
@@ -263,12 +166,30 @@ html, body{
     font-size: 1.5rem;
 }
 .cust-reviews .row {   
-    padding: 10px;
+    box-sizing: border-box;    
+    background-image: url("./images/city_intersection.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    height: 60vh;
+    padding: 15px;
     margin-top: 9vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+.cust-reviews .row::after {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: '';
+    background: rgba(0,0,0,0.6);
 }
 .cust-reviews .row:after {
     /* Clear floats after the columns */
@@ -280,7 +201,7 @@ html, body{
     background-color: #2D2D39;
     box-shadow: 4px 5px 3px black;
     border: 1px solid #F4F8FD;
-    width: 30vw;
+    width: 28vw;
     height: 35vh;                
     padding: 7px;
 }
