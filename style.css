@@ -27,13 +27,29 @@ p {
     margin: 0;
     padding: 0;
     
+    
 }
-
+.navBar {
+    overflow: hidden;
+    background-color: #4f4f55;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navBar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
 li, a, button{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: #edf0fe;
+    color: black;
     text-decoration: none;
 }
 
@@ -80,13 +96,15 @@ button:hover{
 }
 
 /* features */
-.features {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Montserrat', sans-serif;
-background-image:src="images/map.png"; 
+.features 
+{
+    background-image: url("./images/tall_buildings.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
+
+
 
 
 /* NavBar stuff */
@@ -161,6 +179,7 @@ background-image:src="images/map.png";
     
 }
 
+
 /* CUSTOMER TESTIMONIALS */
 .cust-reviews {
     box-sizing: border-box;    
@@ -231,6 +250,42 @@ background-image:src="images/map.png";
     width: inherit;
     height: inherit;
 }
+
+
+/*ABOUT US SECTION*/
+section{
+    background: white;
+    display: flex;
+    flex-direction: row;
+    color: black;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 20px;
+}
+
+.people {
+    color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.people a {
+    text-decoration: none;
+    color: black;
+}
+
+.people figure {
+    margin: auto;
+    text-align: center;
+    width: 200px;
+}
+.people figure img {
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: grey 0 0 10px;
+    width: 150px;
+}
+
 
 /* FAQ Section */
 .container {
