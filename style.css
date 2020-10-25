@@ -49,6 +49,10 @@ Off Black: #171717
     width: inherit;
     height: inherit;
 }
+.cust-reviews .column iimg {
+    width: inherit;
+    height: inherit;
+}
 
 /* FAQ Section */
 .container {

@@ -11,20 +11,30 @@
             
         </style>
 
-        <script src="main.js">
+        <script src="main.js" type="text/javascript">
             // CUSTOMER TESTIMONIALS
-            window.onload = generateRandomNums;
-            window.onload = function() {
-                var reloading = sessionStorage.getItem("reloading");
-                if (reloading) {
-                    sessionStorage.removeItem("reloading");
-                    generateRandomNums();
-                }
-            }
-            function reloadP() {
-                sessionStorage.setItem("reloading", "true");
-                document.location.reload();
-            }
+            // window.onload = displayReviews;
+            // window.onload = function() {
+            //     var reloading = sessionStorage.getItem("reloading");
+            //     if (reloading) {
+            //         sessionStorage.removeItem("reloading");
+            //         displayReviews();
+            //     }
+            // }
+            // function reloadP() {
+            //     sessionStorage.setItem("reloading", "true");
+            //     document.location.reload();
+            // }
+            // call this function when the document has loaded
+            // document.addEventListener("DOMContentLoaded", function(event) {
+            //     if(window.location.hash == "#reload") {
+    		//         console.log("The Page has been reloaded!");
+    	    //     }else{
+    		//         console.log("The page has a new hit!");
+    	    //     }
+            // }
+            // window.addEventListener("beforeunload", displayReviews());
+            // window.onbeforeunload = displayReviews;
 
         </script>
     </head>
@@ -54,6 +64,7 @@
                     <img src="" alt="customer testimonial 3" id="custReview3">
                 </div>
             </div>
+            <p id="testing" style="color: white">testing, testing</p>
         </div>
         
         <!-- Features Section-->
@@ -129,5 +140,8 @@
                             
             </ul>
         </div>
+    <script>
+
+    </script>
     </body>
 </html>
