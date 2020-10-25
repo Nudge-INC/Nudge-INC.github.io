@@ -1,38 +1,254 @@
+/*
+COLOURS
+Yellow: #F1F119
+Light Blue: #44D6C4
+Grey: #2D2D39
+Off White: #F4F8FD
+Off Black: #171717
+*/
 
-/* CUSTOMER TESTIMONIALS */
-.cust-reviews {
-    box-sizing: border-box;               
+/* importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+/* Main styles */
+h1 {
+    font-family: "Montserrat", sans-serif;
 }
-.cust-reviews .row {
-    background-image: url("/images/city_intersection.jpg");
+h2 {
+    font-family: "Montserrat", sans-serif;
+}
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* NavBar stuff */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+.navBar {
+    overflow: hidden;
+    background-color: #4f4f55;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navBar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    position: fixed;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li{
+    transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover {
+    color: aqua
+}
+
+
+button{
+    padding: 9px 25px;
+    background-color: rgb(231, 215, 66);
+    border: none;
+    border-radius: 50 px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(113, 223, 238, 0.8);
+
+}
+
+/* features */
+.features 
+{
+    background-image: url("./images/tall_buildings.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+}
+
+/* HOME */
+
+html, body{
+    height:100%;
+}
+
+.home {
+    background-image: url("./images/map.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.home .text{
+    width: 50%;
+    height: 25%;
+    padding: 40px 40px 40px 40px;
+    top: 30%;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    background-color: #2D2D39;
+    color:#44D6C4;
+    /*text-shadow: -1px 0 #171717, 0 1px #171717, 1px 0 #171717, 0 -1px#171717;
+    */
+}
+
+.home .text h1{
+    font-size: 50px;
+}
+
+.home .text h2{
+    font-size: 20px;
+}
+
+/* CUSTOMER TESTIMONIALS */
+.cust-reviews {   
     width: 100%;
-    padding: 30px;
+    height: 95vh;
+    padding: 40px 20px;
+    background-color: #171717;
+    font-size: 16px;          
+}
+.cust-reviews .upper-container {
+    padding: 10px 15px;
+}
+.cust-reviews h2 {
+    /* background-color: #171717; */
+    color: #F1F119 ;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.cust-reviews p {
+    /* background-color: #2D2D39; */
+    color: #F4F8FD;
+    font-size: 1.5rem;
+}
+.cust-reviews .row {   
+    box-sizing: border-box;    
+    background-image: url("./images/city_intersection.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    height: 60vh;
+    padding: 15px;
+    margin-top: 9vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
-/* Clear floats after the columns */
+.cust-reviews .row::after {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: '';
+    background: rgba(0,0,0,0.6);
+}
 .cust-reviews .row:after {
+    /* Clear floats after the columns */
     content: "";
     display: table;
     clear: both;
 }
 .cust-reviews .column {
-    background-color: rgb(0, 40, 66);
-    box-shadow: 3px 4px 2px black;
-    border: 1px solid rgb(221, 221, 221);
-    width: 22.5vw;
-    height: 60vh;                
-    padding: 9px;
+    background-color: #2D2D39;
+    box-shadow: 4px 5px 3px black;
+    border: 1px solid #F4F8FD;
+    width: 28vw;
+    height: 35vh;                
+    padding: 7px;
 }
 .cust-reviews .column iframe {
     width: inherit;
     height: inherit;
 }
+.cust-reviews .column img {
+    width: inherit;
+    height: inherit;
+}
+
+
+/*ABOUT US SECTION*/
+section{
+    background: white;
+    display: flex;
+    flex-direction: row;
+    color: black;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 20px;
+}
+
+.people {
+    color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.people a {
+    text-decoration: none;
+    color: black;
+}
+
+.people figure {
+    margin: auto;
+    text-align: center;
+    width: 200px;
+}
+.people figure img {
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: grey 0 0 10px;
+    width: 150px;
+}
+
 
 /* FAQ Section */
 
