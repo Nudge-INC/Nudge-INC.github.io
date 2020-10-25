@@ -1,3 +1,25 @@
+/*
+COLOURS
+Yellow: #F1F119
+Light Blue: #44D6C4
+Grey: #2D2D39
+Off White: #F4F8FD
+Off Black: #171717
+*/
+
+/* importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+/* Main styles */
+h1 {
+
+}
+h2 {
+    
+}
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
 /* NavBar stuff */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
 * {
@@ -70,13 +92,7 @@ background-image:src="images/map.png";
     
 }
 
-/*
-Yellow: #FFEF20
-Light Blue: #44D6C4
-Grey: #2D2D39
-Off White: #F4F8FD
-Off Black: #171717
-*/
+
 
 /* CUSTOMER TESTIMONIALS */
 .cust-reviews {
@@ -107,14 +123,14 @@ Off Black: #171717
 }
 .cust-reviews h2 {
     /* background-color: #171717; */
-    color: #FFEF20;
+    color: #F1F119 ;
     text-align: center;
     font-size: 2.5rem;
-    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
 }
-.cust-reviews p span {
+.cust-reviews p {
     /* background-color: #2D2D39; */
-    color: #44D6C4;
+    color: #F4F8FD;
     font-size: 1.5rem;
 }
 .cust-reviews .row {   
