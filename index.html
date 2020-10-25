@@ -11,6 +11,32 @@
         <style>
             
         </style>
+
+        <script src="main.js" language="JavaScript" type="text/javascript">
+            // CUSTOMER TESTIMONIALS
+            // window.onload = function() {
+            //     var reloading = sessionStorage.getItem("reloading");
+            //     if (reloading) {
+            //         sessionStorage.removeItem("reloading");
+            //         displayReviews();
+            //     }
+            // }
+            // function reloadP() {
+            //     sessionStorage.setItem("reloading", "true");
+            //     document.location.reload();
+            // }
+            // call this function when the document has loaded
+            // document.addEventListener("DOMContentLoaded", function(event) {
+            //     if(window.location.hash == "#reload") {
+    		//         console.log("The Page has been reloaded!");
+    	    //     }else{
+    		//         console.log("The page has a new hit!");
+    	    //     }
+            // }
+            // window.addEventListener("beforeunload", displayReviews());
+            // window.onbeforeunload = displayReviews;
+
+        </script>
     </head>
     <body>
         <header>
@@ -43,24 +69,25 @@
 
 
         <!-- CUSTOMER TESTIMONIALS SECTION -->
-        <div class = "cust-reviews">
-            <h2>User Testimonials</h2>
+
+        <div class = "cust-reviews">           
+            <div class="upper-container">
+                <h2>User Testimonials</h2>
+            <p><span>See what our customers have to say about Nudge!</span></p>
+            </div>
             <div class = "row">               
                 <div class="column">
-                    <iframe src="https://www.twitter.com" frameborder="0">
-
-                    </iframe>
+                    <img src="./images/tweet1.png" alt="customer testimonial 1" id="custReview1">
                 </div>
                 <div class="column">
-                    <iframe src="https://www.twitter.com" frameborder="0">
-
-                    </iframe>
+                    <img src="./images/tweet1.png" alt="customer testimonial 2" id="custReview2">
                 </div>
                 <div class="column">
-                    <iframe src="https://twitter.com/?lang=en" frameborder="0">
-
-                    </iframe>
+                    <img src="./images/tweet1.png" alt="customer testimonial 3" id="custReview3">
                 </div>
+                <!-- <iframe src="https://twitter.com/?lang=en" frameborder="0" id="custReview1">
+
+                </iframe> -->
             </div>
         </div>
        
@@ -143,5 +170,14 @@
                             
             </ul>
         </div>
+    <script>
+        /*
+        putting command here so it will actually work
+        - command causes page to take a suuper long time to load; not good
+        - stuck in while loop
+        */
+        window.onload = displayReviews;
+        // window.addEventListener("load", displayReviews);
+    </script>
     </body>
 </html>
