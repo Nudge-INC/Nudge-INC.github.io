@@ -1,4 +1,35 @@
 
+/* HOME */
+
+.home {
+    /*background-image: url(https://lh3.googleusercontent.com/proxy/39riQNbJgUkSZjRp4CHbfI39zAIrGgvHQsaNhVkZUJSTYwOunbtMRFGU9c0Ohv0hd2F3pCXCGIxBv4CQTJ3BbkcUWPAh60Jz4MBuJZ5xfr_xXnSV); 
+    background-repeat: no-repeat;
+    background-size: contain;*/
+}
+
+.home .text{
+    width:50%;
+    height:100%;
+    padding: 50px 30px 50px 30px;
+    margin: 25% auto;
+    position: relative;
+    text-align: center;
+    background-color: #2D2D39
+
+}
+
+.home .text h1{
+    color:#44D6C4;
+    /*text-shadow: -1px 0 #171717, 0 1px #171717, 1px 0 #171717, 0 -1px#171717;
+    */
+}
+
+.home .text h2{
+    color:#44D6C4;
+    /*text-shadow: -1px 0 #171717, 0 1px #171717, 1px 0 #171717, 0 -1px#171717;
+    */
+}
+
 /* CUSTOMER TESTIMONIALS */
 .cust-reviews {
     box-sizing: border-box;    
