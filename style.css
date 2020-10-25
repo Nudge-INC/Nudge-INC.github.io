@@ -42,13 +42,13 @@
     width: 100%;
 }
 .container-questions {
-    width: 90%;
+    width: 100%;
     overflow: hidden;
 }
 
 .container-questions ul{
     padding: 50px;
-    margin: 0px;
+    margin: 200px 0px 10px 0px;
 }
 .container-questions ul li {
     
@@ -76,10 +76,6 @@
 
 }
 
-.container-questions ul li .title-questions:hover {
-    background: blue;
-    color: white;
-}
 
 .container-questions ul li .questions {
     font-family: 'Raleway', sans-serif;
@@ -95,7 +91,7 @@
     text-align:center;
     height: 50%;
     font-family: 'Raleway', sans-serif;
-    margin: 0px 0px 50px 50px;
+    margin: 0px 125px 50px 50px;
     
 }
 
