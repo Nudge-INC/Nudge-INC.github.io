@@ -17,6 +17,9 @@
              background-size: cover;
          } 
         </style>
+
+        <script src="main.js" language="JavaScript" type="text/javascript">
+        </script>
     </head>
     <body>
         <header>
@@ -49,24 +52,23 @@
 
 
         <!-- CUSTOMER TESTIMONIALS SECTION -->
-        <div class = "cust-reviews">
-            <h2>User Testimonials</h2>
+
+        <div class = "cust-reviews">           
+            <div class="upper-container">
+                <h2>User Testimonials</h2>
+            <p>See what our customers have to say about Nudge!</p>
+            </div>
             <div class = "row">               
                 <div class="column">
-                    <iframe src="https://www.twitter.com" frameborder="0">
-
-                    </iframe>
+                    <img src="./images/tweet1.png" alt="customer testimonial 1" id="custReview1">
                 </div>
                 <div class="column">
-                    <iframe src="https://www.twitter.com" frameborder="0">
-
-                    </iframe>
+                    <img src="./images/tweet1.png" alt="customer testimonial 2" id="custReview2">
                 </div>
                 <div class="column">
-                    <iframe src="https://twitter.com/?lang=en" frameborder="0">
-
-                    </iframe>
-                </div>
+                    <img src="./images/tweet1.png" alt="customer testimonial 3" id="custReview3">
+                </div> 
+                <!-- will use iframe instead of img (img resizing problems, tweets w diff numbers of characters) -->
             </div>
         </div>
        
@@ -93,13 +95,49 @@
             <h2>Who are we?</h2>
             <p>We are some university students who came with an idea for a product and decided to develop it into a project!</p>
             <h2>Meet the Founders!</h2>
-            <p>Nicholas Turbide - Costumer Service</p>
-            <p>Jessica Nguyen - Business Manager</p>
-            <p>Diane Tsang - Creative Director</p>
-            <p>Zakria Oulli - Arts and Design</p>
-            <p>Christina Song - Features</p>
-            <p>Mohanad Mohamed - User Experience</p>
-            <button>Click here to learn more</button>
+            <section class="people r1">
+        
+            <figure>
+                <img src="images/baby-yoda.jpg" alt="Nicholas Turbide">
+                <figcaption>Nicholas Turbide</figcaption>
+                <caption>Costumer Service<br></caption>
+                <button><a href="https://github.com/NicholasTurbide">github</a></button>
+            </figure>
+            <figure>
+                <img src="images/zak.png" alt="Zakaria Oulli">
+                <figcaption>Zakaria Oulli</figcaption>
+                <caption>Arts and Design<br></caption>
+                <button><a href="https://github.com/zakariaoulli">github</a></button>
+            </figure>
+            <figure>
+                <img src="images/discord-pfp.png" alt="Mohanad Mohamed">
+                <figcaption>Mohanad Mohamed</figcaption>
+                <caption>User Experience<br></caption>
+                <button><a href="https://github.com/MohanadAhmed123">github</a></button>
+            </figure>    
+        </section>
+        
+        <section class=people>
+            <figure>
+                <img src="images/discord-pfp.png" alt="Christina Song">
+                <figcaption>Christina Song</figcaption>
+                <caption>Features<br></caption>
+                <button><a href="https://github.com/csong202">github</a></button>
+            </figure>
+            <figure>
+                <img src="images/discord-pfp.png" alt="Jessica Nguyen">
+                <figcaption>Jessica Nguyen</figcaption>
+                <caption>Business Manager<br></caption>
+                <button><a href="https://github.com/jessicanguyenn">github</a></button>
+            </figure>
+            <figure>
+                <img src="images/discord-pfp.png" alt="Diane Tsang">
+                <figcaption>Diane Tsang</figcaption>
+                <caption>Creative Director<br></caption>
+                <button><a href="https://github.com/dianetsang">github</a></button>
+            </figure>
+        </section>
+        <div><button>Learn more</button></div>
         </div>
 
 
@@ -151,5 +189,9 @@
                             
             </ul>
         </div>
+    <script>
+        // call function to display random customer testimonials when page is reloaded
+        window.onload = displayReviews;
+    </script>
     </body>
 </html>
