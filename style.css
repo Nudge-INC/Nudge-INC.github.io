@@ -37,8 +37,8 @@ Off Black: #171717
     /* background-color: #171717; */
     color: #FFEF20;
     text-align: center;
-    width: 20vw;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 .cust-reviews p span {
     /* background-color: #2D2D39; */
