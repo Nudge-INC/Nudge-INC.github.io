@@ -9,6 +9,7 @@ Off Black: #171717
 
 /* importing fonts */
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
 /* Main styles */
 h1 {
     font-family: "Montserrat", sans-serif;
@@ -21,7 +22,6 @@ p {
 }
 
 /* NavBar stuff */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
 * {
     box-sizing: border-box;
     margin: 0;
