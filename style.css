@@ -143,6 +143,42 @@ Off Black: #171717
     height: inherit;
 }
 
+
+/*ABOUT US SECTION*/
+section{
+    background: white;
+    display: flex;
+    flex-direction: row;
+    color: black;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 20px;
+}
+
+.people {
+    color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.people a {
+    text-decoration: none;
+    color: black;
+}
+
+.people figure {
+    margin: auto;
+    text-align: center;
+    width: 200px;
+}
+.people figure img {
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: grey 0 0 10px;
+    width: 150px;
+}
+
+
 /* FAQ Section */
 .container {
     width: 98%;
