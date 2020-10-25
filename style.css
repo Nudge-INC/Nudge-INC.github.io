@@ -203,13 +203,7 @@ html, body{
     margin: auto;
     position: relative;
     text-align: center;
-    background-color: #2D2D39
-
-}
-
-.home .text{
-    position: relative;
-    margin: auto;
+    background-color: #2D2D39;
     color:#44D6C4;
     /*text-shadow: -1px 0 #171717, 0 1px #171717, 1px 0 #171717, 0 -1px#171717;
     */
