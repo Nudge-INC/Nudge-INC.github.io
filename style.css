@@ -376,7 +376,7 @@ section .linkedIn a{
 /* $$$$$ Section */
 body {
   min-height: 100vh;
-  background-image: linear-gradient(##000000,#000000);
+  background-image: linear-gradient(#000000,#000000);
 }
 
 .container {
@@ -533,7 +533,7 @@ body {
 }
 
 .table1 a {
-  color: #6eff77;
+  color: #ff8b33;
 }
 
 .table2 a {
