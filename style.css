@@ -385,7 +385,7 @@ section .linkedIn a{
 .searchbar-contour {
     position: absolute; 
     left: 33%;
-    transform: translate(-75%, 200px);
+    transform: translate(-75%, 100px);
     height: 40px;
     font-family: 'Raleway', sans-serif;
     background: #ffffff;
