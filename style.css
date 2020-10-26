@@ -10,6 +10,7 @@ Off Black: #171717
 /* importing fonts */
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
 /* Main styles */
 h1 {
     font-family: "Montserrat", sans-serif;
@@ -47,23 +48,18 @@ p {
 }
 */
 
+/* THE COLOURS ARE JUST FOR TESTS IT DOESN'T HAVE TO BE THAT IF WE DONT WANT IT */
+
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 30px 10%;
+    padding: 20px 10%;
     position: fixed;
     z-index: 1;
     overflow: hidden;
-}
-
-li, a, button{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #171717;
-    text-decoration: none;
+    background-color: #171717;
 }
 
 .logo{
@@ -77,15 +73,20 @@ li, a, button{
 .nav__links li{
     display: inline-block;
     padding: 0px 20px;
-}
-
-.nav__links li{
     transition: all 0.3s ease 0s;
 }
+
 .nav__links li a:hover {
-    color:#44D6C4
+    color: #71dfee
 }
 
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #F4F8FD;
+    text-decoration: none;
+}
 
 button{
     padding: 9px 25px;
@@ -94,6 +95,7 @@ button{
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    color: #171717;
 }
 
 button:hover{
@@ -101,18 +103,7 @@ button:hover{
 
 }
 
-/* features */
-
-.features 
-{
-    background-image: url("./images/tall_buildings.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
 /* HOME */
-
 html, body{
     height:100%;
 }
@@ -134,7 +125,7 @@ html, body{
     position: relative;
     text-align: center;
     background-color: #2D2D39;
-    color:#44D6C4;
+    color: #71dfee;
     /*text-shadow: -1px 0 #171717, 0 1px #171717, 1px 0 #171717, 0 -1px#171717;
     */
 }
@@ -145,6 +136,15 @@ html, body{
 
 .home .text h2{
     font-size: 20px;
+}
+
+/* features */
+.features 
+{
+    background-image: url("./images/tall_buildings.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 /* CUSTOMER TESTIMONIALS */
@@ -305,8 +305,6 @@ section .linkedIn a{
 
 
 /* FAQ Section */
-
-
 .FAQ-Section{
     text-align: center;
     background: url(https://cdn.discordapp.com/attachments/763177317929058326/766010087063289866/pexels-photo-219692.png) no-repeat center center fixed;
@@ -346,7 +344,6 @@ section .linkedIn a{
 
 }
 
-
 .container-questions ul li .questions {
     font-family: 'Raleway', sans-serif;
     color: white;
@@ -373,6 +370,7 @@ section .linkedIn a{
 
     }
 }
+
 /* $$$$$ Section */
 body {
   min-height: 100vh;
