@@ -269,7 +269,7 @@ section{
 
 .container-questions ul{
     padding: 50px;
-    margin: 10px 0px 10px 0px;
+    margin: 100px -110px 10px 0px;
     text-align: center;
 }
 .container-questions ul li {
@@ -305,11 +305,23 @@ section{
 }
 
 .searchbar-contour {
-    text-align:center;
-    height: 50%;
+    position: absolute; 
+    left: 45%;
+    height: 40px;
     font-family: 'Raleway', sans-serif;
-    margin: 0px 125px 50px 50px;
-    padding: 100px;
+    background: #6117362d;
+    border-radius: 40px;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+}
+.search-button {
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width:1250px){
@@ -317,6 +329,5 @@ section{
         width: 60%;
         height: 100%;
         margin: 40px;
-
     }
 }
