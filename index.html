@@ -9,40 +9,32 @@
         <script src="https://kit.fontawesome.com/476a33a271.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Raleway:ital@1&display=swap" rel="stylesheet"> 
         <title>Nudge INC</title>
-       
-       
-        <style>
-         body {
-             background-image: url('/images/city_intersection.jpg');
-             background-repeat: no-repeat;
-             background-attachment: fixed;
-             background-size: cover;
-         } 
-        </style>
-
+        <link rel="icon" href="./images/icon.ico" type="image/x-icon"/>
         <script src="main.js" language="JavaScript" type="text/javascript">
         </script>
     </head>
     <body>
 
         <header>
-            <img class="logo" src="./images/actual logo.png" alt="logo">
             
+            <img class="logo" src="./images/logo.png" alt="nudge" width="15%" height="15%">
+
             <nav>
                 <ul class="nav__links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Customer Satisfaction</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">About Us</a></li>    
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#cust-reviews">Customer Satisfaction</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#faq">FAQ</a></li>    
                 </ul>
             </nav>
             <a class="cta" href="#"><button>Download Here!</button></a>
         </header>
 
         <!-- HOME -->
-        <div class = "home">
+
+        <div class = "home" id="home">
             <div class = home>
                 <div class = text>
                     <h1>WELCOME TO NUDGE!</h1>
@@ -50,30 +42,10 @@
                 </div>
             </div>
         </div>
-
-        <!-- CUSTOMER TESTIMONIALS SECTION -->
-
-        <div class = "cust-reviews">           
-            <div class="upper-container">
-                <h2>User Testimonials</h2>
-            <p>See what our customers have to say about Nudge!</p>
-            </div>
-            <div class = "row">               
-                <div class="column">
-                    <img src="./images/tweet1.png" alt="customer testimonial 1" id="custReview1">
-                </div>
-                <div class="column">
-                    <img src="./images/tweet1.png" alt="customer testimonial 2" id="custReview2">
-                </div>
-                <div class="column">
-                    <img src="./images/tweet1.png" alt="customer testimonial 3" id="custReview3">
-                </div> 
-                <!-- will use iframe instead of img (img resizing problems, tweets w diff numbers of characters) -->
-            </div>
-        </div>
        
         <!-- Features Section-->
-        <div class = "features"> 
+
+        <div class = "features" id="features"> 
             <h1 style="text-align:center;">Why Choose Nudge?</h1>
         <div class ="featureOne">
             <div class="featureOne__img">
@@ -97,36 +69,56 @@
             </div>
         </div>
         </div>
-        <!-- pricing Section-->
-        <div class = "features">
-        </div>
-        
-        <!-- About Us Section -->
-        <div style="background-color:yellow;">
 
+        <!-- CUSTOMER TESTIMONIALS SECTION -->
+
+        <div class= "cust-reviews" id="cust-reviews">           
+            <div class="upper-container">
+                <h2>User Testimonials</h2>
+            <p>See what our customers have to say about Nudge!</p>
+            </div>
+            <div class = "row">               
+                <div class="column">
+                    <img src="./images/tweet1.png" alt="customer testimonial 1" id="custReview1" class="zoom">
+                </div>
+                <div class="column">
+                    <img src="./images/tweet1.png" alt="customer testimonial 2" id="custReview2" class="zoom">
+                </div>
+                <div class="column">
+                    <img src="./images/tweet1.png" alt="customer testimonial 3" id="custReview3" class="zoom">
+                </div> 
+            </div>
+        </div>
+
+      <!-- $$$$$ Section -->
+ 
+        
+      <!-- About Us Section -->
+
+        <div style="background-color: white;" id="about-us">
             <h1>About Team Nudge</h1>
-            <h2>Who are we?</h2>
-            <p>We are some university students who came with an idea for a product and decided to develop it into a project!</p>
-            <h2>Meet the Founders!</h2>
             <section class="people r1">
         
             <figure>
                 <img src="images/baby-yoda.jpg" alt="Nicholas Turbide">
                 <figcaption>Nicholas Turbide</figcaption>
                 <caption>Costumer Service<br></caption>
-                <button><a href="https://github.com/NicholasTurbide">github</a></button>
+                <p class="github link"><a href="https://github.com/NicholasTurbide">Github link</a></p>
+                <p class="linkedIn link"><a href="https://www.linkedin.com/">LinkedIn link</a></p>
             </figure>
             <figure>
                 <img src="images/zak.png" alt="Zakaria Oulli">
                 <figcaption>Zakaria Oulli</figcaption>
                 <caption>Arts and Design<br></caption>
-                <button><a href="https://github.com/zakariaoulli">github</a></button>
+                <p class="github link"><a href="https://github.com/zakariaoulli">Github link</a></p>
+                <p class="linkedIn link"><a href="https://www.linkedin.com/">LinkedIn link</a></p>
             </figure>
             <figure>
                 <img src="images/discord-pfp.png" alt="Mohanad Mohamed">
                 <figcaption>Mohanad Mohamed</figcaption>
                 <caption>User Experience<br></caption>
-                <button><a href="https://github.com/MohanadAhmed123">github</a></button>
+                <p class="github link"><a href="https://github.com/MohanadAhmed123">Github link</a></p>
+                <p class="linkedIn link"><a href="https://www.linkedin.com/">LinkedIn link</a></p>
             </figure>    
         </section>
         
@@ -135,29 +127,34 @@
                 <img src="images/discord-pfp.png" alt="Christina Song">
                 <figcaption>Christina Song</figcaption>
                 <caption>Features<br></caption>
-                <button><a href="https://github.com/csong202">github</a></button>
+                <p class="github link"><a href="https://github.com/csong202">Github link</a></p>
+                <p class="linkedIn link"><a href="https://www.linkedin.com/">LinkedIn link</a></p>
             </figure>
             <figure>
                 <img src="images/discord-pfp.png" alt="Jessica Nguyen">
                 <figcaption>Jessica Nguyen</figcaption>
                 <caption>Business Manager<br></caption>
-                <button><a href="https://github.com/jessicanguyenn">github</a></button>
+                <p class="github link"><a href="https://github.com/jessicanguyenn">Github link</a></p>
+                <p class="linkedIn link"><a href="https://www.linkedin.com/">LinkedIn link</a></p>
             </figure>
             <figure>
                 <img src="images/discord-pfp.png" alt="Diane Tsang">
                 <figcaption>Diane Tsang</figcaption>
                 <caption>Creative Director<br></caption>
-                <button><a href="https://github.com/dianetsang">github</a></button>
+                <p class="github link"><a href="https://github.com/dianetsang">Github link</a></p>
+                <p class="linkedIn link"><a href="https://www.linkedin.com/">LinkedIn link</a></p>
             </figure>
         </section>
-        <div><button>Learn more</button></div>
+        <button id="more-info">Learn more</button>
+            <h2>Who are we? </h2>
+            <p>We are some university students who came with an idea for a product and decided to develop it into a project!</p>
+        
         </div>
-
-
-        <!-- FAQ Section -->
-        <div class="FAQ-Section">
+        
+      <!-- FAQ Section -->
+        <div class="FAQ-Section" id="faq">
         <h2 class="FAQ-H2">FAQ - FREQUENTLY ASKED QUESTIONS</h2>
-            <div class"FAQ-container">
+            <div class="FAQ-container">
                 <div class="searchbar-contour">
                     <input type="text" class="input" placeholder="How Can We Help You?">
                     <div class="search-bar">
@@ -195,6 +192,7 @@
                 </div>
             </div>        
         </div>
+    
     <script>
         // call function to display random customer testimonials when page is reloaded
         window.onload = displayReviews;
