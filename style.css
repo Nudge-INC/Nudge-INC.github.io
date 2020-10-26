@@ -321,14 +321,6 @@ section{
     }
 }
 /* $$$$$ Section */
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Alternate Gothic",sans-serif;
-  text-decoration: none;
-  list-style: none;
-}
 
 body{
   background-image: linear-gradient(150deg,#312454,#312154 );
