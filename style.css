@@ -376,7 +376,7 @@ section .linkedIn a{
 /* $$$$$ Section */
 body {
   min-height: 100vh;
-  background-image: linear-gradient(#ffffff,#ffffff);
+  background-image: linear-gradient(#db1616, #4d1604);
 }
 
 .container {
@@ -428,7 +428,7 @@ body {
   padding: 10px 20px;
 }
 
-.pricing-list {
+.pricing-list li {
   margin: 8px 0;
   font-size: 14px;
   color: #002;
@@ -472,7 +472,7 @@ body {
 }
 
 .table1 .title {
-  background-image: linear-gradient(150deg, #124715, #66b072);
+  background-image: linear-gradient(150deg, #046b17, #66b072);
 }
 
 .table2 .title {
@@ -481,6 +481,16 @@ body {
 
 .table3 .title {
   background-image: linear-gradient(150deg, #0abeff, #0861fc);
+}
+
+.icon {
+  background: #db1616;
+  color: #fff;
+  transform: rotate(45deg);
+  padding: 10px 40px;
+  position: absolute;
+  top: 8px;
+  right: -33px;
 }
 
 .ribbon {
@@ -529,11 +539,20 @@ body {
 
 .label:after {
   right: 0;
+}
 
+.pop {
+  background: #db1616;
+  color: #fff;
+  transform: rotate(45deg);
+  padding: 10px 40px;
+  position: absolute;
+  top: 8px;
+  right: -33px;
 }
 
 .table1 a {
-  color: #ff7700;
+  color: #66b012;
 }
 
 .table2 a {
