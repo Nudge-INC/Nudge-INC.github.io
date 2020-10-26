@@ -19,100 +19,145 @@
         </style>
 
         <script src="main.js" language="JavaScript" type="text/javascript">
-            // CUSTOMER TESTIMONIALS
-            // window.onload = function() {
-            //     var reloading = sessionStorage.getItem("reloading");
-            //     if (reloading) {
-            //         sessionStorage.removeItem("reloading");
-            //         displayReviews();
-            //     }
-            // }
-            // function reloadP() {
-            //     sessionStorage.setItem("reloading", "true");
-            //     document.location.reload();
-            // }
-            // call this function when the document has loaded
-            // document.addEventListener("DOMContentLoaded", function(event) {
-            //     if(window.location.hash == "#reload") {
-    		//         console.log("The Page has been reloaded!");
-    	    //     }else{
-    		//         console.log("The page has a new hit!");
-    	    //     }
-            // }
-            // window.addEventListener("beforeunload", displayReviews());
-            // window.onbeforeunload = displayReviews;
-
         </script>
     </head>
     <body>
+
         <header>
-            <img class="logo" src="images/actual logo.png" alt="logo">
-            <li><a href = "#">Home</a></li> <!--Will this add a link underneath logo??-->
+            
+            <img class="logo" src="./images/logo.png" alt="nudge" width="15%" height="15%">
+
             <nav>
                 <ul class="nav__links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Customer Satisfaction</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">About Us</a></li>    
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#cust-reviews">Customer Satisfaction</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#faq">FAQ</a></li>    
                 </ul>
             </nav>
             <a class="cta" href="#"><button>Download Here!</button></a>
         </header>
-    </body>
 
-    
-    
-        <div class = "home">
-            
+        <!-- HOME -->
+        <div class = "home" id="home">
+            <div class = home>
+                <div class = text>
+                    <h1>WELCOME TO NUDGE!</h1>
+                    <h2>The slogan goes here idk what we really decided on.</h3>
+                </div>
+            </div>
         </div>
-
-
-        <h1 style="font-family:sans-serif;color:red;">Welcome to Nudge!</h1>
-        <h2 style ="color:blue;">This is the index page</h2>
-        <p>This is a paragraph with some <b>bold</b> text.</p>
-
 
         <!-- CUSTOMER TESTIMONIALS SECTION -->
 
-        <div class = "cust-reviews">           
+        <div class= "cust-reviews" id="cust-reviews">           
             <div class="upper-container">
                 <h2>User Testimonials</h2>
-            <p><span>See what our customers have to say about Nudge!</span></p>
+            <p>See what our customers have to say about Nudge!</p>
             </div>
             <div class = "row">               
                 <div class="column">
-                    <img src="./images/tweet1.png" alt="customer testimonial 1" id="custReview1">
+                    <img src="./images/tweet1.png" alt="customer testimonial 1" id="custReview1" class="zoom">
                 </div>
                 <div class="column">
-                    <img src="./images/tweet1.png" alt="customer testimonial 2" id="custReview2">
+                    <img src="./images/tweet1.png" alt="customer testimonial 2" id="custReview2" class="zoom">
                 </div>
                 <div class="column">
-                    <img src="./images/tweet1.png" alt="customer testimonial 3" id="custReview3">
-                </div>
-                <!-- <iframe src="https://twitter.com/?lang=en" frameborder="0" id="custReview1">
-
-                </iframe> -->
+                    <img src="./images/tweet1.png" alt="customer testimonial 3" id="custReview3" class="zoom">
+                </div> 
             </div>
         </div>
        
         <!-- Features Section-->
-        <div class = "features"> 
+        <div class = "features" id="features"> 
             <h1 style="text-align:center;">Why Choose Nudge?</h1>
-        <div class ="container">
-            <div class="title"><b>Location Services</b>
-                <a href="#">Read More</a>
+        <div class ="featureOne">
+            <div class="featureOne__img">
+                <img src="images/feature1.jpg" alt="">
+            </div>
+            <div class="featureOne__info">
+                <div class="featureReleaseDate">
+                    <span>Thursday</span>
+                    <span>October 15th 2020</span>
+                </div>
+                <h2 class="featureOne__title">GPS Alarm Functionality</h2>
+                <p class="featureOne__text">
+                    One of the main functionalities of the Nudge app is the ability to program an alarm to wake you up at a certain location.
 
+                </p>
+                <a href="#" class="featureOne__cta">Read more</a>
+            </div>
+            <div class="SpeedometerBox"><b>Speedometer Function</b>
+            </div>
+            <div class="GPSBox"><b>GPS Function</b>
             </div>
         </div>
         </div>
-        <!-- pricing Section-->
-        <div class = "features">
+
+      <!-- $$$$$ Section -->
+      
+        <div class="pricecontainer" id="pricing">
+      <div class="pricing-table table1">
+        <div class="pricing-header">
+          <div class="price"><span></span>0.00</div>
+          <div class="pricetitle">BASIC</div>
+            <div class="pop">FREE</div>
+
         </div>
+        <ul class="pricing-list">
+          <li><strong>1</strong> device</li>
+          <div class="border"></div>
+          <li><strong>69</strong> pogs</li>
+          <div class="border"></div>
+          <li><strong>1</strong> bruh</li>
+          <div class="border"></div>
+          <li><strong>24h/7</strong> indian tech support</li>
+        </ul>
+        <a href="#">Get Basic nudge now!</a>
+      </div>
+
+      <div class="pricing-table table2">
+        <div class="pricing-header">
+          <div class="price"><span>$</span>5.99</div>
+          <div class="pricetitle">Gold</div>
+        </div>
+        <ul class="pricing-list">
+          <li><strong>5</strong> devices</li>
+          <div class="priceborder"></div>
+          <li><strong>8</strong> poggies</li>
+          <div class="priceborder"></div>
+          <li><strong>3</strong> bruh</li>
+          <div class="priceborder"></div>
+          <li><strong>24h/7</strong> Indian tech support</li>
+        </ul>
+        <a href="#">Get gold nudge now!</a>
+      </div>
+
+      <div class="pricing-table table3">
+        <div class="pricing-header">
+            <div class="ribbon">
+              <div class="label">HOT</div>
+            </div>
+          <div class="price"><span>$</span>9.99</div>
+          <div class="pricetitle">diamond</div>      
+          </div>
+        <ul class="pricing-list">
+          <li><strong>10</strong> devices</li>
+          <div class="priceborder"></div>
+          <li><strong>15</strong> poggers</li>
+          <div class="priceborder"></div>
+          <li><strong>1</strong> bruh</li>
+          <div class="priceborder"></div>
+          <li><strong>24h/7</strong> Indian tech Support</li>
+        </ul>
+        <a href="#">Get diamond nudge now!</a>
+        </div>
+        </div>      
         
-        <!-- About Us Section -->
-        <div style="background-color:yellow;">
+      <!-- About Us Section -->
+        <div style="background-color:yellow;" id="about-us">
 
             <h1>About Team Nudge</h1>
             <h2>Who are we?</h2>
@@ -162,64 +207,51 @@
         </section>
         <div><button>Learn more</button></div>
         </div>
-
-
-        <!-- FAQ Section -->
-        <div class="container">
-            <ul>   
-                <li>  
-                    <div class="title"><b>General</b>
-                        <div class="questions">How to Download</div>
-                        <div class="questions">How to pair with Smart Watches</div>
-                        <div class="questions">How to add Markers on the map</div>
-                        <div class="questions">How to add your Friends</div>
-
-                    </div>  
-                </li>
-                    
-                <li>  
-                    <div class="title"><b>Where is Nudge Available?</b>
-                        <div class="questions">Currently, Nudge is available in these locations:</div>
-                        <div class="questions"> - Ontario, Canada</div>
-                        <div class="questions"> - Somewhere, Morocco</div>
-                        <div class="questions"> - Your Imagination</div>
-                    </div>  
-                </li>
-                <li>  
-                    <div class="title"><b>What Devices are Supported?</b>
-                        <div class="questions">We currently support these devices:</div>  
-                        <div class="questions"> - iPhone Juan</div>
-                        <div class="questions"> - Android Pineapple</div>
-                        <div class="questions"> - Huawei Data Stealer</div>
+        
+      <!-- FAQ Section -->
+        <div class="FAQ-Section" id="faq">
+            <div class"FAQ-container">
+                <div class="searchbar-contour">
+                    <input type="text" class="input" placeholder="How Can We Help You?">
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
                     </div>
-                </li>
-                <li>  
-                    <div class="title"><b>Where are our Headquarters?</b>
-                        <div class="questions">We are a startup originating from Ottawa, Ontario. However we do have servers in Morocco.<div>
-                    </div>  
-                </li>
-                <li>  
-                    <div class="title"><b>These are some Great Questions!</b>
-                        <div class="questions">       <div>
-                        <div class="questions">       <div>
-                        <div class="questions">       <div>
-                        <div class="questions">       <div>
-                    </div>  
-                </li>
-                <li>  
-                    <div class="title"><b>That last one Wasn't a Question</b> </div>  
-                </li>
-                            
-            </ul>
+                </div>
+                <div class="container-questions">
+                    <ul>   
+                        <li>  
+                            <div class="title-questions"><b>General</b>
+                                <div class="questions">How to Download</div>
+                                <div class="questions">How to pair with Smart Watches</div>
+                                <div class="questions">How to add Markers on the map</div>
+                                <div class="questions">How to add your Friends</div>
+
+                            </div>  
+                        </li>
+                        <li>  
+                            <div class="title-questions"><b>Where is Nudge Available?</b>
+                                <div class="questions"> Nudge is available in these locations:</div>
+                                <div class="questions"> - Ontario, Canada</div>
+                                <div class="questions"> - Somewhere, Morocco</div>
+                                <div class="questions"> - Your Imagination</div>
+                            </div>  
+                        </li>
+                        <li>  
+                            <div class="title-questions"><b>What Devices are Supported?</b>
+                                <div class="questions">We currently support these devices:</div>  
+                                <div class="questions"> - iPhone Juan</div>
+                                <div class="questions"> - Android Pineapple</div>
+                                <div class="questions"> - Huawei Data Stealer</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>        
         </div>
+    
     <script>
-        /*
-        putting command here so it will actually work
-        - command causes page to take a suuper long time to load; not good
-        - stuck in while loop
-        */
+        // call function to display random customer testimonials when page is reloaded
         window.onload = displayReviews;
-        // window.addEventListener("load", displayReviews);
     </script>
     </body>
 </html>

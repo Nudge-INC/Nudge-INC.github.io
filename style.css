@@ -1,17 +1,56 @@
-/* NavBar stuff */
+/*
+COLOURS
+Yellow: #F1F119
+Light Blue: #44D6C4
+Grey: #2D2D39
+Off White: #F4F8FD
+Off Black: #171717
+*/
+
+/* importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+/* Main styles */
+h1 {
+    font-family: "Montserrat", sans-serif;
+}
+h2 {
+    font-family: "Montserrat", sans-serif;
+}
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* NavBar stuff */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     
+    
 }
-
+.navBar {
+    overflow: hidden;
+    background-color: #4f4f55;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+.navBar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
 li, a, button{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: #edf0fe;
+    color: black;
     text-decoration: none;
 }
 
@@ -20,6 +59,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+    position: fixed;
 }
 
 .logo{
@@ -47,7 +87,7 @@ button{
     padding: 9px 25px;
     background-color: rgb(231, 215, 66);
     border: none;
-    border-radius: 50 px;
+    border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
@@ -58,25 +98,78 @@ button:hover{
 }
 
 /* features */
-.features {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Montserrat', sans-serif;
-background-image:src="images/map.png"; 
+.features 
+{
+    background-image: url("./images/tall_buildings.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
+/* HOME */
 
-/*
-Yellow: #FFEF20
-Light Blue: #44D6C4
-Grey: #2D2D39
-Off White: #F4F8FD
-Off Black: #171717
-*/
+html, body{
+    height:100%;
+}
+
+.home {
+    background-image: url("./images/map.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.home .text{
+    width: 50%;
+    height: 25%;
+    padding: 40px 40px 40px 40px;
+    top: 30%;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    background-color: #2D2D39;
+    color:#44D6C4;
+    /*text-shadow: -1px 0 #171717, 0 1px #171717, 1px 0 #171717, 0 -1px#171717;
+    */
+}
+
+.home .text h1{
+    font-size: 50px;
+}
+
+.home .text h2{
+    font-size: 20px;
+}
 
 /* CUSTOMER TESTIMONIALS */
-.cust-reviews {
+.cust-reviews {   
+    width: 100%;
+    height: 95vh;
+    padding: 40px 20px;
+    padding-bottom: 30px;
+    background-color: #171717;
+    font-size: 16px;          
+}
+.cust-reviews .upper-container {
+    margin-bottom: 15px;
+}
+.cust-reviews h2 {
+    /* background-color: #171717; */
+    color: #F1F119 ;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin: 0.8rem;
+}
+.cust-reviews p {
+    /* background-color: #2D2D39; */
+    color: #F4F8FD;
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+}
+.cust-reviews .row {   
     box-sizing: border-box;    
     background-image: url("./images/city_intersection.jpg");
     background-repeat: no-repeat;
@@ -84,11 +177,14 @@ Off Black: #171717
     background-size: cover;
     position: relative;
     z-index: 1;
-    width: 100%;
-    padding: 40px 0 40px 0;
-    font-size: 16px;          
+    height: 60vh;
+    padding: 0.9rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
-.cust-reviews::after {
+.cust-reviews .row::after {
     position: absolute;
     z-index: -1;
     top: 0;
@@ -96,29 +192,7 @@ Off Black: #171717
     height: 100%;
     width: 100%;
     content: '';
-    background: rgba(0,0,0,0.4);
-}
-.cust-reviews .upper-container {
-    padding: 10px 15px;
-}
-.cust-reviews h2 {
-    /* background-color: #171717; */
-    color: #FFEF20;
-    text-align: center;
-    width: 20vw;
-    font-size: 2rem;
-}
-.cust-reviews p span {
-    /* background-color: #2D2D39; */
-    color: #44D6C4;
-    font-size: 1.5rem;
-}
-.cust-reviews .row {   
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    background: rgba(0,0,0,0.6);
 }
 .cust-reviews .row:after {
     /* Clear floats after the columns */
@@ -126,21 +200,28 @@ Off Black: #171717
     display: table;
     clear: both;
 }
-.cust-reviews .column {
-    background-color: #2D2D39;
-    box-shadow: 3px 4px 2px black;
-    border: 1px solid #F4F8FD;
+.cust-reviews .column {  
     width: 30vw;
-    height: 35vh;                
-    padding: 7px;
+    height: 40vh;                
 }
 .cust-reviews .column iframe {
     width: inherit;
     height: inherit;
 }
 .cust-reviews .column img {
-    width: inherit;
-    height: inherit;
+    width: 26vw;
+    height: auto;
+    border: 2px solid #171717;
+    outline: 0.5px solid #F4F8FD;
+    box-shadow: 4px 5px 5px black;
+}
+.cust-reviews .zoom {
+    transition: transform .2s;
+}
+.cust-reviews .zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.2); 
 }
 
 
@@ -180,34 +261,40 @@ section{
 
 
 /* FAQ Section */
-.container {
-    width: 98%;
-    overflow: hidden;
+
+
+.FAQ-Section{
+    text-align: center;
     background: url(https://cdn.discordapp.com/attachments/763177317929058326/766010087063289866/pexels-photo-219692.png) no-repeat center center fixed;
-    margin-top: 20px auto;
-    padding: 20px;
+    background-size: 100%;
+    background-clip: 50%;
+    width: 100%;
+}
+.container-questions {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
 }
 
-.container ul{
-    padding: 0px;
-    margin: 0px;
+.container-questions ul{
+    padding: 50px;
+    margin: 10px 0px 10px 0px;
+    text-align: center;
 }
-.container ul li {
-    opacity: 0.75;
-    list-style: none;
-    float: left;
-    width: 20%;
+.container-questions ul li {
+
+    text-align: center;
+    display: inline-block;
+    width: 25%;
     height: 300px;
     background: black;
-    margin:  80px 150px 80px 80px;
-    box-sizing: border-box;
-}
-.container ul li:hover {
-    opacity: 1;
+    margin:  0px 142px 142px 0px;
+    padding: 2px;
+
 }
 
-.container ul li .title {
-    width: 100%;
+.container-questions ul li .title-questions {
+    font-family: 'Raleway', sans-serif;
     height: 50px;
     line-height: 50px;
     background:white;
@@ -215,12 +302,9 @@ section{
 
 }
 
-.container ul li .title:hover {
-    background: blue;
-    color: white;
-}
 
-.container ul li .questions {
+.container-questions ul li .questions {
+    font-family: 'Raleway', sans-serif;
     color: white;
     width: 100%;
     height: 50px;
@@ -229,12 +313,208 @@ section{
     margin: 5px 10px 10px 10px;
 }
 
+.searchbar-contour {
+    text-align:center;
+    height: 50%;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px 125px 50px 50px;
+    padding: 100px;
+}
+
 @media screen and (max-width:1250px){
-    .container ul li{
-        width:40%;
+    .container-questions ul li{
+        width: 60%;
+        height: 100%;
         margin: 40px;
 
     }
 }
+/* $$$$$ Section */
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(#db1616, #4d1604);
+}
 
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.pricing-table {
+  background: #f1f1f1;
+  flex: 1;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+.pricing-header {
+  color: #fff;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.price span {
+  font-size: 30px;
+}
+
+.title {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 80%;
+  max-width: 360px;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+.pricing-list {
+  padding: 10px 20px;
+}
+
+.pricing-list li {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #002;
+  text-align: center;
+}
+
+.border {
+  width: 80px;
+  height: 1px;
+  background: #ddd;
+  margin: auto;
+}
+
+.pricing-table a {
+  display: block;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 14px;
+  border: 1px solid;
+  max-width: 360px;
+  transition: .2s linear;
+}
+
+.pricing-table a:hover {
+  border-radius: 30px;
+}
+
+.table1 .pricing-header {
+  background: #08fc41;
+}
+
+.table2 .pricing-header {
+  background: #ffbe0a;
+}
+
+.table3 .pricing-header {
+  background: #0861fc;
+}
+
+.table1 .title {
+  background-image: linear-gradient(150deg, #046b17, #66b072);
+}
+
+.table2 .title {
+  background-image: linear-gradient(150deg, #ffdd00, #ffbe33);
+}
+
+.table3 .title {
+  background-image: linear-gradient(150deg, #0abeff, #0861fc);
+}
+
+.icon {
+  background: #db1616;
+  color: #fff;
+  transform: rotate(45deg);
+  padding: 10px 40px;
+  position: absolute;
+  top: 8px;
+  right: -33px;
+}
+
+.ribbon {
+  position: absolute;
+  display: block;
+  top: -4px;
+  right: -4px;
+  width: 110px;
+  height: 110px;
+  overflow: hidden;
+}
+
+.ribbon .label {
+  position: relative;
+  display: block;
+  left: -10px;
+  top: 23px;
+  width: 158px;
+  padding: 10px 0;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+  background-color: #db1616;
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
+  -moz-transform: rotate(45deg) translate3d(0, 0, 0);
+  -ms-transform: rotate(45deg) translate3d(0, 0, 0);
+  transform: rotate(45deg) translate3d(0, 0, 0);
+}
+
+.label:before, .label:after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  border-top: 4px solid #a71c26;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+}
+
+.label:before {
+  left: 0;
+}
+
+.label:after {
+  right: 0;
+}
+
+.pop {
+  background: #db1616;
+  color: #fff;
+  transform: rotate(45deg);
+  padding: 10px 40px;
+  position: absolute;
+  top: 8px;
+  right: -33px;
+}
+
+.table1 a {
+  color: #66b012;
+}
+
+.table2 a {
+  color: #ff8b33;
+}
+
+.table3 a {
+  color: #0861fc;
+}
