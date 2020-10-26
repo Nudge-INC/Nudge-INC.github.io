@@ -308,59 +308,69 @@ section .linkedIn a{
 
 
 /* FAQ Section */
+.Faq-background{
+    background-color:#171717;
+    max-height: 760px;
+}
 .FAQ-Section{
-    text-align: center;
-    background: url(https://cdn.discordapp.com/attachments/763177317929058326/766010087063289866/pexels-photo-219692.png) no-repeat;
-    background-size: 100%;
-    background-clip: 50%;
-    width: 100%;
+    background: 
+        url(https://cdn.discordapp.com/attachments/763177317929058326/766010087063289866/pexels-photo-219692.png) no-repeat fixed;
+        max-width: 50%;
+        background-position: -600px -500px;
+        color:#171717;
+    height: 50%;
 }
 .FAQ-H2{
-    margin: 0px 10px 100px 10px;
-    background-color: white;
+    text-align: center;
+    color: yellow;
+    margin: 0px 0px 130px 0px;
+    background-color: #171717;
     padding: 20px;
+    transform: translate(100%, 0%);
+
 }
 .container-questions {
+    transform: translate(100%,0%);
+    padding: 0px;
+    margin: 0px 150px 150px 0px;
     width: 100%;
-    overflow: hidden;
-    text-align: center;
-    padding: 50px
 }
 
 .container-questions ul{
     padding: 50px;
-    margin: 100px -110px 10px 0px;
+    margin: 100px -200px 300px 0px;
     text-align: center;
 }
 .container-questions ul li {
-
     text-align: center;
     display: inline-block;
-    width: 25%;
-    height: 300px;
-    background: black;
+    width: 370px;
+    height: 320px;
+    background: #171717;
     margin:  0px 142px 142px 0px;
     padding: 2px;
-
 }
 
 .container-questions ul li .title-questions {
     font-family: 'Raleway', sans-serif;
     height: 50px;
     line-height: 50px;
-    background:white;
+    background: yellow;
     text-align: center;
+    color: #171717;
+    width: 350px
 
 }
 
 .container-questions ul li .questions {
     font-family: 'Raleway', sans-serif;
-    color: white;
-    width: 100%;
+    color: yellow;
+    width: 500px;
     height: 50px;
     line-height: 50px;
     text-align: left;
-    margin: 5px 10px 10px 10px;
+    padding: 10px;
+    margin: 0px 0px 20px 20px;
 }
 .searchbar-contour .search-bar{
     margin:0;
@@ -373,7 +383,7 @@ section .linkedIn a{
 .searchbar-contour {
     position: absolute; 
     left: 33%;
-    transform: (-50%,-50%);
+    transform: translate(-75%, 200px);
     height: 40px;
     font-family: 'Raleway', sans-serif;
     background: #ffffff;
@@ -393,12 +403,14 @@ section .linkedIn a{
     border-radius: 5px;
     font-weight: bold;
 }
-@media screen and (max-width:1250px){
+@media screen and (max-width:1000px){
     .container-questions ul li{
         width: 60%;
         height: 100%;
         margin: 40px;
+        background-color: black;
     }
 }
+
 
 /* $$$$$ Section */
