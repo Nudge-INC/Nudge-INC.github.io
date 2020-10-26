@@ -183,6 +183,7 @@ html, body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 .cust-reviews .row::after {
     position: absolute;
@@ -202,6 +203,7 @@ html, body{
 }
 .cust-reviews .column {  
     width: 30vw;
+    min-width: 100px;
     height: 40vh;                
 }
 .cust-reviews .column iframe {
