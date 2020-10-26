@@ -428,14 +428,14 @@ body {
   padding: 10px 20px;
 }
 
-.pricing-list li {
+.pricing-list {
   margin: 8px 0;
   font-size: 14px;
   color: #002;
   text-align: center;
 }
 
-.priceborder {
+.border {
   width: 80px;
   height: 1px;
   background: #ddd;
