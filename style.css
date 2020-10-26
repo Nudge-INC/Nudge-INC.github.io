@@ -26,10 +26,9 @@ p {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
-    
 }
-.navBar {
+
+/*.navBar {
     overflow: hidden;
     background-color: #4f4f55;
     position: fixed;
@@ -46,20 +45,25 @@ p {
     text-decoration: none;
     font-size: 18px;
 }
+*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 30px 10%;
+    position: fixed;
+    z-index: 1;
+    overflow: hidden;
+}
+
 li, a, button{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: black;
+    color: #171717;
     text-decoration: none;
-}
-
-header{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-    position: fixed;
 }
 
 .logo{
@@ -79,7 +83,7 @@ header{
     transition: all 0.3s ease 0s;
 }
 .nav__links li a:hover {
-    color: aqua
+    color:#44D6C4
 }
 
 
@@ -98,6 +102,7 @@ button:hover{
 }
 
 /* features */
+
 .features 
 {
     background-image: url("./images/tall_buildings.jpg");
