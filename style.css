@@ -376,7 +376,7 @@ section .linkedIn a{
 /* $$$$$ Section */
 body {
   min-height: 100vh;
-  background-image: linear-gradient(#fffff);
+  background-image: linear-gradient(##000000,#000000);
 }
 
 .container {
