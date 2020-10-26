@@ -379,7 +379,7 @@ body {
   background-image: linear-gradient(#db1616, #4d1604);
 }
 
-.container {
+.pricecontainer {
   max-width: 1000px;
   margin: auto;
   padding: 40px;
@@ -483,16 +483,6 @@ body {
   background-image: linear-gradient(150deg, #0abeff, #0861fc);
 }
 
-.icon {
-  background: #db1616;
-  color: #fff;
-  transform: rotate(45deg);
-  padding: 10px 40px;
-  position: absolute;
-  top: 8px;
-  right: -33px;
-}
-
 .ribbon {
   position: absolute;
   display: block;
@@ -539,16 +529,7 @@ body {
 
 .label:after {
   right: 0;
-}
 
-.pop {
-  background: #db1616;
-  color: #fff;
-  transform: rotate(45deg);
-  padding: 10px 40px;
-  position: absolute;
-  top: 8px;
-  right: -33px;
 }
 
 .table1 a {
