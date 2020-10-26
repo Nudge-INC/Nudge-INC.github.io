@@ -1,0 +1,47 @@
+Overall Look and Feel of Nudge
+====
+Nudge has a minimalist, modern, techy feel to it. 
+Our innovative design should make the user feel energized, invigorated, and excited to explore.
+
+Color theme
+====
+We chose to use bright colours and contrasting shades to give our website an industrial, modern look. 
+The bright colours will capture the user’s attention and the use of dark colours will balance out the bright colours so the user does not feel overwhelmed.
+We chose to use colours associated with traffic lights because we want them to associate being on the road with Nudge.
+
+These are our main colours:
+yellow - #F1F119
+cyan - #44D6C4
+dark grey - #2D2D39
+off-white - #F4F8FD
+off-black - #171717
+
+Other color shades:
+====
+- yellow: #F2F21F 
+- red: #E60E0E 
+- green: #20E634 ;  #22F237
+- sky/diamond blue: #32D4E6 ; #39EAFF
+
+Iconographie
+====
+We will use icons with a flat design to match the theme and look that we’re aiming for with the website. 
+The icons we will use will match our colour theme (they will be the same colour as the colours outlined above).
+
+Typographie
+====
+We decided to use different fonts for different elements of the website. The fonts we used are from Google fonts.
+
+The fonts we will use include: 
+Montserrat: navigation bar, headings
+Raleway: paragraphs
+
+Links
+====
+Links will not be underlined and should change colour when the user hovers over them. 
+Colors for links may vary depending on the section.
+
+Buttons
+====
+Buttons will be flat, to avoid the outdated 3D, metallic look. 
+We will use the variations of the colours outlined above.
