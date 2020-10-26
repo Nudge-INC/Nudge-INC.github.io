@@ -56,6 +56,7 @@ header{
     align-items: center;
     text-align: center;
     padding: 20px 10%;
+    width: 100%;
     position: fixed;
     z-index: 1;
     overflow: hidden;
@@ -128,6 +129,8 @@ html, body{
     color: #71dfee;
     /*text-shadow: -1px 0 #171717, 0 1px #171717, 1px 0 #171717, 0 -1px#171717;
     */
+    outline-offset: 10px;
+    outline: 4px solid #e7d742;
 }
 
 .home .text h1{
