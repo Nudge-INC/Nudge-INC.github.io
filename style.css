@@ -377,7 +377,7 @@ body {
   background-image: linear-gradient(#ffffff, #ffffff);
 }
 
-.container {
+.pricecontainer {
   max-width: 1000px;
   margin: auto;
   padding: 40px;
