@@ -148,7 +148,7 @@ html, body{
   max-width: 98rem;
   padding: 5rem;
   background-color:transparent;
-  background-image: url('./images/tall_buildings.jpg');
+  background-image: url('./images/blue..jpg');
   box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, .2);
   display: flex;
   align-items: center;
@@ -201,7 +201,7 @@ html, body{
 .blog-post__text{
   margin-bottom: 3rem;
   font-size: 1.4rem;
-  color: white;
+  color:black;
 }
 
 .blog-post__cta{
