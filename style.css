@@ -160,8 +160,19 @@ html, body{
     font-size: 16px;          
 }
 .cust-reviews .upper-container {
+    position: relative;
     margin-bottom: 15px;
+    /* data-aos: fade-right; */
+    /* animation-name: head-p;
+    animation-duration: 3s; */
 }
+/* @keyframes head-p {
+    0% {left: 100vw;}
+    25% {left: 70vw;}
+    50% {left: 50vw;}
+    75% {left: 25vw;}
+    100% {left: 0vw;}
+} */
 .cust-reviews h2 {
     /* background-color: #171717; */
     color: #F1F119 ;
@@ -211,7 +222,6 @@ html, body{
 }
 .cust-reviews .column {  
     width: 30vw;
-    min-width: 100px;
     height: 40vh;                
 }
 .cust-reviews .column iframe {
@@ -220,6 +230,7 @@ html, body{
 }
 .cust-reviews .column img {
     width: 26vw;
+    min-width: 300px;;
     height: auto;
     border: 2px solid #171717;
     outline: 0.5px solid #F4F8FD;
