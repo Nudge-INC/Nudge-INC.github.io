@@ -1,48 +1,28 @@
 /* CUSTOMER TESTIMONIALS */
 console.log("hello world");
+var anim_played;
 
-// get scroll position of .upper-container
-// const sc = document.querySelector('.upper-container')
-// document.getElementById("scPos").innerHTML="scroll position: " + sc.scrollLeft + ", " + sc.scrollTop;
-// document.getElementById("body").onscroll = function() {scrollPosition()};
-// document.getScroll = function scrollPosition()
-//  document.addEventListener("scroll", scrollPosition);
 window.onscroll = function() {scrollPosition()};
 function scrollPosition() {
     var elmnt = document.getElementById("upper-cont");
-    var y = elmnt.scrollTop;
     var c = elmnt.clientHeight; // viewable height of upper-container in px
-    var anim_played = false;
     var ite_count = Number(elmnt.style.animationIterationCount);
-    // console.log("we scrollin");
-    //  && (document.getElementById("upper-container").style.left > 0)
-    //  && (anim_played == false)
 
-    if ((c >= 40) && (anim_played == false)) {
+    if ((c >= 40) && (anim_played != true)) {
         ite_count += 1;
-        console.log("anim_played = " + anim_played + "\nite_coount = " + ite_count);    
+        console.log("anim_played = " + anim_played + "\nite_count = " + ite_count);    
         document.getElementById("upper-cont").style.animationIterationCount = ite_count;
-        document.getElementById("upper-cont").style.animationPlayState = "running";
+        // document.getElementById("upper-cont").style.animationPlayState = "running";
         anim_played = true;
+        console.log("anim_played = " + anim_played);
+        // document.getElementById("upper-cont").style.animationIterationCount = 1;
     }
     else {
-        console.log("upper_container is not visible");
-        // document.getElementById("upper-cont").style.animationPlayState = initial;
         document.getElementById("upper-cont").style.animationPlayState = "paused";
         anim_played = false;
+        console.log("upper_container is not visible, anim_played = " + anim_played);
     }
 }
-
-function rocScroll() {
-
-}
-
-
-// window.addEventListener("scroll", (event) => {
-//     let scroll = this.scrollY;
-//     console.log(scroll)
-//     document.getElementById("scPos").innerHTML=scroll;
-// });
 
 // function to display random reviews every time the page is refreshed
 function displayReviews() {

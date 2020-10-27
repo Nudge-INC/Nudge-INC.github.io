@@ -162,7 +162,7 @@ html, body{
 .cust-reviews .upper-container {
     position: relative;
     margin-bottom: 15px;
-    animation: head-p 3s;
+    animation: head-p 2s;
     /* animation-iteration-count: 1; */
 }
 @keyframes head-p {
@@ -171,7 +171,7 @@ html, body{
     50% {left: 50vw;}
     75% {left: 25vw;}
     100% {left: 0vw;} */
-    from {left: 80vw;}
+    from {left: 70vw;}
     to {left: 0vw}
 }
 .cust-reviews h2 {
