@@ -163,7 +163,7 @@ html, body{
     position: relative;
     margin-bottom: 15px;
     animation: head-p 3s;
-    animation-iteration-count: 1;
+    /* animation-iteration-count: 1; */
 }
 @keyframes head-p {
     /* 0% {left: 100vw;}
