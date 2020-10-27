@@ -162,17 +162,18 @@ html, body{
 .cust-reviews .upper-container {
     position: relative;
     margin-bottom: 15px;
-    /* data-aos: fade-right; */
-    /* animation-name: head-p;
-    animation-duration: 3s; */
+    animation: head-p 3s;
+    animation-iteration-count: 1;
 }
-/* @keyframes head-p {
-    0% {left: 100vw;}
+@keyframes head-p {
+    /* 0% {left: 100vw;}
     25% {left: 70vw;}
     50% {left: 50vw;}
     75% {left: 25vw;}
-    100% {left: 0vw;}
-} */
+    100% {left: 0vw;} */
+    from {left: 80vw;}
+    to {left: 0vw}
+}
 .cust-reviews h2 {
     /* background-color: #171717; */
     color: #F1F119 ;
