@@ -333,7 +333,7 @@ section .linkedIn a{
 .container-questions {
     transform: translate(133%,0%);
     padding: 0px;
-    width: 800px;
+    width: 85%;
     height: 420px
 }
 
@@ -341,12 +341,12 @@ section .linkedIn a{
     padding: 50px;
     margin: 0px 0px 0px 0px;
     text-align: center;
-    width: 800px;
+    width: 100%;
 }
 .container-questions ul li {
     text-align: center;
     display: inline-flex;
-    width: 300px;
+    width: 44%;
     height: 320px;
     background: #171717;
     margin:  0px 40px 0px 0px;
@@ -360,7 +360,7 @@ section .linkedIn a{
     background: yellow;
     text-align: center;
     color: #171717;
-    width: 350px
+    width:100%;
 
 }
 
@@ -385,7 +385,7 @@ section .linkedIn a{
 .searchbar-contour {
     position: absolute; 
     left: 33%;
-    transform: translate(-75%, 100px);
+    transform: translate(-75%, 120%);
     height: 40px;
     font-family: 'Raleway', sans-serif;
     background: #ffffff;
