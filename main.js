@@ -61,6 +61,11 @@ function displayReviews() {
     // document.getElementById("custReview2").src=reviewOrder[2];
 }
 
+// function to shuffle order of reviews
+function shuffleReviews(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+}
+
 // function to shift reviews 
 function shiftReviews() {
     // 
