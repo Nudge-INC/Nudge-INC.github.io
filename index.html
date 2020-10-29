@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="aos.css">
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/476a33a271.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Raleway:ital@1&display=swap" rel="stylesheet"> 
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--did i add this line? idk-->
         <title>Nudge INC</title>
@@ -16,6 +17,7 @@
         <script src="main.js" language="JavaScript" type="text/javascript">
         </script>
     </head>
+    
     <body id="body">
 
         <header>
@@ -38,10 +40,12 @@
         <!-- HOME -->
 
         <div class = "home" id="home">
-            <div class = home>
-                <div class = text>
-                    <h1>WELCOME TO NUDGE!</h1>
-                    <h2>The slogan goes here idk what we really decided on.</h3>
+            <div class = "home-overlay">
+            </div>
+            <div class = "home-background">
+                <div class = "text">
+                <h1>WELCOME TO NUDGE!</h1>
+                <h2>The slogan goes here idk what we really decided on.</h2>
                 </div>
             </div>
         </div>
@@ -98,27 +102,30 @@
       <!-- About Us Section -->
 
         <div style="background-color: white;" id="about-us">
-            <h1>About Team Nudge</h1>
-            <section class="people r1">
+          <h1>About Team Nudge</h1>
+           <p class="introinfo">We are some university students who came with an idea for a product and decided to develop it into a project!</p>
+
+
+        <section class="people r1">
         
             <figure>
                 <img src="images/baby-yoda.jpg" alt="Nicholas Turbide">
                 <figcaption>Nicholas Turbide</figcaption>
-                <caption>Costumer Service<br></caption>
+                <caption><em>Costumer Service</em><br></caption>
                 <p class="github link"><a href="https://github.com/NicholasTurbide">Github link</a></p>
                 <p class="linkedIn link"><a href="https://www.linkedin.com/">LinkedIn link</a></p>
             </figure>
             <figure>
                 <img src="images/zak.png" alt="Zakaria Oulli">
                 <figcaption>Zakaria Oulli</figcaption>
-                <caption>Arts and Design<br></caption>
+                <caption><em>Arts and Design</em><br></caption>
                 <p class="github link"><a href="https://github.com/zakariaoulli">Github link</a></p>
                 <p class="linkedIn link"><a href="https://www.linkedin.com/">LinkedIn link</a></p>
             </figure>
             <figure>
                 <img src="images/discord-pfp.png" alt="Mohanad Mohamed">
                 <figcaption>Mohanad Mohamed</figcaption>
-                <caption>User Experience<br></caption>
+                <caption><em>User Experience</em><br></caption>
                 <p class="github link"><a href="https://github.com/MohanadAhmed123">Github link</a></p>
                 <p class="linkedIn link"><a href="https://www.linkedin.com/">LinkedIn link</a></p>
             </figure>    
@@ -128,29 +135,37 @@
             <figure>
                 <img src="images/discord-pfp.png" alt="Christina Song">
                 <figcaption>Christina Song</figcaption>
-                <caption>Features<br></caption>
+                <caption><em>Features</em><br></caption>
                 <p class="github link"><a href="https://github.com/csong202">Github link</a></p>
                 <p class="linkedIn link"><a href="https://www.linkedin.com/">LinkedIn link</a></p>
             </figure>
             <figure>
                 <img src="images/discord-pfp.png" alt="Jessica Nguyen">
                 <figcaption>Jessica Nguyen</figcaption>
-                <caption>Business Manager<br></caption>
+                <caption><em>Business Manager</em><br></caption>
                 <p class="github link"><a href="https://github.com/jessicanguyenn">Github link</a></p>
                 <p class="linkedIn link"><a href="https://www.linkedin.com/">LinkedIn link</a></p>
             </figure>
             <figure>
                 <img src="images/discord-pfp.png" alt="Diane Tsang">
                 <figcaption>Diane Tsang</figcaption>
-                <caption>Creative Director<br></caption>
+                <caption><em>Creative Director</em><br></caption>
                 <p class="github link"><a href="https://github.com/dianetsang">Github link</a></p>
                 <p class="linkedIn link"><a href="https://www.linkedin.com/">LinkedIn link</a></p>
             </figure>
         </section>
+
         <button id="more-info">Learn more</button>
-            <h2>Who are we? </h2>
-            <p>We are some university students who came with an idea for a product and decided to develop it into a project!</p>
+        <ul>
+            <li class="more-info">Learn More</li>
+        </ul>
+
+        <input type='text' ... list='listid'>
+            <datalist id='listid'>
+             <option label='label1' value='value1'>
+             <option label='label2' value='value2'>
         
+        </datalist>  
         </div>
         
       <!-- FAQ Section -->
