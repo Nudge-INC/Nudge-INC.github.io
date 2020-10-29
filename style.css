@@ -162,22 +162,24 @@ html, body{
 .cust-reviews .upper-container {
     position: relative;
     margin-bottom: 15px;
-    animation: head-p 2s;
+    text-shadow: 0 2px 5px rgba(0,0,0,.5);
+    /* box-shadow: 0 5px 25px rgba(0,0,0,.5); */
+    /* animation: head-p 2s; */
     /* animation-iteration-count: 1; */
+    /* animation: head-p 1s linear infinite;
+    animation-play-state: paused;
+    animation-iteration-count: 1;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-fill-mode: both; */
 }
-@keyframes head-p {
-    /* 0% {left: 100vw;}
-    25% {left: 70vw;}
-    50% {left: 50vw;}
-    75% {left: 25vw;}
-    100% {left: 0vw;} */
+/* @keyframes head-p {
     from {left: 70vw;}
     to {left: 0vw}
-}
+} */
 .cust-reviews h2 {
     /* background-color: #171717; */
     color: #F1F119 ;
-    text-align: center;
+    text-align: left;
     font-size: 2.5rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
