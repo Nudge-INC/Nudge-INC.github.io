@@ -8,15 +8,16 @@ function displayReviews() {
     "./images/tweet3.png",
     "./images/tweet4.png",
     "./images/tweet5.png",
-    "./images/tweet6.png"]
+    "./images/tweet6.png",
+    "./images/tweet7.png"]
     
-    review1 = Math.floor(Math.random() * 6);  // returns a random integer from 0 to 5
-    review2 = Math.floor(Math.random() * 6);
-    review3 = Math.floor(Math.random() * 6);
+    review1 = Math.floor(Math.random() * reviewLinks.length);  // returns a random integer from 0 to array length - 1
+    review2 = Math.floor(Math.random() * reviewLinks.length);
+    review3 = Math.floor(Math.random() * reviewLinks.length);
     
     // ensure that no 2 columns show the same testimonial
     while ((review1==review2) || (review1==review3) || (review2==review3)) {
-        review1 = Math.floor(Math.random() * 6);  // returns a random integer from 0 to 5
+        review1 = Math.floor(Math.random() * 6);
         review2 = Math.floor(Math.random() * 6);
         review3 = Math.floor(Math.random() * 6);
     }
