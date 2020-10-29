@@ -239,6 +239,10 @@ html, body{
 
 
 /*ABOUT US SECTION*/
+p{
+    font-size: 25px;
+}
+
 section{
     background: white;
     padding: 20px;
@@ -264,7 +268,7 @@ section .link a{
     text-decoration: none;
     width: 30px;
     padding: 0;
-    
+
 }
 
 
