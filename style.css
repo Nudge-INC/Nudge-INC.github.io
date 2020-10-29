@@ -541,7 +541,7 @@ body{
     color: black
 }
 
-.pricing-card:hover ,.pricing-card:hover .price{
+.pricing-table:hover ,.pricing-table:hover .price{
   color: #fff;
 
 }
