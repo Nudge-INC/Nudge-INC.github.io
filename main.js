@@ -1,4 +1,6 @@
 /* CUSTOMER TESTIMONIALS */
+
+// function to display random reviews every time the page is refreshed
 function displayReviews() {
 
     var reviewLinks = ["./images/tweet1.png",

@@ -5,15 +5,18 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="aos.css">
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/476a33a271.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Raleway:ital@1&display=swap" rel="stylesheet"> 
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--did i add this line? idk-->
         <title>Nudge INC</title>
         <link rel="icon" href="./images/icon.ico" type="image/x-icon"/>
+
         <script src="main.js" language="JavaScript" type="text/javascript">
         </script>
     </head>
-    <body>
+    <body id="body">
 
         <header>
             
@@ -71,11 +74,10 @@
         </div>
 
         <!-- CUSTOMER TESTIMONIALS SECTION -->
-
         <div class= "cust-reviews" id="cust-reviews">           
-            <div class="upper-container">
+            <div class="upper-container" id="upper-cont" data-aos="zoom-in-right">
                 <h2>User Testimonials</h2>
-            <p>See what our customers have to say about Nudge!</p>
+                <p>See what our customers have to say about Nudge!</p>
             </div>
             <div class = "row">               
                 <div class="column">
@@ -188,6 +190,17 @@
     <script>
         // call function to display random customer testimonials when page is reloaded
         window.onload = displayReviews;
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js">    
+    </script>
+    <script src="aos.js"></script>
+    <script type="text/javascript">
+        AOS.init(
+            {
+                offset: 300,
+                duration: 2000,
+            }
+        );
     </script>
     </body>
 </html>
