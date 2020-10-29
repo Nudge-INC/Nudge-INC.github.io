@@ -239,7 +239,7 @@ html, body{
 
 
 /*ABOUT US SECTION*/
-p{
+p.introinfo{
     font-size: 25px;
 }
 
