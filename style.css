@@ -241,6 +241,7 @@ html, body{
 /*ABOUT US SECTION*/
 p.introinfo{
     font-size: 25px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 section{
@@ -248,6 +249,7 @@ section{
     padding: 20px;
     display: flex;
     flex-direction: row;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 
 }
 
