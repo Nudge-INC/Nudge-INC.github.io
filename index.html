@@ -5,13 +5,18 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="aos.css">
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/476a33a271.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Raleway:ital@1&display=swap" rel="stylesheet"> 
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--did i add this line? idk-->
         <title>Nudge INC</title>
         <link rel="icon" href="./images/icon.ico" type="image/x-icon"/>
+
         <script src="main.js" language="JavaScript" type="text/javascript">
         </script>
     </head>
-    <body>
+    <body id="body">
 
         <header>
             
@@ -38,26 +43,6 @@
                     <h1>WELCOME TO NUDGE!</h1>
                     <h2>The slogan goes here idk what we really decided on.</h2>
                 </div>
-            </div>
-        </div>
-
-        <!-- CUSTOMER TESTIMONIALS SECTION -->
-
-        <div class= "cust-reviews" id="cust-reviews">           
-            <div class="upper-container">
-                <h2>User Testimonials</h2>
-            <p>See what our customers have to say about Nudge!</p>
-            </div>
-            <div class = "row">               
-                <div class="column">
-                    <img src="./images/tweet1.png" alt="customer testimonial 1" id="custReview1" class="zoom">
-                </div>
-                <div class="column">
-                    <img src="./images/tweet1.png" alt="customer testimonial 2" id="custReview2" class="zoom">
-                </div>
-                <div class="column">
-                    <img src="./images/tweet1.png" alt="customer testimonial 3" id="custReview3" class="zoom">
-                </div> 
             </div>
         </div>
        
@@ -88,71 +73,36 @@
         </div>
         </div>
 
-      <!-- $$$$$ Section -->
-      
-        <div class="pricecontainer" id="pricing">
-      <div class="pricing-table table1">
-        <div class="pricing-header">
-          <div class="price"><span></span>0.00</div>
-          <div class="pricetitle">BASIC</div>
-            <div class="pop">FREE</div>
-
-        </div>
-        <ul class="pricing-list">
-          <li><strong>1</strong> device</li>
-          <div class="border"></div>
-          <li><strong>69</strong> pogs</li>
-          <div class="border"></div>
-          <li><strong>1</strong> bruh</li>
-          <div class="border"></div>
-          <li><strong>24h/7</strong> indian tech support</li>
-        </ul>
-        <a href="#">Get Basic nudge now!</a>
-      </div>
-
-      <div class="pricing-table table2">
-        <div class="pricing-header">
-          <div class="price"><span>$</span>5.99</div>
-          <div class="pricetitle">Gold</div>
-        </div>
-        <ul class="pricing-list">
-          <li><strong>5</strong> devices</li>
-          <div class="priceborder"></div>
-          <li><strong>8</strong> poggies</li>
-          <div class="priceborder"></div>
-          <li><strong>3</strong> bruh</li>
-          <div class="priceborder"></div>
-          <li><strong>24h/7</strong> Indian tech support</li>
-        </ul>
-        <a href="#">Get gold nudge now!</a>
-      </div>
-
-      <div class="pricing-table table3">
-        <div class="pricing-header">
-            <div class="ribbon">
-              <div class="label">HOT</div>
+        <!-- CUSTOMER TESTIMONIALS SECTION -->
+        <div class= "cust-reviews" id="cust-reviews">           
+            <div class="upper-container" id="upper-cont" data-aos="zoom-in-right">
+                <h2>User Testimonials</h2>
+                <p>See what our customers have to say about Nudge!</p>
             </div>
-          <div class="price"><span>$</span>9.99</div>
-          <div class="pricetitle">diamond</div>      
-          </div>
-        <ul class="pricing-list">
-          <li><strong>10</strong> devices</li>
-          <div class="priceborder"></div>
-          <li><strong>15</strong> poggers</li>
-          <div class="priceborder"></div>
-          <li><strong>1</strong> bruh</li>
-          <div class="priceborder"></div>
-          <li><strong>24h/7</strong> Indian tech Support</li>
-        </ul>
-        <a href="#">Get diamond nudge now!</a>
+            <div class = "row">               
+                <div class="column">
+                    <img src="./images/tweet1.png" alt="customer testimonial 1" id="custReview1" class="zoom">
+                </div>
+                <div class="column">
+                    <img src="./images/tweet1.png" alt="customer testimonial 2" id="custReview2" class="zoom">
+                </div>
+                <div class="column">
+                    <img src="./images/tweet1.png" alt="customer testimonial 3" id="custReview3" class="zoom">
+                </div> 
+            </div>
         </div>
-        </div>      
+
+      <!-- $$$$$ Section -->
+
         
       <!-- About Us Section -->
 
         <div style="background-color: white;" id="about-us">
-            <h1>About Team Nudge</h1>
-            <section class="people r1">
+          <h1>About Team Nudge</h1>
+           <p class="introinfo">We are some university students who came with an idea for a product and decided to develop it into a project!</p>
+
+
+        <section class="people r1">
         
             <figure>
                 <img src="images/baby-yoda.jpg" alt="Nicholas Turbide">
@@ -200,16 +150,24 @@
                 <p class="linkedIn link"><a href="https://www.linkedin.com/">LinkedIn link</a></p>
             </figure>
         </section>
+
         <button id="more-info">Learn more</button>
-            <h2>Who are we? </h2>
-            <p>We are some university students who came with an idea for a product and decided to develop it into a project!</p>
+        <ul>
+            <li class="more-info">Learn More</li>
+        </ul>
+
+        <input type='text' ... list='listid'>
+            <datalist id='listid'>
+             <option label='label1' value='value1'>
+             <option label='label2' value='value2'>
         
+        </datalist>  
         </div>
         
       <!-- FAQ Section -->
-
-        <div class="FAQ-Section" id="faq">
-            <div class="FAQ-container">
+        <div class="Faq-background">
+            <div class="FAQ-Section" id="faq">
+            <h2 class="FAQ-H2">FAQ - FREQUENTLY ASKED QUESTIONS</h2>
                 <div class="searchbar-contour">
                     <input type="text" class="input" placeholder="How Can We Help You?">
                     <div class="search-bar">
@@ -219,38 +177,41 @@
                 <div class="container-questions">
                     <ul>   
                         <li>  
-                            <div class="title-questions"><b>General</b>
-                                <div class="questions">How to Download</div>
-                                <div class="questions">How to pair with Smart Watches</div>
-                                <div class="questions">How to add Markers on the map</div>
-                                <div class="questions">How to add your Friends</div>
-
-                            </div>  
+                        <div class="title-questions"><b>General</b>
+                        <div class="questions"><a href="https://www.youtube.com/watch?v=IYZzxpFMytg" target="_blank" style="color:yellow">How to Download</a></div>
+                        <div class="questions"><a href="https://www.youtube.com/watch?v=ullCv0ZfuW0" target="_blank" style="color:yellow">How to pair with Smart Watches</a></div>
+                        <div class="questions"><a href="https://www.youtube.com/watch?v=zlsBDPKeKAs" target="_blank" style="color:yellow">How to add Markers on the map</a></div>
+                        <div class="questions"><a href="https://www.youtube.com/watch?v=7qFzG_VwgUE" target="_blank" style="color:yellow">How to add your Friends</a></div>
+                        </div>  
                         </li>
                         <li>  
-                            <div class="title-questions"><b>Where is Nudge Available?</b>
-                                <div class="questions"> Nudge is available in these locations:</div>
-                                <div class="questions"> - Ontario, Canada</div>
-                                <div class="questions"> - Somewhere, Morocco</div>
-                                <div class="questions"> - Your Imagination</div>
-                            </div>  
-                        </li>
-                        <li>  
-                            <div class="title-questions"><b>What Devices are Supported?</b>
-                                <div class="questions">We currently support these devices:</div>  
-                                <div class="questions"> - iPhone Juan</div>
-                                <div class="questions"> - Android Pineapple</div>
-                                <div class="questions"> - Huawei Data Stealer</div>
-                            </div>
-                        </li>
+                        <div class="title-questions"><b>Where is Nudge Available?</b>
+                        <div class="questions"> - <a href="https://www.google.com/maps/place/H%E1%BA%A1+Long+Bay/@20.8434084,107.009542,11z/data=!3m1!4b1!4m5!3m4!1s0x314a5796518cee87:0x55c6b0bcc85478db!8m2!3d20.9100512!4d107.1839024" target="_blank" style="color:yellow"> Hạ Long Bay </a></div>
+                        <div class="questions"> - <a href="https://www.google.com/maps?q=map+of+ontario&source=lmns&bih=1006&biw=1920&client=firefox-b-d&hl=en&sa=X&ved=2ahUKEwjp4K3C6dLsAhUQBKwKHTtxBnIQ_AUoAXoECAEQAQ" target="_blank" style="color:yellow">Ontario, Canada</a></div>
+                        <div class="questions"> - <a href="https://www.google.com/maps/place/Agadir+80000,+Morocco/@30.4197423,-9.612764,13z/data=!3m1!4b1!4m5!3m4!1s0xdb3b6e9daad1cc9:0xbcf8d0b78bf48474!8m2!3d30.4277547!4d-9.5981072?hl=en" target="_blank" style="color:yellow">Agadir, Morocco</a></div>
+                        <div class="questions"> - <a href="https://earth.google.com/web/@0,0,0a,23204072.0469549d,35y,0h,0t,0r" target="_blank" style="color:yellow">Your Imagination</a></div>
+                        </div>
+                        </li>   
                     </ul>
                 </div>
-            </div>        
+            </div>
         </div>
-    
+      
+
     <script>
         // call function to display random customer testimonials when page is reloaded
         window.onload = displayReviews;
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js">    
+    </script>
+    <script src="aos.js"></script>
+    <script type="text/javascript">
+        AOS.init(
+            {
+                offset: 300,
+                duration: 2000,
+            }
+        );
     </script>
     </body>
 </html>
