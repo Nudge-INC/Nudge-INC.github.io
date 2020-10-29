@@ -147,13 +147,91 @@ html, body{
 }
 
 /* features */
-.features 
-{
-    background-image: url("./images/tall_buildings.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
+.blog-post{
+    width: 100%;
+    max-width: 98rem;
+    padding: 5rem;
+    background-color:transparent;
+    background-image: url('./images/blue..jpg');
+    box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, .2);
+    display: flex;
+    align-items: center;
+    border-radius: .8rem;
+  }
+  #more {display: none;}
+  .blog-post__img{
+    min-width: 35rem;
+    max-width: 35rem;
+    height: 30rem;
+    transform: translateX(-8rem);
+    position: relative;
+  }
+  
+  .blog-post__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: .8rem;
+  }
+  
+  .blog-post__img::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 250, 167, .8), rgba(255, 250, 0, 0.8));
+    box-shadow: .5rem .5rem 3rem 1px rgba(0, 0, 0, .05);
+    border-radius: .8rem;
+  }
+  
+  .blog-post__date span{
+    display: block;
+    color: rgba(0, 0, 0, .5);
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: .5rem 0;
+  }
+  
+  .blog-post__title{
+    font-size: 2.5rem;
+    margin: 1.5rem 0 2rem;
+    text-transform: uppercase;
+    color: #4facfe;
+  }
+  
+  .blog-post__text{
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+    color:black;
+  }
+  
+  .blog-post__cta{
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #fff;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    border-radius: .8rem;
+    text-decoration: none;
+  }
+  
+  .blog-post__cta: hover {
+    background-image: linear-gradient(to right, #00f2fe 0%, #4facfe 100%);
+  }
+  
+  
+    
+    .blog-post_img{
+      min-width: 30rem;
+      max-width: 30rem;
+      transform: translate(0, -8rem);
+    }
+    /* End of Features */
 
 /* CUSTOMER TESTIMONIALS */
 .cust-reviews {   
@@ -341,11 +419,10 @@ section .linkedIn a{
 
 
 
-/* FAQ Section */
+/* /////////////////////////////////////////////////////////////////////////FAQ Section////////////////////////////////////////////////////////////////////////////////////// */
 .Faq-background{
     background-color:#171717;
-    max-height: 1000px;
-    max-width: 1920px;
+
 }
 .FAQ-Section{
     background: 
@@ -353,7 +430,7 @@ section .linkedIn a{
         max-width: 50%;
         background-position: -600px -500px;
         color:#171717;
-    max-height: 1000px;
+
 }
 .FAQ-H2{
     text-align: center;
@@ -369,7 +446,6 @@ section .linkedIn a{
     width: 95%;
     height: 420px
 }
-
 .container-questions ul{
     margin: 0px 0px 0px 0px;
     text-align: center;
@@ -381,10 +457,9 @@ section .linkedIn a{
     width: 300px;
     height: 320px;
     background: #171717;
-    margin:  0px 40px 0px 0px;
+    margin:  0px 40px 20px 0px;
     padding: 0px;
 }
-
 .container-questions ul li .title-questions {
     font-family: 'Raleway', sans-serif;
     height: 50px;
@@ -395,7 +470,6 @@ section .linkedIn a{
     width: 350px
 
 }
-
 .container-questions ul li .questions {
     font-family: 'Raleway', sans-serif;
     color: yellow;
@@ -438,4 +512,210 @@ section .linkedIn a{
     font-weight: bold;
 }
 
+@media screen and (max-width: 1440px){
+    .Faq-background{
+        height: 950px;
+    }
+
+    .FAQ-Section {
+        height: 950px;
+    }
+}
+@media screen and (max-width: 1440px){
+    .searchbar-contour{
+        transform: translate(-75%, 750%);
+        width: 40% ;
+    }
+}
 /* $$$$$ Section */
+}
+
+body{ 
+  background-image: linear-gradient(150deg,#312454,#472664 );
+  min-height: 100vh;
+  min-width: 100vh;
+  display: flex;
+  align-items: center;
+  margin: auto;  
+
+}
+.pricing-table{
+    background-image: linear-gradient(150deg,#312454,#472664 );
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: min(1600px,100%)
+    align-items: center;
+}
+.pricing-card{
+  flex: 1;
+  max-width: 400px;
+  background-color: #152d47;
+  margin: 500px 20px;
+  text-align: center;
+  cursor: pointer;
+  align-items: center; 
+  overflow: hidden;
+  margin: auto;
+  color: #2d2d2d;
+  transition: .3s linear;
+
+
+}
+
+.ribbon .label {
+  position: relative;
+  display: block;
+  left: 265px;
+  top: -15px;
+  width: 180px;
+  padding: 10px 0;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+  background-color: #db1616;
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
+  -moz-transform: rotate(45deg) translate3d(0, 0, 0);
+  -ms-transform: rotate(45deg) translate3d(0, 0, 0);
+  transform: rotate(45deg) translate3d(0, 0, 0);
+}
+
+
+.table1 .pricing-card-header{
+  background-color: #76e381;
+  display: inline-block;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 0 0 200px 200px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: .4s linear;
+}
+.table2 .pricing-card-header{
+  background-color: #ff7a59;
+  display: inline-block;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 0 0 200px 200px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: .4s linear;
+}
+.table3 .pricing-card-header{
+  background-color: #0e579c;
+  display: inline-block;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 0 0 200px 200px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: .4s linear;
+}
+.pricing-card:hover .pricing-card-header{
+  box-shadow: 0 0 0 26em #ff0000;
+  background-image: linear-gradient(100deg,#ffff00#ffff00,#ffff00);
+
+}
+
+.table1 .price{
+  font-size: 70px;
+  color: #77ff00;
+  margin: 40px 0;
+  transition: .2s linear;
+}
+.table2 .price{
+  font-size: 70px;
+  color: #ff9900;
+  margin: 40px 0;
+  transition: .2s linear;
+}
+.table3 .price{
+  font-size: 70px;
+  color: #0e579c;
+  margin: 40px 0;
+  transition: .2s linear;
+}
+.price sup, .price span{
+  font-size: 22px;
+  font-weight: 700;
+}
+.price{
+    color: black
+}
+
+.pricing-card:hover ,.pricing-card:hover .price{
+  color: #fff;
+
+}
+.pricing-card:hover .ribbon .label {
+  background-image: linear-gradient(100deg,#11859c,#11859c);
+}
+
+.pricing-card li{
+  font-size: 20px;
+  padding: 10px 0;
+  text-transform: uppercase;
+
+}
+
+.table1 .order-btn{
+  display: inline-block;
+  margin-bottom: 40px;
+  margin-top: 80px;
+  border: 2px solid #058212;
+  color: #47a150;
+  padding: 18px 40px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: .3s linear;
+}
+
+.table1 .order-btn:hover{
+  background-color: #76e381;
+  color: #fff;
+}
+.table2 .order-btn:hover{
+  background-color: #e3c96d;
+  color: #fff;
+}
+.table2 .order-btn{
+  display: inline-block;
+  margin-bottom: 40px;
+  margin-top: 80px;
+  border: 2px solid #fcc462;
+  color: #ffa305;
+  padding: 18px 40px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: .3s linear;
+}
+.table3 .order-btn:hover{
+  background-color: #1e0d4a;
+  color: #fff;
+}
+.table3 .order-btn{
+  display: inline-block;
+  margin-bottom: 40px;
+  margin-top: 80px;
+  border: 2px solid #0e579c;
+  color: #4755bf;
+  padding: 18px 40px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: .3s linear;
+}
+@media screen and (max-width:1100px){
+  .pricing-card{
+    flex: 50%;
+  }
+}
