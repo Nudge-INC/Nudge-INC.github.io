@@ -69,15 +69,19 @@ $(window).scroll(function() {
 // }
 
 // main
+/* CUSTOMER TESTIMONIALS */
 var origReviewLinks = ["./images/tweet1.png",
     "./images/tweet2.png",
     "./images/tweet3.png",
     "./images/tweet4.png",
     "./images/tweet5.png",
     "./images/tweet6.png",
-    "./images/tweet7.png"];
+    "./images/tweet7.png",
+    "./images/tweet8.png",
+    "./images/tweet9.png"];
 var reviewLinks = origReviewLinks;
-window.setInterval(shiftReviews, 1000);
+var shift = 0;
+window.setInterval(shiftReviews, 10000);
 
 // function to shift reviews 
 function shiftReviews() {
@@ -86,6 +90,11 @@ function shiftReviews() {
     for (i = 0; i < reviewLinks.length - 1; i++) {
         reviewLinks[i] = reviewLinks[i+1];
     }
+    shift += 1;
+    if (shift > 8) {
+        shift -= 9;
+    }
+    console.log("shift = " + shift);
     reviewLinks[reviewLinks.length-1] = firstImage;
     displayReviews2();
 }
@@ -100,4 +109,20 @@ function displayReviews2() {
     document.getElementById("custReview1").src=reviewLinks[0];
     document.getElementById("custReview2").src=reviewLinks[1];
     document.getElementById("custReview3").src=reviewLinks[2];
+
+    if ((shift==0) || (shift==1) || (shift==2)) {
+        document.getElementById("dot1").style.color = "rgba(255,255,255,0.6)";
+        document.getElementById("dot2").style.color = "rgba(255,255,255,0.3)";
+        document.getElementById("dot3").style.color = "rgba(255,255,255,0.3)";
+    }
+    else if ((shift==3) || (shift==4) || (shift==5)) {
+        document.getElementById("dot1").style.color = "rgba(255,255,255,0.3)";
+        document.getElementById("dot2").style.color = "rgba(255,255,255,0.6)";
+        document.getElementById("dot3").style.color = "rgba(255,255,255,0.3)";
+    }
+    else if ((shift==6) || (shift==7) || (shift==8)) {
+        document.getElementById("dot1").style.color = "rgba(255,255,255,0.3)";
+        document.getElementById("dot2").style.color = "rgba(255,255,255,0.3)";
+        document.getElementById("dot3").style.color = "rgba(255,255,255,0.6)";
+    }
 }
