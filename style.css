@@ -244,24 +244,6 @@ html, body{
 
 
 /*ABOUT US SECTION*/
-div.about_us{
-    background-color: #171717;
-    color: #F2F21F;
-}
-
-div.about_us h1{
-    color:#F2F21F;
-}
-
-div.about_us img{
-    transition: transform .4s;
-    
-}
-
-div.about_us img:hover{
-    transform: scale(1.1);
-}
-
 p.introinfo{
     font-size: 25px;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -314,7 +296,7 @@ section .linkedIn a{
 
 
 .people {
-    color: #F2F21F;
+    color: black;
     padding: 20px;
     display: flex;
     flex-direction: row;
