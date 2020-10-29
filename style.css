@@ -419,3 +419,194 @@ section .linkedIn a{
 }
 
 /* $$$$$ Section */
+}
+
+body{ 
+  background-image: linear-gradient(150deg,#312454,#472664 );
+  min-height: 100vh;
+  min-width: 100vh;
+  display: flex;
+  align-items: center;
+  margin: auto;  
+
+}
+.pricing-table{
+    background-image: linear-gradient(150deg,#312454,#472664 );
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: min(1600px,100%)
+    align-items: center;
+}
+.pricing-card{
+  flex: 1;
+  max-width: 400px;
+  background-color: #152d47;
+  margin: 500px 20px;
+  text-align: center;
+  cursor: pointer;
+  align-items: center; 
+  overflow: hidden;
+  margin: auto;
+  color: #2d2d2d;
+  transition: .3s linear;
+
+
+}
+
+.ribbon .label {
+  position: relative;
+  display: block;
+  left: 265px;
+  top: -15px;
+  width: 180px;
+  padding: 10px 0;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+  background-color: #db1616;
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
+  -moz-transform: rotate(45deg) translate3d(0, 0, 0);
+  -ms-transform: rotate(45deg) translate3d(0, 0, 0);
+  transform: rotate(45deg) translate3d(0, 0, 0);
+}
+
+
+.table1 .pricing-card-header{
+  background-color: #76e381;
+  display: inline-block;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 0 0 200px 200px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: .4s linear;
+}
+.table2 .pricing-card-header{
+  background-color: #ff7a59;
+  display: inline-block;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 0 0 200px 200px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: .4s linear;
+}
+.table3 .pricing-card-header{
+  background-color: #0e579c;
+  display: inline-block;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 0 0 200px 200px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: .4s linear;
+}
+.pricing-card:hover .pricing-card-header{
+  box-shadow: 0 0 0 26em #ff0000;
+  background-image: linear-gradient(100deg,#ffff00#ffff00,#ffff00);
+
+}
+
+.table1 .price{
+  font-size: 70px;
+  color: #77ff00;
+  margin: 40px 0;
+  transition: .2s linear;
+}
+.table2 .price{
+  font-size: 70px;
+  color: #ff9900;
+  margin: 40px 0;
+  transition: .2s linear;
+}
+.table3 .price{
+  font-size: 70px;
+  color: #0e579c;
+  margin: 40px 0;
+  transition: .2s linear;
+}
+.price sup, .price span{
+  font-size: 22px;
+  font-weight: 700;
+}
+.price{
+    color: black
+}
+
+.pricing-card:hover ,.pricing-card:hover .price{
+  color: #fff;
+
+}
+.pricing-card:hover .ribbon .label {
+  background-image: linear-gradient(100deg,#11859c,#11859c);
+}
+
+.pricing-card li{
+  font-size: 20px;
+  padding: 10px 0;
+  text-transform: uppercase;
+
+}
+
+.table1 .order-btn{
+  display: inline-block;
+  margin-bottom: 40px;
+  margin-top: 80px;
+  border: 2px solid #058212;
+  color: #47a150;
+  padding: 18px 40px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: .3s linear;
+}
+
+.table1 .order-btn:hover{
+  background-color: #76e381;
+  color: #fff;
+}
+.table2 .order-btn:hover{
+  background-color: #e3c96d;
+  color: #fff;
+}
+.table2 .order-btn{
+  display: inline-block;
+  margin-bottom: 40px;
+  margin-top: 80px;
+  border: 2px solid #fcc462;
+  color: #ffa305;
+  padding: 18px 40px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: .3s linear;
+}
+.table3 .order-btn:hover{
+  background-color: #1e0d4a;
+  color: #fff;
+}
+.table3 .order-btn{
+  display: inline-block;
+  margin-bottom: 40px;
+  margin-top: 80px;
+  border: 2px solid #0e579c;
+  color: #4755bf;
+  padding: 18px 40px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: .3s linear;
+}
+@media screen and (max-width:1100px){
+  .pricing-card{
+    flex: 50%;
+  }
+}
