@@ -321,7 +321,7 @@ section .linkedIn a{
 
 
 
-/* FAQ Section */
+/* /////////////////////////////////////////////////////////////////////////FAQ Section////////////////////////////////////////////////////////////////////////////////////// */
 .Faq-background{
     background-color:#171717;
     max-height: 1000px;
@@ -349,7 +349,6 @@ section .linkedIn a{
     width: 95%;
     height: 420px
 }
-
 .container-questions ul{
     margin: 0px 0px 0px 0px;
     text-align: center;
@@ -364,7 +363,6 @@ section .linkedIn a{
     margin:  0px 40px 0px 0px;
     padding: 0px;
 }
-
 .container-questions ul li .title-questions {
     font-family: 'Raleway', sans-serif;
     height: 50px;
@@ -375,7 +373,6 @@ section .linkedIn a{
     width: 350px
 
 }
-
 .container-questions ul li .questions {
     font-family: 'Raleway', sans-serif;
     color: yellow;
