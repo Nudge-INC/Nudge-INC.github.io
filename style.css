@@ -430,7 +430,7 @@ body{
   margin: auto;  
 
 }
-.pricing-table{
+.Pricing{
     background-image: linear-gradient(150deg,#312454,#472664 );
     display: flex;
     flex-wrap: wrap;
