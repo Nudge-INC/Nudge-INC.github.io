@@ -164,18 +164,7 @@ html, body{
     margin-bottom: 15px;
     text-shadow: 0 2px 5px rgba(0,0,0,.5);
     /* box-shadow: 0 5px 25px rgba(0,0,0,.5); */
-    /* animation: head-p 2s; */
-    /* animation-iteration-count: 1; */
-    /* animation: head-p 1s linear infinite;
-    animation-play-state: paused;
-    animation-iteration-count: 1;
-    animation-delay: calc(var(--scroll) * -1s);
-    animation-fill-mode: both; */
 }
-/* @keyframes head-p {
-    from {left: 70vw;}
-    to {left: 0vw}
-} */
 .cust-reviews h2 {
     /* background-color: #171717; */
     color: #F1F119 ;
