@@ -1,3 +1,20 @@
+
+/* HOME */
+
+// function that fades the home page (opacity) as the page is scrolled down
+
+$(window).scroll(function() {
+    var scrollTop = $(this).scrollTop();
+
+    $('.home-background').css({
+        opacity: function() {
+            var elementHeight = $(this).height();
+            opacity = ((elementHeight - scrollTop) / elementHeight);
+            return opacity;
+        }
+    });
+});
+
 /* CUSTOMER TESTIMONIALS */
 
 // function to display random reviews every time the page is refreshed

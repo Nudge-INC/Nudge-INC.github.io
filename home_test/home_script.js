@@ -1,10 +1,12 @@
+
 $(window).scroll(function() {
     var scrollTop = $(this).scrollTop();
-  
-    $('.home-overlay').css({
-      opacity: function() {
-        var elementHeight = $(this).height();
-        return 1 - (elementHeight - scrollTop) / elementHeight;
-      }
+
+    $('.home-background').css({
+        opacity: function() {
+            var elementHeight = $(this).height();
+            opacity = ((elementHeight - scrollTop) / elementHeight);
+            return opacity;
+        }
     });
-  });
+});
