@@ -154,7 +154,7 @@ html, body{
   align-items: center;
   border-radius: .8rem;
 }
-
+#more {display: none;}
 .blog-post__img{
   min-width: 35rem;
   max-width: 35rem;
