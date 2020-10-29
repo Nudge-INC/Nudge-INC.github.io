@@ -453,26 +453,6 @@ body{
 
 
 }
-.ribbon .label {
-  position: relative;
-  display: block;
-  left: 265px;
-  top: -15px;
-  width: 180px;
-  padding: 10px 0;
-  font-size: 15px;
-  text-align: center;
-  color: transparent;
-  background-color: #db1616;
-  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
-  -ms-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
-  -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
-  -moz-transform: rotate(45deg) translate3d(0, 0, 0);
-  -ms-transform: rotate(45deg) translate3d(0, 0, 0);
-  transform: rotate(45deg) translate3d(0, 0, 0);
-}
 
 .ribbon .label {
   position: relative;
