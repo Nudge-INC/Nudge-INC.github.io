@@ -274,10 +274,7 @@ html, body{
     height: 60vh;
     padding: 0.9rem;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
 }
 .cust-reviews .row::after {
     position: absolute;
@@ -295,7 +292,14 @@ html, body{
     display: table;
     clear: both;
 }
-.cust-reviews .column {  
+.cust-reviews .columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cust-reviews .columns .column {  
     width: 30vw;
     height: 40vh;                
 }
@@ -319,7 +323,23 @@ html, body{
     -webkit-transform: scale(1.5); /* Safari 3-8 */
     transform: scale(1.2); 
 }
-
+.cust-reviews .dots {
+    width: 20vw;
+    align-self: center;
+    margin-top: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.cust-reviews .dots i:nth-child(1) {
+    color: rgba(255,255,255,0.3);
+}
+.cust-reviews .dots i:nth-child(2) {
+    color: rgba(255,255,255,0.3);
+}
+.cust-reviews .dots i:nth-child(3) {
+    color: rgba(255,255,255,0.3);
+}
 
 /*ABOUT US SECTION*/
 p.introinfo{
