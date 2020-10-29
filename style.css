@@ -345,17 +345,15 @@ section .linkedIn a{
 
 }
 .container-questions {
-    transform: translate(133%,0%);
-    padding: 0px;
-    width: 800px;
+    transform: translate(110%,0%);
+    width: 95%;
     height: 420px
 }
 
 .container-questions ul{
-    padding: 50px;
     margin: 0px 0px 0px 0px;
     text-align: center;
-    width: 800px;
+    width: 100%;
 }
 .container-questions ul li {
     text-align: center;
@@ -419,14 +417,5 @@ section .linkedIn a{
     border-radius: 5px;
     font-weight: bold;
 }
-@media screen and (max-width:1000px){
-    .container-questions ul li{
-        width: 60%;
-        height: 100%;
-        margin: 40px;
-        background-color: black;
-    }
-}
-
 
 /* $$$$$ Section */
