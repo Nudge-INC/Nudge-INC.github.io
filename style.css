@@ -324,8 +324,7 @@ section .linkedIn a{
 /* /////////////////////////////////////////////////////////////////////////FAQ Section////////////////////////////////////////////////////////////////////////////////////// */
 .Faq-background{
     background-color:#171717;
-    max-height: 1000px;
-    max-width: 1920px;
+
 }
 .FAQ-Section{
     background: 
@@ -333,7 +332,7 @@ section .linkedIn a{
         max-width: 50%;
         background-position: -600px -500px;
         color:#171717;
-    max-height: 1000px;
+
 }
 .FAQ-H2{
     text-align: center;
@@ -360,7 +359,7 @@ section .linkedIn a{
     width: 300px;
     height: 320px;
     background: #171717;
-    margin:  0px 40px 0px 0px;
+    margin:  0px 40px 20px 0px;
     padding: 0px;
 }
 .container-questions ul li .title-questions {
@@ -415,6 +414,21 @@ section .linkedIn a{
     font-weight: bold;
 }
 
+@media screen and (max-width: 1440px){
+    .Faq-background{
+        height: 950px;
+    }
+
+    .FAQ-Section {
+        height: 950px;
+    }
+}
+@media screen and (max-width: 1440px){
+    .searchbar-contour{
+        transform: translate(-75%, 750%);
+        width: 40% ;
+    }
+}
 /* $$$$$ Section */
 }
 
