@@ -125,12 +125,13 @@
                     <div class="column">
                         <img src="./images/tweet1.png" alt="customer testimonial 3" id="custReview3" class="zoom">
                     </div> 
-                    <div class="bottom-dots">
-                        <i class="material-icons" id="dot1">stop_circle</i>
-                        <i class="material-icons" id="dot2">stop_circle</i>
-                        <i class="material-icons" id="dot3">stop_circle</i>
-                    </div>
-                </div>                            
+                    
+                </div> 
+                <div class="bottom-dots">
+                    <button onclick="reviewsP1()"><i class="material-icons" id="dot1">stop_circle</i></button>
+                    <button onclick="reviewsP2()"><i class="material-icons" id="dot2">stop_circle</i></button>
+                    <button onclick="reviewsP3()"><i class="material-icons" id="dot3">stop_circle</i></button>
+                </div>                           
             </div>
         </div>
 
@@ -294,7 +295,7 @@
     <script type="text/javascript">
         AOS.init(
             {
-                offset: 200,
+                offset: 150,
                 duration: 1500,
             }
         );

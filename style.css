@@ -238,13 +238,13 @@ html, body{
     width: 100%;
     height: 95vh;
     padding: 40px 20px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     background-color: #171717;
     font-size: 16px;          
 }
 .cust-reviews .upper-container {
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     text-shadow: 0 2px 5px rgba(0,0,0,.5);
     /* box-shadow: 0 5px 25px rgba(0,0,0,.5); */
 }
@@ -274,7 +274,8 @@ html, body{
     height: 60vh;
     padding: 0.9rem;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 .cust-reviews .row::after {
     position: absolute;
@@ -297,7 +298,6 @@ html, body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
 }
 .cust-reviews .columns .column {  
     width: 30vw;
@@ -326,7 +326,7 @@ html, body{
 .cust-reviews .bottom-dots {
     width: 20vw;
     align-self: center;
-    margin-top: 22px;
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -339,6 +339,13 @@ html, body{
 }
 .cust-reviews .bottom-dots i:nth-child(3) {
     color: rgba(255,255,255,0.3);
+}
+.cust-reviews i:hover {
+    color: rgba(255,255,255,0.6);
+}
+.cust-reviews button {
+    padding: 0;
+    background-color: rgba(0,0,0,0);
 }
 
 /*ABOUT US SECTION*/
