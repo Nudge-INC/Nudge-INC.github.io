@@ -336,7 +336,7 @@ html, body{
 .cust-reviews .bottom-dots i:nth-child(3) {
     color: rgba(255,255,255,0.3);
 }
-/* RESPONSIVE CUSTOMER TESTINOMIRLAS */
+/* RESPONSIVE CUSTOMER TESTIMONIALS */
 @media screen and (max-width: 1155px) {
   .cust-reviews {
     height: 80vh
@@ -351,10 +351,16 @@ html, body{
   .cust-reviews .bottom-dots {
     margin-top: 5px;
   } 
+  .cust-reviews .bottom-dots i {
+    font-size: 19px;
+  }
 }
-@media screeb and (max-width: 950px) {
+@media screen and (max-width: 950px) {
   .cust-reviews .row .columns .column {
     width: 250px;
+  }
+  .cust-reviews .bottom-dots i {
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 900px) {
@@ -379,7 +385,7 @@ html, body{
     margin-top: 0; 
   }
   .cust-reviews .bottom-dots i {
-    font-size: 20px;
+    font-size: 17px;
   }
 }
 @media screen and (max-width: 725px) {
