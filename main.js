@@ -16,7 +16,8 @@ $(window).scroll(function() {
 });
 
 // main
-/* CUSTOMER TESTIMONIALS */
+/* ------------CUSTOMER TESTIMONIALS------------------- */
+// declare global variables
 var origReviewLinks = ["./images/tweet1.png",
     "./images/tweet2.png",
     "./images/tweet3.png",
@@ -46,6 +47,7 @@ function shiftReviews() {
     displayReviews();
 }
 
+// function to display reviews
 function displayReviews() {
     
     document.getElementById("custReview1").src=reviewLinks[0];
@@ -68,6 +70,7 @@ function displayReviews() {
         document.getElementById("dot3").style.color = "rgba(255,255,255,0.6)";
     }
 }
+/* ---- Customer Testimonials end ---- */
 
 function myFunction() {
     var dots = document.getElementById("dots");
