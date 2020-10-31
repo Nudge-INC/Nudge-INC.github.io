@@ -352,7 +352,12 @@ html, body{
     margin-top: 5px;
   } 
 }
-@media screen and (max-width: 940px) {
+@media screeb and (max-width: 950px) {
+  .cust-reviews .row .columns .column {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 900px) {
   .cust-reviews {
     height: 75vh;
   }
@@ -364,18 +369,22 @@ html, body{
     margin-bottom: 0;
   }
   .cust-reviews .column {
-    width: 400px;
+    width: 420px;
     height: 30vh;
+  }
+  #custReview1, #custReview3 {
+    display: none;
   }
   .cust-reviews .bottom-dots {
     margin-top: 0; 
   }
-  /* .cust-reviews .columns i:nth-child(3) {
-    display: none;
-    width: 0;
-  } */
-  #custReview1, #custReview3 {
-    display: none;
+  .cust-reviews .bottom-dots i {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 725px) {
+  .cust-reviews .bottom-dots i {
+    font-size: 15px;
   }
 }
 
