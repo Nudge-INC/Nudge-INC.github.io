@@ -160,6 +160,8 @@ html, body{
     border-radius: .8rem;
   }
   #more {display: none;}
+  #more2 {display: none;}
+  #more3 {display: none;}
   .blog-post__img{
     min-width: 35rem;
     max-width: 35rem;
@@ -772,4 +774,4 @@ body{
   .pricing-card{
     flex: 50%;
   }
-}
+
