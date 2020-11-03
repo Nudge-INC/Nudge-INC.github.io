@@ -9,7 +9,7 @@ $(window).scroll(function() {
     $('.home-background').css({
         opacity: function() {
             var elementHeight = $(this).height();
-            opacity = ((elementHeight - scrollTop) / elementHeight);
+            opacity = ((elementHeight - scrollTop - 100) / elementHeight);
             return opacity;
         }
     });
