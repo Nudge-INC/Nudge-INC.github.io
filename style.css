@@ -107,6 +107,7 @@ button:hover{
 /* HOME */
 html, body{
   height:100%;
+  scroll-behavior: smooth;
 }
 
 .home {
@@ -773,4 +774,4 @@ body{
   .pricing-card{
     flex: 50%;
   }
-}
+
