@@ -9,8 +9,8 @@
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/476a33a271.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Raleway:ital@1&display=swap" rel="stylesheet"> 
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--did i add this line? idk-->
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Raleway:ital@1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
         <title>Nudge INC</title>
         <link rel="icon" href="./images/icon.ico" type="image/x-icon"/>
 
@@ -27,8 +27,8 @@
                 <ul class="nav__links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#features">Features</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
                     <li><a href="#cust-reviews">Customer Satisfaction</a></li>
+                    <li><a href="#pricing-table">Pricing</a></li>                 
                     <li><a href="#about-us">About Us</a></li>
                     <li><a href="#faq">FAQ</a></li>    
                 </ul>
@@ -51,7 +51,7 @@
        
         <!-- Features Section-->
 
-       <div class="blog-post">
+       <div class="blog-post" id="features">
             <div class="blog-post__img">
               <img src="images/map.png" alt="">
               </div>
@@ -70,9 +70,9 @@
   
               </div>
             </div>
-        </div>
-          <div class="blog-post">
-          <div class="blog-post__img">
+        
+        <div class="blog-post" id="features">
+            <div class="blog-post__img">
             <img src="images/jogging.jpg" alt="">
             </div>
             <div class="blog-post__info">
@@ -81,13 +81,14 @@
               <h1 class="blog-post__title">Speedometer</h1>
               <p class="blog-post__text">
                   You don't have to wait for New Year's Day to start exercising. Enhance your fitness routine with Nudge's speedometer function!<span id="dots2"></span><span id="more2">
-                      Additional Information:
+                    <br><br>
+                    Additional Information:
                            Nudge's GPS alarm clock gives you the ability to set your route on the app and will notify you on approach. It can be used as a general GPS to give you the recommended routes that will take you to your destination in the fastest and easiest way possible.
                            Nudge's most popular feature wakes you up if you dozed off and you're nearing your stop! Perfect for everyday commuters.
                    </span></p>
                    <button onclick="myFunction2()" id="myBtn2">Read more</button>
             </div>
-          </div>
+        </div>
           <div class="blog-post">
               <div class="blog-post__img">
                 <img src="images/passport-map-world-trip-preview.jpg" alt="">
@@ -107,6 +108,7 @@
                     
                 </div>
               </div>
+            
 
         <!-- CUSTOMER TESTIMONIALS SECTION -->
         <div class= "cust-reviews" id="cust-reviews">           
@@ -114,22 +116,72 @@
                 <h2>User Testimonials</h2>
                 <p>See what our customers have to say about Nudge!</p>
             </div>
-            <div class = "row">               
-                <div class="column">
-                    <img src="./images/tweet1.png" alt="customer testimonial 1" id="custReview1" class="zoom">
-                </div>
-                <div class="column">
-                    <img src="./images/tweet1.png" alt="customer testimonial 2" id="custReview2" class="zoom">
-                </div>
-                <div class="column">
-                    <img src="./images/tweet1.png" alt="customer testimonial 3" id="custReview3" class="zoom">
+            <div class = "row"> 
+                <div class="columns">
+                    <div class="column">
+                        <img src="./images/tweet1.png" alt="customer testimonial 1" id="custReview1" class="zoom">
+                    </div>
+                    <div class="column">
+                        <img src="./images/tweet1.png" alt="customer testimonial 2" id="custReview2" class="zoom">
+                    </div>
+                    <div class="column">
+                        <img src="./images/tweet1.png" alt="customer testimonial 3" id="custReview3" class="zoom">
+                    </div>          
                 </div> 
+                <div class="bottom-dots">
+                    <i class="material-icons" id="dot1">stop_circle</i>
+                    <i class="material-icons" id="dot2">stop_circle</i>
+                    <i class="material-icons" id="dot3">stop_circle</i>
+                </div>                           
             </div>
         </div>
 
       <!-- $$$$$ Section -->
+        <div class="pricing-table" id="pricing-table"> >
+    <div class="pricing-card table1">
+      <h3 class="pricing-card-header table1">Basic</h3>
+        <div class="ribbon">
+       <div class="label">FREE!</div>
+        </div>
+      <div class="price"><sup>$</sup>0.00<span>/Month</span></div>
+      <ul>
+        <li><strong>1</strong> 1</li>
+        <li><strong>1</strong> 1</li>
+        <li><strong>1</strong> 1</li>
+        <li><strong>1</strong> 1</li>
+        <li><strong>1</strong> 1</li>
+      </ul>
+      <a href="#" class="order-btn">Get Nudge Now</a>
+      </div>
+    <div class="pricing-card table2">
+      <h3 class="pricing-card-header table2">Gold</h3>
+      <div class="price"><sup>$</sup>4.99<span>/Month</span></div>
+      <ul>
+        <li><strong>1</strong> 1</li>
+        <li><strong>1</strong> 1</li>
+        <li><strong>1</strong> 1</li>
+        <li><strong>1</strong> 1</li>
+        <li><strong>1</strong> 1</li>
+      </ul>
+      <a href="#" class="order-btn">Get Nudge Now</a>
+    </div>
+    <div class="pricing-card table3">
+      <h3 class="pricing-card-header table3">Diamond</h3>
+        <div class="ribbon">
+       <div class="label">Best Deal</div>
+        </div>
+      <div class="price"><sup>$</sup>9.99<span>/Month</span></div>
+      <ul>
+        <li><strong>1</strong> 1</li>
+        <li><strong>1</strong> 1</li>
+        <li><strong>1</strong> 1</li>
+        <li><strong>1</strong> 1</li>
+        <li><strong>1</strong> 1</li>
+      </ul>
+      <a href="#" class="order-btn">Get Nudge Now</a>
+    </div>
+       </div>
 
-        
       <!-- About Us Section -->
 
         <div style="background-color: white;" id="about-us">
@@ -236,7 +288,7 @@
         </script>
     <script>
         // call function to display random customer testimonials when page is reloaded
-        window.onload = displayReviews;
+        window.onload = shiftReviews;
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.js">    
     </script>
