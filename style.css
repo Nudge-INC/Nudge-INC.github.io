@@ -22,31 +22,24 @@ p {
     font-family: 'Raleway', sans-serif;
 }
 
-/* NavBar stuff */
+/* MAIN */
+
+html, body{
+  height:100%;
+  scroll-behavior: smooth;
+}
+
+:target{
+  scroll-margin-top: 4.5rem;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/*.navBar {
-    overflow: hidden;
-    background-color: #4f4f55;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 2;
-}
-.navBar a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 18px;
-}
-*/
+/* NAVBAR */
 
 /* THE COLOURS ARE JUST FOR TESTS IT DOESN'T HAVE TO BE THAT IF WE DONT WANT IT */
 
@@ -61,6 +54,7 @@ header{
     z-index: 3;
     overflow: hidden;
     background-color: #171717;
+    max-height:150px;
 }
 
 .logo{
@@ -105,9 +99,6 @@ button:hover{
 }
 
 /* HOME */
-html, body{
-  height:100%;
-}
 
 .home {
   height: 100%;
@@ -146,16 +137,114 @@ html, body{
   font-size: 20px;
 }
 
-/* features */
-.features 
-{
-    background-image: url("./images/tall_buildings.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+.arrow {
+  border: solid #F4F8FD;
+  border-width: 0 8px 8px 0;
+  display: inline-block;
+  padding: 10px;
+  height: 50px;
+  width: 50px;
+  z-index:3;
+  position: absolute;
+  transform: rotate(45deg);
+  bottom:8%;
+  right:48%;
 }
 
-/* CUSTOMER TESTIMONIALS */
+.arrow:hover{
+  border-color: #e7d742;
+}
+
+/* features */
+.blog-post{
+    width: 100%;
+    max-width: 200rem;
+    padding: 5rem;
+    background-color:transparent;
+    background-image: url('./images/blue..jpg');
+    box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, .2);
+    display: flex;
+    align-items: center;
+    border-radius: .8rem;
+  }
+  #more {display: none;}
+  #more2 {display: none;}
+  #more3 {display: none;}
+  .blog-post__img{
+    min-width: 35rem;
+    max-width: 35rem;
+    height: 30rem;
+    transform: translateX(-8rem);
+    position: relative;
+  }
+  
+  .blog-post__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: .8rem;
+  }
+  
+  .blog-post__img::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 250, 167, .8), rgba(255, 250, 0, 0.8));
+    box-shadow: .5rem .5rem 3rem 1px rgba(0, 0, 0, .05);
+    border-radius: .8rem;
+  }
+  
+  .blog-post__date span{
+    display: block;
+    color: rgba(0, 0, 0, .5);
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: .5rem 0;
+  }
+  
+  .blog-post__title{
+    font-size: 2.5rem;
+    margin: 1.5rem 0 2rem;
+    text-transform: uppercase;
+    color: #4facfe;
+  }
+  
+  .blog-post__text{
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+    color:black;
+  }
+  
+  .blog-post__cta{
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #fff;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    border-radius: .8rem;
+    text-decoration: none;
+  }
+  
+  .blog-post__cta:hover {
+    background-image: linear-gradient(to right, #00f2fe 0%, #4facfe 100%);
+  }
+  
+  
+    
+    .blog-post_img{
+      min-width: 30rem;
+      max-width: 30rem;
+      transform: translate(0, -8rem);
+    }
+    /* End of Features */
+
+/* ------------ CUSTOMER TESTIMONIALS ------------- */
 .cust-reviews {   
     width: 100%;
     height: 95vh;
@@ -166,7 +255,7 @@ html, body{
 }
 .cust-reviews .upper-container {
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     text-shadow: 0 2px 5px rgba(0,0,0,.5);
     /* box-shadow: 0 5px 25px rgba(0,0,0,.5); */
 }
@@ -194,12 +283,11 @@ html, body{
     position: relative;
     z-index: 1;
     height: 60vh;
-    padding: 0.9rem;
+    padding: 0.8rem;
+    padding-bottom: 5px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
 }
 .cust-reviews .row::after {
     position: absolute;
@@ -217,17 +305,18 @@ html, body{
     display: table;
     clear: both;
 }
-.cust-reviews .column {  
-    width: 30vw;
-    height: 40vh;                
+.cust-reviews .columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
-.cust-reviews .column iframe {
-    width: inherit;
-    height: inherit;
+.cust-reviews .columns .column {  
+    width: 360px;
+    height: 45vh;                
 }
 .cust-reviews .column img {
-    width: 26vw;
-    min-width: 300px;;
+    width: inherit;
     height: auto;
     border: 2px solid #171717;
     outline: 0.5px solid #F4F8FD;
@@ -241,9 +330,87 @@ html, body{
     -webkit-transform: scale(1.5); /* Safari 3-8 */
     transform: scale(1.2); 
 }
-
+.cust-reviews .bottom-dots {
+    width: 20vw;
+    align-self: center;
+    margin-top: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.cust-reviews .bottom-dots i:nth-child(1) {
+    color: rgba(255,255,255,0.3);
+}
+.cust-reviews .bottom-dots i:nth-child(2) {
+    color: rgba(255,255,255,0.3);
+}
+.cust-reviews .bottom-dots i:nth-child(3) {
+    color: rgba(255,255,255,0.3);
+}
+/* RESPONSIVE CUSTOMER TESTIMONIALS */
+@media screen and (max-width: 1155px) {
+  .cust-reviews {
+    height: 80vh
+  }
+  .cust-reviews .row .columns .column {
+    width: 290px;
+    height: 38vh
+  }
+  .cust-reviews .row {
+    height: 50vh;
+  }
+  .cust-reviews .bottom-dots {
+    margin-top: 5px;
+  } 
+  .cust-reviews .bottom-dots i {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .cust-reviews .row .columns .column {
+    width: 250px;
+  }
+  .cust-reviews .bottom-dots i {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .cust-reviews {
+    height: 75vh;
+  }
+  .cust-reviews .row {
+    height: 45vh;
+  }
+  .cust-reviews .columns {
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  .cust-reviews .column {
+    width: 420px;
+    height: 30vh;
+  }
+  #custReview1, #custReview3 {
+    display: none;
+  }
+  .cust-reviews .bottom-dots {
+    margin-top: 0; 
+  }
+  .cust-reviews .bottom-dots i {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 725px) {
+  .cust-reviews .bottom-dots i {
+    font-size: 15px;
+  }
+}
 
 /*ABOUT US SECTION*/
+
+#about-us{
+  padding:2%;
+}
+
 p.introinfo{
     font-size: 25px;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -321,7 +488,7 @@ section .linkedIn a{
 
 
 
-/* FAQ Section */
+/* /////////////////////////////////////////////////////////////////////////FAQ Section////////////////////////////////////////////////////////////////////////////////////// */
 .Faq-background{
     background-color:#171717;
 
@@ -340,7 +507,7 @@ section .linkedIn a{
     margin: 0px 0px 130px 0px;
     background-color: #171717;
     padding: 20px;
-    transform: translate(100%, 0%);
+    transform: translate(100%, 100%);
 
 }
 .container-questions {
@@ -348,7 +515,6 @@ section .linkedIn a{
     width: 95%;
     height: 420px
 }
-
 .container-questions ul{
     margin: 0px 0px 0px 0px;
     text-align: center;
@@ -363,7 +529,6 @@ section .linkedIn a{
     margin:  0px 40px 20px 0px;
     padding: 0px;
 }
-
 .container-questions ul li .title-questions {
     font-family: 'Raleway', sans-serif;
     height: 50px;
@@ -374,7 +539,6 @@ section .linkedIn a{
     width: 350px
 
 }
-
 .container-questions ul li .questions {
     font-family: 'Raleway', sans-serif;
     color: yellow;
@@ -433,3 +597,196 @@ section .linkedIn a{
     }
 }
 /* $$$$$ Section */
+}
+
+body{ 
+  background-image: linear-gradient(150deg,#312454,#472664 );
+  min-height: 100vh;
+  min-width: 100vh;
+  display: flex;
+  align-items: center;
+  margin: auto;  
+
+}
+.pricing-table{
+    background-image: linear-gradient(150deg,#312454,#472664 );
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: min(2000px,100%);
+    align-items: center;
+    padding-top:2%;
+    padding-bottom: 2%;
+}
+.pricing-card{
+  flex: 1;
+  max-width: 400px;
+  background-color: #152d47;
+  margin: 500px 20px;
+  text-align: center;
+  cursor: pointer;
+  align-items: center; 
+  overflow: hidden;
+  margin: auto;
+  color: #2d2d2d;
+  transition: .3s linear;
+
+
+}
+
+.ribbon .label {
+  position: relative;
+  display: block;
+  left: 265px;
+  top: -15px;
+  width: 180px;
+  padding: 10px 0;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+  background-color: #db1616;
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
+  -moz-transform: rotate(45deg) translate3d(0, 0, 0);
+  -ms-transform: rotate(45deg) translate3d(0, 0, 0);
+  transform: rotate(45deg) translate3d(0, 0, 0);
+}
+
+
+.table1 .pricing-card-header{
+  background-color: #76e381;
+  display: inline-block;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 0 0 200px 200px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: .4s linear;
+}
+.table2 .pricing-card-header{
+  background-color: #ff7a59;
+  display: inline-block;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 0 0 200px 200px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: .4s linear;
+}
+.table3 .pricing-card-header{
+  background-color: #0e579c;
+  display: inline-block;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 0 0 200px 200px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: .4s linear;
+}
+.pricing-card:hover .pricing-card-header{
+  box-shadow: 0 0 0 26em #ff0000;
+  background-image: linear-gradient(100deg,#ffff00#ffff00,#ffff00);
+
+}
+
+.table1 .price{
+  font-size: 70px;
+  color: #77ff00;
+  margin: 40px 0;
+  transition: .2s linear;
+}
+.table2 .price{
+  font-size: 70px;
+  color: #ff9900;
+  margin: 40px 0;
+  transition: .2s linear;
+}
+.table3 .price{
+  font-size: 70px;
+  color: #0e579c;
+  margin: 40px 0;
+  transition: .2s linear;
+}
+.price sup, .price span{
+  font-size: 22px;
+  font-weight: 700;
+}
+.price{
+    color: black
+}
+
+.pricing-card:hover ,.pricing-card:hover .price{
+  color: #fff;
+
+}
+.pricing-card:hover .ribbon .label {
+  background-image: linear-gradient(100deg,#11859c,#11859c);
+}
+
+.pricing-card li{
+  font-size: 20px;
+  padding: 10px 0;
+  text-transform: uppercase;
+
+}
+
+.table1 .order-btn{
+  display: inline-block;
+  margin-bottom: 40px;
+  margin-top: 80px;
+  border: 2px solid #058212;
+  color: #47a150;
+  padding: 18px 40px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: .3s linear;
+}
+
+.table1 .order-btn:hover{
+  background-color: #76e381;
+  color: #fff;
+}
+.table2 .order-btn:hover{
+  background-color: #e3c96d;
+  color: #fff;
+}
+.table2 .order-btn{
+  display: inline-block;
+  margin-bottom: 40px;
+  margin-top: 80px;
+  border: 2px solid #fcc462;
+  color: #ffa305;
+  padding: 18px 40px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: .3s linear;
+}
+.table3 .order-btn:hover{
+  background-color: #1e0d4a;
+  color: #fff;
+}
+.table3 .order-btn{
+  display: inline-block;
+  margin-bottom: 40px;
+  margin-top: 80px;
+  border: 2px solid #0e579c;
+  color: #4755bf;
+  padding: 18px 40px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: .3s linear;
+}
+@media screen and (max-width:1100px){
+  .pricing-card{
+    flex: 50%;
+  }
+}
