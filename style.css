@@ -613,7 +613,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: min(1600px,100%);
+    width: min(2000px,100%);
     align-items: center;
     padding-top:2%;
     padding-bottom: 2%;
