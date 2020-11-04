@@ -429,7 +429,7 @@ section .linkedIn a{
 @media screen and (max-width: 1440px){
     .searchbar-contour{
         transform: translate(-75%, 750%);
-        width: 40% ;
+        width: 400px;
     }
 }
 /* $$$$$ Section */
