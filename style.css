@@ -812,11 +812,36 @@ body{
 .footer li a:hover {
   color: #F1F119;
 }
+.footer .column img {
+  width: 50%;
+  height: auto;
+}
+.footer .column img:hover {
+  cursor: pointer;
+}
+.footer .socials {
+  width: 30vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer .socials i {
+  font-size: 20px;
+  color: #e0e4e9;
+}
+.footer .socials i:hover {
+  color: #F1F119;
+  cursor: pointer;
+}
 .bottom-band {
   background: black;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+.bottom-band .privacy p:hover{
+  cursor: pointer;
+  color: #F1F119;
 }
 .footer h4 {
   margin-bottom: 12px;
