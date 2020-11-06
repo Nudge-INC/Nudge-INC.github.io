@@ -816,6 +816,7 @@ body{
 .footer .row .column:nth-child(1) img {
   width: calc(inherit - 10vw);
   max-width: 300px;
+  margin-bottom: 10px;
 }
 .footer .row .column:nth-child(3) {
   display: flex;
