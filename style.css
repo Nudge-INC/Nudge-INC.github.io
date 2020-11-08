@@ -390,6 +390,9 @@ button:hover{
   .cust-reviews .row .columns .column {
     width: 250px;
   }
+  .cust-reviews .bottom-dots {
+    width: 22vw;
+  }
   .cust-reviews .bottom-dots i {
     font-size: 16px;
   }
@@ -414,14 +417,26 @@ button:hover{
   }
   .cust-reviews .bottom-dots {
     margin-top: 0; 
+    width: 25vw;
   }
   .cust-reviews .bottom-dots i {
     font-size: 15px;
   }
 }
 @media screen and (max-width: 725px) {
+  .cust-reviews .bottom-dots {
+    width: 30vw;
+  }
   .cust-reviews .bottom-dots i {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .cust-reviews .bottom-dots {
+    width: 40vw;
+  }
+  .cust-reviews .bottom-dots i {
+    font-size: 12px;
   }
 }
 
