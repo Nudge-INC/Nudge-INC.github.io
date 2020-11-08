@@ -363,10 +363,10 @@ button:hover{
   animation-name: tweet;
   animation-duration: 1s;
 }
-@keyframes tweet {
+/* @keyframes tweet {
   from {}
   to {}
-}
+} */
 /* RESPONSIVE CUSTOMER TESTIMONIALS */
 @media screen and (max-width: 1155px) {
   .cust-reviews {
