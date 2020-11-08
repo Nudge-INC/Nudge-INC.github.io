@@ -69,7 +69,6 @@
   
               </div>
             </div>
-        </div>
           <div class="blog-post">
           <div class="blog-post__img">
             <img src="images/jogging.jpg" alt="">
@@ -127,15 +126,18 @@
                     </div>          
                 </div> 
                 <div class="bottom-dots">
-                    <i class="material-icons" id="dot1">stop_circle</i>
-                    <i class="material-icons" id="dot2">stop_circle</i>
-                    <i class="material-icons" id="dot3">stop_circle</i>
+                    <button onclick="dot1()"><i class="material-icons" id="dot1">stop_circle</i></button>
+                    <button onclick="dot2()"><i class="material-icons" id="dot2">stop_circle</i></button>
+                    <button onclick="dot3()"><i class="material-icons" id="dot3">stop_circle</i></button>
+                    <button onclick="dot4()"><i class="material-icons" id="dot4">stop_circle</i></button>
+                    <button onclick="dot5()"><i class="material-icons" id="dot5">stop_circle</i></button>
+                    <button onclick="dot6()"><i class="material-icons" id="dot6">stop_circle</i></button>
                 </div>                           
             </div>
         </div>
 
       <!-- $$$$$ Section -->
-        <div class="pricing-table" id="pricing-table"> >
+        <div class="pricing-table" id="pricing-table"> 
     <div class="pricing-card table1">
       <h3 class="pricing-card-header table1">Basic</h3>
         <div class="ribbon">
@@ -218,7 +220,7 @@
                 <figcaption>Christina Song</figcaption>
                 <caption><em>Features</em><br></caption>
                 <p class="github link"><a href="https://github.com/csong202">Github link</a></p>
-                <p class="linkedIn link"><a href="https://www.linkedin.com/in/christina-song-555039193/">LinkedIn link</a></p>
+                <p class="linkedIn link"><a href="https://www.linkedin.com/in/christina-song202/">LinkedIn link</a></p>
             </figure>
             <figure>
                 <img src="images/discord-pfp.png" alt="Jessica Nguyen">
@@ -281,12 +283,61 @@
                 </div>
             </div>
         </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="row">
+            <div class="column">
+                <!-- <img src="images/nudge-logo.png" alt="Nudge Logo"> -->
+                <h3>NUDGE</h3>
+                <p style="margin-bottom:10px">
+                    Nudge.... is cool. 
+                    [insert one sentence summary of what nudge is]
+                </p>
+                <p style="font-weight:600; font-size:17px;">slogan??</p>
+            </div>
+            <div class="column">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <!-- <li><a href="#home">Home</a></li> -->
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#cust-reviews">Customer Satisfaction</a></li>
+                    <li><a href="#pricing-table">Pricing</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#faq">FAQ</a></li>                
+                </ul>
+            </div>
+            <div class="column">
+                <h4>DOWNLOAD</h4>
+                <img src="images/download_on_app_store.png" alt="Download on the App Store">
+                <img src="images/download_on_goog_play.png" alt="Get it on Google Play">
+            </div>
+            
+        </div>
+        <div class="follow-us">
+            <h4>FOLLOW US</h4>
+            <div class="socials w3-large">
+                <i class="fab fa-facebook-f fa-lg" title="Facebook"></i>
+                <i class="fab fa-twitter" title="Twitter"></i>
+                <i class="fab fa-linkedin-in" title="LinkedIn"></i>
+                <i class="fab fa-instagram" title="Instagram"></i>
+            </div>        
+        </div>
+    </div>
+    <div class="bottom-band">
+        <div class="copyright">
+            <p>2020 © Nudge Inc.</p>
+        </div>
+        <div class="privacy">
+            <p>Privacy & Terms</p>
+        </div>
+    </div>
       
     <script src="main.js" language="JavaScript" type="text/javascript">
         </script>
     <script>
         // call function to display random customer testimonials when page is reloaded
-        window.onload = shiftReviews;
+        window.onload = displayReviews;
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.js">    
     </script>
@@ -295,7 +346,7 @@
         AOS.init(
             {
                 offset: 200,
-                duration: 1500,
+                duration: 1250,
             }
         );
     </script>

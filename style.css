@@ -138,8 +138,8 @@ button:hover{
 }
 
 .arrow {
-  border: solid #F4F8FD;
-  border-width: 0 10px 10px 0;
+  border: solid #e7d742;
+  border-width: 0 8px 8px 0;
   display: inline-block;
   padding: 10px;
   height: 50px;
@@ -152,7 +152,7 @@ button:hover{
 }
 
 .arrow:hover{
-  border-color: #e7d742;
+  border-color: #F4F8FD;
 }
 
 /* features */
@@ -338,6 +338,17 @@ button:hover{
     flex-direction: row;
     justify-content: space-around;
 }
+.cust-reviews button {
+  padding: 0;
+  background-color: rgba(231, 215, 66, 0);
+  border: none;
+  border-radius: 70px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.cust-reviews .bottom-dots i {
+  font-size: 17px;
+}
 .cust-reviews .bottom-dots i:nth-child(1) {
     color: rgba(255,255,255,0.3);
 }
@@ -347,6 +358,15 @@ button:hover{
 .cust-reviews .bottom-dots i:nth-child(3) {
     color: rgba(255,255,255,0.3);
 }
+/* Customer Testimonials Animations */
+.cust .custReview1 {
+  animation-name: tweet;
+  animation-duration: 1s;
+}
+/* @keyframes tweet {
+  from {}
+  to {}
+} */
 /* RESPONSIVE CUSTOMER TESTIMONIALS */
 @media screen and (max-width: 1155px) {
   .cust-reviews {
@@ -362,16 +382,19 @@ button:hover{
   .cust-reviews .bottom-dots {
     margin-top: 5px;
   } 
-  .cust-reviews .bottom-dots i {
-    font-size: 19px;
-  }
+  /* .cust-reviews .bottom-dots i {
+    font-size: 17px;
+  } */
 }
 @media screen and (max-width: 950px) {
   .cust-reviews .row .columns .column {
     width: 250px;
   }
+  .cust-reviews .bottom-dots {
+    width: 22vw;
+  }
   .cust-reviews .bottom-dots i {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 900px) {
@@ -394,14 +417,26 @@ button:hover{
   }
   .cust-reviews .bottom-dots {
     margin-top: 0; 
+    width: 25vw;
   }
   .cust-reviews .bottom-dots i {
-    font-size: 17px;
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 725px) {
+  .cust-reviews .bottom-dots {
+    width: 30vw;
+  }
   .cust-reviews .bottom-dots i {
-    font-size: 15px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .cust-reviews .bottom-dots {
+    width: 40vw;
+  }
+  .cust-reviews .bottom-dots i {
+    font-size: 12px;
   }
 }
 
@@ -613,7 +648,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: min(1600px,100%);
+    width: min(2000px,100%);
     align-items: center;
     padding-top:2%;
     padding-bottom: 2%;
@@ -789,4 +824,106 @@ body{
   .pricing-card{
     flex: 50%;
   }
+}
+
+/* FOOTER */
+.footer {
+  background: #080808;
+  padding: 50px 40px 20px 40px;
+  line-height: 2;
+}
+.footer .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer .row .column {
+  width: 22vw;
+  /* background: #1a1a1a; */
+}
+.footer .row .column:nth-child(1) {
+  /* display: flex;
+  flex-grow: 2; */
+  width: 44vw;
+  min-width: 260px;
+  margin-right: 35px;
+}
+.footer .row .column:nth-child(1) img {
+  width: calc(inherit - 10vw);
+  max-width: 300px;
+  margin-bottom: 10px;
+}
+.footer .row .column:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+}
+.footer .row .column:nth-child(3) img {
+  width: inherit;
+  max-width: 160px;
+  min-width: 120px;
+  margin-bottom: 11px;
+}
+.footer .row .column li {
+  list-style-type: none;
+}
+.footer li a:hover {
+  color: #F1F119;
+}
+.footer .column img {
+  width: 70%;
+  height: auto;
+}
+.footer .column img:hover {
+  cursor: pointer;
+}
+.footer .socials {
+  width: 20vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer .socials i {
+  font-size: 20px;
+  color: #e0e4e9;
+}
+.footer .socials i:hover {
+  color: #F1F119;
+  cursor: pointer;
+}
+.bottom-band {
+  background: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.bottom-band .privacy p:hover{
+  cursor: pointer;
+  color: #F1F119;
+}
+.footer h3 {
+  font-size: 30px;
+  color: #F1F119;
+  font-family: "Montserrat", sans-serif;
+}
+.footer h4 {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #979797;
+  font-family: 'Raleway', sans-serif;
+}
+.footer p {
+  font-size: 16px;
+  color: #e0e4e9;
+  font-family: 'Raleway', sans-serif;
+}
+.footer a {
+  font-size: 14px;
+  font-weight: 100;
+  font-family: 'Raleway', sans-serif;
+}
+.bottom-band p {
+  padding: 10px;
+  font-size: 13px;
+  color: #e0e4e9;
+  font-family: 'Raleway', sans-serif;
 }
