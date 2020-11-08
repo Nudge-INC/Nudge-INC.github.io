@@ -338,6 +338,17 @@ button:hover{
     flex-direction: row;
     justify-content: space-around;
 }
+.cust-reviews button {
+  padding: 0;
+  background-color: rgba(231, 215, 66, 0);
+  border: none;
+  border-radius: 70px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.cust-reviews .bottom-dots i {
+  font-size: 17px;
+}
 .cust-reviews .bottom-dots i:nth-child(1) {
     color: rgba(255,255,255,0.3);
 }
@@ -346,6 +357,15 @@ button:hover{
 }
 .cust-reviews .bottom-dots i:nth-child(3) {
     color: rgba(255,255,255,0.3);
+}
+/* Customer Testimonials Animations */
+.cust .custReview1 {
+  animation-name: tweet;
+  animation-duration: 1s;
+}
+@keyframes tweet {
+  from {}
+  to {}
 }
 /* RESPONSIVE CUSTOMER TESTIMONIALS */
 @media screen and (max-width: 1155px) {
@@ -362,16 +382,16 @@ button:hover{
   .cust-reviews .bottom-dots {
     margin-top: 5px;
   } 
-  .cust-reviews .bottom-dots i {
-    font-size: 19px;
-  }
+  /* .cust-reviews .bottom-dots i {
+    font-size: 17px;
+  } */
 }
 @media screen and (max-width: 950px) {
   .cust-reviews .row .columns .column {
     width: 250px;
   }
   .cust-reviews .bottom-dots i {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 900px) {
@@ -396,12 +416,12 @@ button:hover{
     margin-top: 0; 
   }
   .cust-reviews .bottom-dots i {
-    font-size: 17px;
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 725px) {
   .cust-reviews .bottom-dots i {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
