@@ -138,7 +138,7 @@ button:hover{
 }
 
 .arrow {
-  border: solid #F4F8FD;
+  border: solid #e7d742;
   border-width: 0 8px 8px 0;
   display: inline-block;
   padding: 10px;
@@ -152,7 +152,7 @@ button:hover{
 }
 
 .arrow:hover{
-  border-color: #e7d742;
+  border-color: #F4F8FD;
 }
 
 /* features */
