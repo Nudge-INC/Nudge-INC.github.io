@@ -345,21 +345,18 @@ button:hover{
   border-radius: 70px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+  user-select: none;
+}
+.cust-reviews button:focus {
+  outline: none;
+  box-shadow: none;
 }
 .cust-reviews .bottom-dots i {
-  font-size: 17px;
-}
-.cust-reviews .bottom-dots i:nth-child(1) {
-    color: rgba(255,255,255,0.3);
-}
-.cust-reviews .bottom-dots i:nth-child(2) {
-    color: rgba(255,255,255,0.3);
-}
-.cust-reviews .bottom-dots i:nth-child(3) {
-    color: rgba(255,255,255,0.3);
+  font-size: 1.4vw;
+  color: rgba(255,255,255,0.3);
 }
 /* Customer Testimonials Animations */
-.cust .custReview1 {
+.custReview1, .custReview2, .custReview3 {
   animation-name: tweet;
   animation-duration: 1s;
 }
@@ -381,21 +378,22 @@ button:hover{
   }
   .cust-reviews .bottom-dots {
     margin-top: 5px;
+    width: 25vw;
   } 
-  /* .cust-reviews .bottom-dots i {
-    font-size: 17px;
-  } */
+  .cust-reviews .bottom-dots i {
+    font-size: 1.45vw;
+  }
 }
 @media screen and (max-width: 950px) {
   .cust-reviews .row .columns .column {
     width: 250px;
   }
-  .cust-reviews .bottom-dots {
+  /* .cust-reviews .bottom-dots {
     width: 22vw;
-  }
-  .cust-reviews .bottom-dots i {
+  } */
+  /* .cust-reviews .bottom-dots i {
     font-size: 16px;
-  }
+  } */
 }
 @media screen and (max-width: 900px) {
   .cust-reviews {
@@ -417,13 +415,13 @@ button:hover{
   }
   .cust-reviews .bottom-dots {
     margin-top: 0; 
-    width: 25vw;
+    width: 27vw;
   }
   .cust-reviews .bottom-dots i {
-    font-size: 15px;
+    font-size: 1.8vw;
   }
 }
-@media screen and (max-width: 725px) {
+@media screen and (max-width: 750px) {
   .cust-reviews .bottom-dots {
     width: 30vw;
   }
@@ -435,9 +433,9 @@ button:hover{
   .cust-reviews .bottom-dots {
     width: 40vw;
   }
-  .cust-reviews .bottom-dots i {
+  /* .cust-reviews .bottom-dots i {
     font-size: 12px;
-  }
+  } */
 }
 
 /*ABOUT US SECTION*/
