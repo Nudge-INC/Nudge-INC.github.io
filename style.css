@@ -51,7 +51,7 @@ header{
     padding: 20px 10%;
     width: 100%;
     position: fixed;
-    z-index: 3;
+    z-index: 2;
     overflow: hidden;
     background-color: #171717;
     max-height:150px;
@@ -108,18 +108,17 @@ button:hover{
 .home-background{
   background-image: url("./images/map.jpg"); 
   background-repeat: no-repeat;
-  background-size: 100%;
   height: 100%;
   position: relative;
+  background-size: cover;
 }
 
-.home .text{
+.home-text{
   width: 50%;
-  height: 25%;
+  height: 30%;
   padding: 40px 40px 40px 40px;
-  top: 30%;
   margin: auto;
-  position: relative;
+  position: absolute;
   text-align: center;
   background-color: #2D2D39;
   color: #71dfee;
@@ -127,13 +126,16 @@ button:hover{
   */
   outline-offset: 10px;
   outline: 4px solid #e7d742;
+  display: inline-block;
+  bottom: 40%;
+  right: 25%;
 }
 
-.home .text h1{
+.home-text h1{
   font-size: 50px;
 }
 
-.home .text h2{
+.home-text h2{
   font-size: 20px;
 }
 
@@ -144,11 +146,11 @@ button:hover{
   padding: 10px;
   height: 50px;
   width: 50px;
-  z-index:3;
   position: absolute;
   transform: rotate(45deg);
   bottom:8%;
-  right:48%;
+  right:50%;
+  border-radius: 5px;
 }
 
 .arrow:hover{
