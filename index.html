@@ -9,13 +9,12 @@
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/476a33a271.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Raleway:ital@1&display=swap" rel="stylesheet"> 
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--did i add this line? idk-->
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Raleway:ital@1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
         <title>Nudge INC</title>
         <link rel="icon" href="./images/icon.ico" type="image/x-icon"/>
 
-        <script src="main.js" language="JavaScript" type="text/javascript">
-        </script>
+        
     </head>
     
     <body id="body">
@@ -28,8 +27,8 @@
                 <ul class="nav__links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#features">Features</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
                     <li><a href="#cust-reviews">Customer Satisfaction</a></li>
+                    <li><a href="#pricing-table">Pricing</a></li>                 
                     <li><a href="#about-us">About Us</a></li>
                     <li><a href="#faq">FAQ</a></li>    
                 </ul>
@@ -40,42 +39,73 @@
         <!-- HOME -->
 
         <div class = "home" id="home">
-            <div class = "home-overlay">
-            </div>
             <div class = "home-background">
                 <div class = "text">
                 <h1>WELCOME TO NUDGE!</h1>
                 <h2>The slogan goes here idk what we really decided on.</h2>
                 </div>
+                <div><a href="#features"><i class = "arrow"></i></a></div>
             </div>
         </div>
        
         <!-- Features Section-->
 
-        <div class = "features" id="features"> 
-            <h1 style="text-align:center;">Why Choose Nudge?</h1>
-        <div class ="featureOne">
-            <div class="featureOne__img">
-                <img src="images/feature1.jpg" alt="">
-            </div>
-            <div class="featureOne__info">
-                <div class="featureReleaseDate">
-                    <span>Thursday</span>
-                    <span>October 15th 2020</span>
+       <div class="blog-post" id="features">
+            <div class="blog-post__img">
+              <img src="images/map.png" alt="">
+              </div>
+              <div class="blog-post__info">
+                <div class="blog-post__date">
                 </div>
-                <h2 class="featureOne__title">GPS Alarm Functionality</h2>
-                <p class="featureOne__text">
-                    One of the main functionalities of the Nudge app is the ability to program an alarm to wake you up at a certain location.
-
-                </p>
-                <a href="#" class="featureOne__cta">Read more</a>
+                <h1 class="blog-post__title">GPS Alarm Functionality</h1>
+                <p class="blog-post__text">
+                  Fell asleep and missed your stop? Say no more! With the Nudge app, you can pre-program your bus route and get the app to wake you up at your destination.<span id="dots"></span><span id="more">
+                     <br><br>
+                    
+                          Nudge's GPS alarm clock gives you the ability to set your route on the app and will notify you on approach. It can be used as a general GPS to give you the recommended routes that will take you to your destination in the fastest and easiest way possible.
+                          Nudge's most popular feature wakes you up if you dozed off and you're nearing your stop! Perfect for everyday commuters.
+                  </span></p>
+                  <button onclick="myFunction()" id="myBtn">Read more</button>
+  
+              </div>
             </div>
-            <div class="SpeedometerBox"><b>Speedometer Function</b>
+          <div class="blog-post">
+          <div class="blog-post__img">
+            <img src="images/jogging.jpg" alt="">
             </div>
-            <div class="GPSBox"><b>GPS Function</b>
+            <div class="blog-post__info">
+              <div class="blog-post__date">
+              </div>
+              <h1 class="blog-post__title">Speedometer</h1>
+              <p class="blog-post__text">
+                  You don't have to wait for New Year's Day to start exercising. Enhance your fitness routine with Nudge's speedometer function!<span id="dots2"></span><span id="more2">
+                  <br><br>    
+                 
+                           Nudge's GPS alarm clock gives you the ability to set your route on the app and will notify you on approach. It can be used as a general GPS to give you the recommended routes that will take you to your destination in the fastest and easiest way possible.
+                           Nudge's most popular feature wakes you up if you dozed off and you're nearing your stop! Perfect for everyday commuters.
+                   </span></p>
+                   <button onclick="myFunction2()" id="myBtn2">Read more</button>
             </div>
-        </div>
-        </div>
+          </div>
+          <div class="blog-post">
+              <div class="blog-post__img">
+                <img src="images/passport-map-world-trip-preview.jpg" alt="">
+                </div>
+                <div class="blog-post__info">
+                  <div class="blog-post__date">
+                  </div>
+                  <h1 class="blog-post__title">Standard GPS Function</h1>
+                  <p class="blog-post__text">
+                    Forgot your map at home? No worries! You can use the built-in GPS function to find the quickest route to your destination.<span id="dots3"></span><span id="more3">
+                      <br><br>
+                      The GPS function in the Nudge app is the best option to help you reach your destination in a pinch. With over 100 different routes preplanned for various cities, Nudge will surely find you the most effective way to get you places.
+                       
+                   </span></p>
+                   <button onclick="myFunction3()" id="myBtn3">Read more</button>
+                   
+                    
+                </div>
+              </div>
 
         <!-- CUSTOMER TESTIMONIALS SECTION -->
         <div class= "cust-reviews" id="cust-reviews">           
@@ -83,22 +113,75 @@
                 <h2>User Testimonials</h2>
                 <p>See what our customers have to say about Nudge!</p>
             </div>
-            <div class = "row">               
-                <div class="column">
-                    <img src="./images/tweet1.png" alt="customer testimonial 1" id="custReview1" class="zoom">
-                </div>
-                <div class="column">
-                    <img src="./images/tweet1.png" alt="customer testimonial 2" id="custReview2" class="zoom">
-                </div>
-                <div class="column">
-                    <img src="./images/tweet1.png" alt="customer testimonial 3" id="custReview3" class="zoom">
+            <div class = "row"> 
+                <div class="columns">
+                    <div class="column">
+                        <img src="./images/tweet1.png" alt="customer testimonial 1" id="custReview1" class="zoom">
+                    </div>
+                    <div class="column">
+                        <img src="./images/tweet1.png" alt="customer testimonial 2" id="custReview2" class="zoom">
+                    </div>
+                    <div class="column">
+                        <img src="./images/tweet1.png" alt="customer testimonial 3" id="custReview3" class="zoom">
+                    </div>          
                 </div> 
+                <div class="bottom-dots">
+                    <button onclick="dot1()"><i class="material-icons" id="dot1">stop_circle</i></button>
+                    <button onclick="dot2()"><i class="material-icons" id="dot2">stop_circle</i></button>
+                    <button onclick="dot3()"><i class="material-icons" id="dot3">stop_circle</i></button>
+                    <button onclick="dot4()"><i class="material-icons" id="dot4">stop_circle</i></button>
+                    <button onclick="dot5()"><i class="material-icons" id="dot5">stop_circle</i></button>
+                    <button onclick="dot6()"><i class="material-icons" id="dot6">stop_circle</i></button>
+                </div>                           
             </div>
         </div>
 
       <!-- $$$$$ Section -->
+        <div class="pricing-table" id="pricing-table"> 
+    <div class="pricing-card table1">
+      <h3 class="pricing-card-header table1">Basic</h3>
+        <div class="ribbon">
+       <div class="label">FREE!</div>
+        </div>
+      <div class="price"><sup>$</sup>0.00<span>/Month</span></div>
+      <ul>
+        <li><strong>1</strong> 1</li>
+        <li><strong>1</strong> 1</li>
+        <li><strong>1</strong> 1</li>
+        <li><strong>1</strong> 1</li>
+        <li><strong>1</strong> 1</li>
+      </ul>
+      <a href="#" class="order-btn">Get Nudge Now</a>
+      </div>
+    <div class="pricing-card table2">
+      <h3 class="pricing-card-header table2">Gold</h3>
+      <div class="price"><sup>$</sup>4.99<span>/Month</span></div>
+      <ul>
+        <li><strong>1</strong> 1</li>
+        <li><strong>1</strong> 1</li>
+        <li><strong>1</strong> 1</li>
+        <li><strong>1</strong> 1</li>
+        <li><strong>1</strong> 1</li>
+      </ul>
+      <a href="#" class="order-btn">Get Nudge Now</a>
+    </div>
+    <div class="pricing-card table3">
+      <h3 class="pricing-card-header table3">Diamond</h3>
+        <div class="ribbon">
+       <div class="label">Best Deal</div>
+        </div>
+      <div class="price"><sup>$</sup>9.99<span>/Month</span></div>
+      <ul>
+        <li><strong>1</strong> 1</li>
+        <li><strong>1</strong> 1</li>
+        <li><strong>1</strong> 1</li>
+        <li><strong>1</strong> 1</li>
+        <li><strong>1</strong> 1</li>
+      </ul>
+      <a href="#" class="order-btn">Get Nudge Now</a>
+    </div>
+       </div>
 
-        
       <!-- About Us Section -->
 
         <div class="about_us">
@@ -137,14 +220,14 @@
                 <figcaption>Christina Song</figcaption>
                 <caption><em>Features</em><br></caption>
                 <p class="github link"><a href="https://github.com/csong202">Github link</a></p>
-                <p class="linkedIn link"><a href="https://www.linkedin.com/">LinkedIn link</a></p>
+                <p class="linkedIn link"><a href="https://www.linkedin.com/in/christina-song202/">LinkedIn link</a></p>
             </figure>
             <figure>
                 <img src="images/discord-pfp.png" alt="Jessica Nguyen">
                 <figcaption>Jessica Nguyen</figcaption>
                 <caption><em>Business Manager</em><br></caption>
                 <p class="github link"><a href="https://github.com/jessicanguyenn">Github link</a></p>
-                <p class="linkedIn link"><a href="https://www.linkedin.com/">LinkedIn link</a></p>
+                <p class="linkedIn link"><a href="https://www.linkedin.com/in/jessnguyenn/">LinkedIn link</a></p>
             </figure>
             <figure>
                 <img src="images/discord-pfp.png" alt="Diane Tsang">
@@ -200,8 +283,58 @@
                 </div>
             </div>
         </div>
-      
 
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="row">
+            <div class="column">
+                <!-- <img src="images/nudge-logo.png" alt="Nudge Logo"> -->
+                <h3>NUDGE</h3>
+                <p style="margin-bottom:10px">
+                    Nudge.... is cool. 
+                    [insert one sentence summary of what nudge is]
+                </p>
+                <p style="font-weight:600; font-size:17px;">slogan??</p>
+            </div>
+            <div class="column">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <!-- <li><a href="#home">Home</a></li> -->
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#cust-reviews">Customer Satisfaction</a></li>
+                    <li><a href="#pricing-table">Pricing</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#faq">FAQ</a></li>                
+                </ul>
+            </div>
+            <div class="column">
+                <h4>DOWNLOAD</h4>
+                <img src="images/download_on_app_store.png" alt="Download on the App Store">
+                <img src="images/download_on_goog_play.png" alt="Get it on Google Play">
+            </div>
+            
+        </div>
+        <div class="follow-us">
+            <h4>FOLLOW US</h4>
+            <div class="socials w3-large">
+                <i class="fab fa-facebook-f fa-lg" title="Facebook"></i>
+                <i class="fab fa-twitter" title="Twitter"></i>
+                <i class="fab fa-linkedin-in" title="LinkedIn"></i>
+                <i class="fab fa-instagram" title="Instagram"></i>
+            </div>        
+        </div>
+    </div>
+    <div class="bottom-band">
+        <div class="copyright">
+            <p>2020 © Nudge Inc.</p>
+        </div>
+        <div class="privacy">
+            <p>Privacy & Terms</p>
+        </div>
+    </div>
+      
+    <script src="main.js" language="JavaScript" type="text/javascript">
+        </script>
     <script>
         // call function to display random customer testimonials when page is reloaded
         window.onload = displayReviews;
@@ -213,9 +346,11 @@
         AOS.init(
             {
                 offset: 200,
-                duration: 1500,
+                duration: 1250,
             }
         );
     </script>
+    
     </body>
+
 </html>
