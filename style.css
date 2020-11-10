@@ -440,22 +440,50 @@ button:hover{
 
 /*ABOUT US SECTION*/
 
-#about-us{
-  padding:2%;
+div.about_us{
+    background-color: #171717;
+    color: #F4F8FD;
+}
+
+div.about_us h1{
+    color:#F2F21F;
+}
+
+h2{
+    
 }
 
 p.introinfo{
+    
     font-size: 25px;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+div.about_us img{
+    transition: transform .4s;
+    
+}
+
+div.about_us img:hover{
+    transform: scale(1.1);
+}
+
+section.r1 p{
+    background-color: ;
+    display: inline;
+}
+section.r2 p{
+    background-color: ;
+    display: inline;
 }
 
 section{
+    
     padding: 20px;
     display: flex;
     flex-direction: row;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 
 }
+
 
 section button{
     border-radius: 20px;
@@ -469,6 +497,7 @@ section .link a{
     border-radius: 50%;
     display: inline-block;
     height: 30px;
+    margin-top: 5px;
     position: relative;
     text-indent: -999999999px;
     text-decoration: none;
@@ -477,15 +506,30 @@ section .link a{
 
 }
 
+section .linkedIn a{
+    background-size: 45px;
+    background-position: center;
+}
 
-section .link a:hover{
-    background-color: #3835ec;
+section .github a{
+    background-size: 51px;
+    background-position: center;
+    position: relative;
+}
+
+section .github a:hover{
+    background-color:#F2F21F;
     box-shadow: gray 0 0 10px;
 }
 
+section .linkedIn a:hover{
+    background-color: #32D4E6;
+    box-shadow: gray 0 0 10px;
+}
 
 section .github a{
     background-image: url("images/github.png");
+    size: ;
 }
 
 
@@ -495,10 +539,17 @@ section .linkedIn a{
 
 
 .people {
-    color: black;
+    
     padding: 20px;
     display: flex;
     flex-direction: row;
+    
+}
+
+figcaption{
+    color: #F2F21F;
+    font-size: 22px;
+    margin-top: 10px;
 }
 
 .people a {
@@ -512,12 +563,11 @@ section .linkedIn a{
     width: 200px;
 }
 .people figure img {
-    border: 1px solid white;
+    border: 1px solid whitesmoke;
     border-radius: 50%;
     box-shadow: grey 0 0 10px;
     width: 150px;
 }
-
 
 
 /* /////////////////////////////////////////////////////////////////////////FAQ Section////////////////////////////////////////////////////////////////////////////////////// */
