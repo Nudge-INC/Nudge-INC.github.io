@@ -18,7 +18,7 @@ h1 {
 h2 {
     font-family: "Montserrat", sans-serif;
 }
-p {
+p , figcaption, caption{
     font-family: 'Raleway', sans-serif;
 }
 
