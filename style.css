@@ -165,7 +165,7 @@ button:hover{
     box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, .2);
     display: flex;
     align-items: center;
-    border-radius: .8rem;
+    border-radius: 0rem;
   }
   #more {display: none;}
   #more2 {display: none;}
