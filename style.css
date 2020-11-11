@@ -691,7 +691,7 @@ body{
 
 }
 .pricing-table{
-    background-image: linear-gradient(150deg,#312454,#472664 );
+    background-image: linear-gradient(150deg,#171717,#171717 );
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -703,7 +703,7 @@ body{
 .pricing-card{
   flex: 1;
   max-width: 400px;
-  background-color: #e7d742;
+  background-color: #ffe561;
   margin: 500px 20px;
   text-align: center;
   cursor: pointer;
