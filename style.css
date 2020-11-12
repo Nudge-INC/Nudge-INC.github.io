@@ -103,6 +103,7 @@ button:hover{
 .home {
   height: 100%;
   background-color: black;
+  display: relative;
 }
 
 .home-background{
@@ -116,7 +117,7 @@ button:hover{
 .home-text{
   width: 50%;
   height: 30%;
-  padding: 40px 40px 40px 40px;
+  padding: 50px 40px 40px 40px;
   margin: auto;
   position: absolute;
   text-align: center;
@@ -127,7 +128,7 @@ button:hover{
   outline-offset: 10px;
   outline: 4px solid #e7d742;
   display: inline-block;
-  bottom: 40%;
+  bottom: 35%;
   right: 25%;
 }
 
@@ -149,7 +150,7 @@ button:hover{
   position: absolute;
   transform: rotate(45deg);
   bottom:8%;
-  right:50%;
+  right:48%;
   border-radius: 5px;
 }
 
