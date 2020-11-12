@@ -247,7 +247,7 @@ button:hover{
 /* ------------ CUSTOMER TESTIMONIALS ------------- */
 .cust-reviews {   
     width: 100%;
-    height: 95vh;
+    height: 90vh;
     padding: 40px 20px;
     padding-bottom: 30px;
     background-color: #171717;
@@ -287,7 +287,7 @@ button:hover{
     padding-bottom: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
 }
 .cust-reviews .row::after {
     position: absolute;
@@ -309,10 +309,11 @@ button:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
 }
 .cust-reviews .columns .column {  
-    width: 360px;
+    /* width: 360px; */
+    width: 25vw;
     height: 45vh;                
 }
 .cust-reviews .column img {
@@ -367,48 +368,52 @@ button:hover{
 /* RESPONSIVE CUSTOMER TESTIMONIALS */
 @media screen and (max-width: 1155px) {
   .cust-reviews {
-    height: 80vh
+    height: 84vh
   }
+  
   .cust-reviews .row .columns .column {
-    width: 290px;
-    height: 38vh
+    width: 28vw;
+    height: 45vh
   }
   .cust-reviews .row {
-    height: 50vh;
+    height: 54vh;
   }
   .cust-reviews .bottom-dots {
-    margin-top: 5px;
+    margin-top: 9px;
     width: 25vw;
   } 
   .cust-reviews .bottom-dots i {
     font-size: 1.45vw;
   }
 }
-@media screen and (max-width: 950px) {
-  .cust-reviews .row .columns .column {
-    width: 250px;
+@media screen and (max-width: 955px) {
+  .cust-reviews .row {
+    height: 52vh;
   }
-  /* .cust-reviews .bottom-dots {
-    width: 22vw;
-  } */
-  /* .cust-reviews .bottom-dots i {
-    font-size: 16px;
-  } */
+  .cust-reviews h2 {
+    font-size: 4vw;
+  }
+  .cust-reviews p {
+    font-size: 2.5vw;
+  }
+  .cust-reviews .row .columns .column {
+    height: 40vh;
+  }
 }
 @media screen and (max-width: 900px) {
   .cust-reviews {
-    height: 75vh;
+    height: 80vh;
   }
   .cust-reviews .row {
-    height: 45vh;
+    height: 50vh;
   }
   .cust-reviews .columns {
     justify-content: center;
     margin-bottom: 0;
   }
-  .cust-reviews .column {
-    width: 420px;
-    height: 30vh;
+  .cust-reviews .row .columns .column {
+    width: 300px;;
+    height: 42vh;
   }
   #custReview1, #custReview3 {
     display: none;
@@ -422,20 +427,59 @@ button:hover{
   }
 }
 @media screen and (max-width: 750px) {
+  .cust-reviews {
+    height: 75vh;
+  }
   .cust-reviews .bottom-dots {
-    width: 30vw;
+    /* width: 30vw; */
   }
   .cust-reviews .bottom-dots i {
     font-size: 14px;
   }
 }
-@media screen and (max-width: 540px) {
-  .cust-reviews .bottom-dots {
-    width: 40vw;
+@media screen and (max-width: 600px) {
+  .cust-reviews .row .columns .column {
+    width: 50vw;
+    height: 41vh;
   }
-  /* .cust-reviews .bottom-dots i {
+  .cust-reviews .bottom-dots {
+    width: 30vw;
+  }
+  .cust-reviews .bottom-dots i {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .cust-reviews h2 {
+    font-size: 20px;
+  }
+  .cust-reviews p {
+    font-size: 16px;
+  }
+  .cust-reviews .row .columns .column {
+    height: 35vh;
+  }
+  .cust-reviews .bottom-dots i {
     font-size: 12px;
-  } */
+  }
+}
+@media screen and (max-width: 475px) {
+  .cust-reviews {
+    height: 65vh;
+    font-size: 10px;
+  }
+  .cust-reviews .row {
+    padding: 0.5rem;
+    height: 42vh;
+  }
+  .cust-reviews .row .columns .column {
+    height:30vh;
+  }
+}
+@media screen and (max-width: 380px) {
+  .cust-reviews .row {
+    height: 37vh;
+  }
 }
 
 /*ABOUT US SECTION*/
