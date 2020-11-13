@@ -251,6 +251,7 @@ button:hover{
 .cust-reviews {   
     width: 100%;
     height: 90vh;
+    min-height: 700px;
     padding: 40px 20px;
     padding-bottom: 30px;
     background-color: #171717;
@@ -286,11 +287,12 @@ button:hover{
     position: relative;
     z-index: 1;
     height: 60vh;
-    padding: 0.8rem;
+    min-height: 450px;
+    padding: 12px;
     padding-bottom: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .cust-reviews .row::after {
     position: absolute;
@@ -317,7 +319,8 @@ button:hover{
 .cust-reviews .columns .column {  
     /* width: 360px; */
     width: 25vw;
-    height: 45vh;                
+    height: 45vh;
+    min-height: 300px;             
 }
 .cust-reviews .column img {
     width: inherit;
@@ -336,6 +339,7 @@ button:hover{
 }
 .cust-reviews .bottom-dots {
     width: 20vw;
+    min-width: 200px;
     align-self: center;
     margin-top: 22px;
     display: flex;
@@ -373,49 +377,41 @@ button:hover{
   .cust-reviews {
     height: 84vh
   }
-  
-  .cust-reviews .row .columns .column {
-    width: 28vw;
-    height: 45vh
-  }
   .cust-reviews .row {
     height: 54vh;
   }
+  .cust-reviews .row .columns .column {
+    width: 28vw;
+    min-height: 280px;
+  } 
   .cust-reviews .bottom-dots {
     margin-top: 9px;
-    width: 25vw;
   } 
   .cust-reviews .bottom-dots i {
     font-size: 1.45vw;
   }
 }
 @media screen and (max-width: 955px) {
-  .cust-reviews .row {
-    height: 52vh;
-  }
   .cust-reviews h2 {
     font-size: 4vw;
   }
   .cust-reviews p {
     font-size: 2.5vw;
   }
-  .cust-reviews .row .columns .column {
-    height: 40vh;
+  .cust-reviews {
+    min-height: 650px;
+  }
+  .cust-reviews .row {
+    min-height: 420px;
   }
 }
 @media screen and (max-width: 900px) {
-  .cust-reviews {
-    height: 80vh;
-  }
-  .cust-reviews .row {
-    height: 50vh;
-  }
   .cust-reviews .columns {
     justify-content: center;
     margin-bottom: 0;
   }
   .cust-reviews .row .columns .column {
-    width: 300px;;
+    width: 300px;
     height: 42vh;
   }
   #custReview1, #custReview3 {
@@ -423,30 +419,17 @@ button:hover{
   }
   .cust-reviews .bottom-dots {
     margin-top: 0; 
-    width: 27vw;
   }
   .cust-reviews .bottom-dots i {
     font-size: 1.8vw;
   }
 }
-@media screen and (max-width: 750px) {
-  .cust-reviews {
-    height: 75vh;
-  }
-  .cust-reviews .bottom-dots {
-    /* width: 30vw; */
-  }
-  .cust-reviews .bottom-dots i {
-    font-size: 14px;
-  }
-}
 @media screen and (max-width: 600px) {
-  .cust-reviews .row .columns .column {
-    width: 50vw;
-    height: 41vh;
+  .cust-reviews {
+    min-height: 600px;
   }
-  .cust-reviews .bottom-dots {
-    width: 30vw;
+  .cust-reviews .row {
+    min-height: 350px;
   }
   .cust-reviews .bottom-dots i {
     font-size: 13px;
@@ -459,29 +442,18 @@ button:hover{
   .cust-reviews p {
     font-size: 16px;
   }
+  .cust-reviews .row {
+    min-height: 400px;
+  }
   .cust-reviews .row .columns .column {
-    height: 35vh;
+    min-width: 280px;
+    min-height: 250px;
+  }
+  .cust-reviews .bottom-dots {
+    min-width: 150px;
   }
   .cust-reviews .bottom-dots i {
     font-size: 12px;
-  }
-}
-@media screen and (max-width: 475px) {
-  .cust-reviews {
-    height: 65vh;
-    font-size: 10px;
-  }
-  .cust-reviews .row {
-    padding: 0.5rem;
-    height: 42vh;
-  }
-  .cust-reviews .row .columns .column {
-    height:30vh;
-  }
-}
-@media screen and (max-width: 380px) {
-  .cust-reviews .row {
-    height: 37vh;
   }
 }
 
