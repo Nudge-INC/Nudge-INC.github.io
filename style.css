@@ -162,7 +162,7 @@ button:hover{
 .blog-post{
     width: 100%;
     max-width: 100000rem;
-    padding: 1rem;
+    padding: 5rem;
     background-color: #171717;
     
     display: flex;
