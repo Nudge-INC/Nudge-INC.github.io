@@ -152,8 +152,7 @@ html, body{
     width: 100%;
     max-width: 100000rem;
     padding: 5rem;
-    background-color:transparent;
-    background-image: url("./images/solidgrey.jpg");
+    background-color: #171717;
     box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, .2);
     display: flex;
     align-items: center;
