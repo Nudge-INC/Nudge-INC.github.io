@@ -813,15 +813,15 @@ body{
   transition: .2s linear;
 }
 .price sup, .price span{
-  font-size: 22px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 600;
 }
 .price{
     color: black
 }
 
 .pricing-card:hover .price{
-  color: #fff;
+  color: #171717;
 
 }
 .pricing-card:hover .ribbon .label {
@@ -829,9 +829,8 @@ body{
 }
 
 .pricing-card li{
-  font-size: 23px;
+  font-size: 19px;
   padding: 12px 0;
-  text-transform: uppercase;
   color: #000;
 
 }
