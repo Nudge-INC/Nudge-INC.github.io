@@ -74,7 +74,7 @@ header{
 }
 
 .nav__links li a:hover {
-    color: #F1F119
+    color: #e7d742
 }
 
 li, a, button{
@@ -96,7 +96,7 @@ button{
 }
 
 button:hover{
-    background-color: rgba(113, 223, 238, 0.8);
+    background-color: rgba(244, 248, 253, 0.8);
 
 }
 
