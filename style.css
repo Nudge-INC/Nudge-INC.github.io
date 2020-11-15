@@ -467,10 +467,6 @@ div.about_us h1{
     color:#F2F21F;
 }
 
-h2{
-    
-}
-
 p.introinfo{
     
     font-size: 25px;
@@ -537,17 +533,16 @@ section .github a{
 
 section .github a:hover{
     background-color:#F2F21F;
-    box-shadow: gray 0 0 10px;
+    
 }
 
 section .linkedIn a:hover{
     background-color: #32D4E6;
-    box-shadow: gray 0 0 10px;
+    
 }
 
 section .github a{
     background-image: url("images/github.png");
-    size: ;
 }
 
 
@@ -581,7 +576,6 @@ figcaption{
     width: 200px;
 }
 .people figure img {
-    border: 1px solid whitesmoke;
     border-radius: 50%;
     box-shadow: grey 0 0 10px;
     width: 150px;
