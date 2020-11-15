@@ -81,7 +81,12 @@ function displayReviews() {
 
 function dot1() {
     console.log("dot1 clicked");
-    reviewLinks = origReviewLinks;
+    reviewLinks = ["./images/tweet1.png",
+    "./images/tweet2.png",
+    "./images/tweet3.png",
+    "./images/tweet4.png",
+    "./images/tweet5.png",
+    "./images/tweet6.png"];
     shift = 0;
     displayReviews();
 }
