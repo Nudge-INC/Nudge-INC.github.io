@@ -728,7 +728,7 @@ body{
   overflow: hidden;
   margin: auto;
   color: #2d2d2d;
-  transition: .3s linear;
+  transition: .6s linear;
 
 
 }
@@ -761,10 +761,10 @@ body{
   color: #fff;
   padding: 12px 30px;
   border-radius: 0 0 200px 200px;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
   font-weight: 600;
-  transition: .4s linear;
+  transition: .6s linear;
 }
 .table2 .pricing-card-header{
   background-color: #ff7a59;
@@ -775,7 +775,7 @@ body{
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 600;
-  transition: .4s linear;
+  transition: .6s linear;
 }
 .table3 .pricing-card-header{
   background-color: #0e579c;
@@ -783,10 +783,10 @@ body{
   color: #fff;
   padding: 12px 30px;
   border-radius: 0 0 200px 200px;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
   font-weight: 600;
-  transition: .4s linear;
+  transition: .6s linear;
 }
 .pricing-card:hover .pricing-card-header{
   box-shadow: 0 0 0 26em #F2F21F;
