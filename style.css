@@ -17,6 +17,8 @@ h1 {
 }
 h2 {
     font-family: "Montserrat", sans-serif;
+    /* color: #F1F119;
+    background-color: #171717; */
 }
 p , figcaption, caption{
     font-family: 'Raleway', sans-serif;
@@ -266,10 +268,12 @@ button:hover{
     /* background-color: #171717; */
     color: #F1F119 ;
     text-align: left;
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
+    font-size: 2em;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    /* font-weight: 500; */
     margin: 0.8rem;
+    margin-left: 0;
 }
 .cust-reviews p {
     /* background-color: #2D2D39; */
