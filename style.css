@@ -160,6 +160,58 @@ button:hover{
   border-color: #F4F8FD;
 }
 
+@media screen and (max-height: 600px) {
+  .home-text{
+    padding: 40px 40px 40px 40px;
+  }
+  .home-text h1{
+    font-size: 45px;
+  }
+  
+  .home-text h2{
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-height: 800px) {
+  .home-text{
+    padding: 60px 40px 40px 40px;
+  }
+  .home-text h1{
+    font-size: 60px;
+  }
+  
+  .home-text h2{
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-height: 1000px) {
+  .home-text{
+    padding: 70px 40px 40px 40px;
+  }
+  .home-text h1{
+    font-size: 70px;
+  }
+  
+  .home-text h2{
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-height: 1200px) {
+  .home-text{
+    padding: 80px 40px 40px 40px;
+  }
+  .home-text h1{
+    font-size: 80px;
+  }
+  
+  .home-text h2{
+    font-size: 35px;
+  }
+}
+
 /* features */
 .blog-post{
     width: 100%;
