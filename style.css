@@ -121,8 +121,8 @@ button:hover{
   margin: auto;
   position: absolute;
   text-align: center;
-  background-color: #2D2D39;
-  color: #e7d742;
+  background-color: #171717;
+  color: #F1F119;
   /*text-shadow: -1px 0 #171717, 0 1px #171717, 1px 0 #171717, 0 -1px#171717;
   */
   outline-offset: 10px;
