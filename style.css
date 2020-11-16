@@ -641,7 +641,7 @@ figcaption{
 /* /////////////////////////////////////////////////////////////////////////FAQ Section////////////////////////////////////////////////////////////////////////////////////// */
 .Faq-background{
     background-color:#171717;
-
+    
 }
 .FAQ-Section{
     background: 
@@ -649,6 +649,9 @@ figcaption{
         max-width: 50%;
         background-position: -600px -500px;
         color:#171717;
+        
+        
+    
 
 }
 .FAQ-H2{
@@ -663,7 +666,8 @@ figcaption{
 .container-questions {
     transform: translate(110%,0%);
     width: 95%;
-    height: 420px
+    height: 420px;
+    padding-bottom: 50px;
 }
 .container-questions ul{
     margin: 0px 0px 0px 0px;
@@ -710,7 +714,7 @@ figcaption{
 .searchbar-contour {
     position: absolute; 
     left: 33%;
-    transform: translate(-75%, -100px);
+    transform: translate(-75%, -112px);
     height: 40px;
     font-family: 'Raleway', sans-serif;
     background: #ffffff;
@@ -742,8 +746,9 @@ figcaption{
 }
 @media screen and (max-width: 1440px){
     .searchbar-contour{
-        transform: translate(-75%, 750%);
+        transform: translate(-75%, 50%);
         width: 40% ;
+    
     }
 }
 /* ------------------------------------------------Contact Us Section ------------------------------------------------------*/
@@ -752,12 +757,12 @@ figcaption{
   max-width: 600px;
   background: #171717;
   position:  absolute;
-  transform: translate(40%, 20%);
-  padding: 30px 40px;
+  transform: translate(32%, 20%);
+  padding: 30px 40px 30px 40px;
   box-sizing: border-box;
   border-radius: 8px;
   text-align: center;
-
+  margin-bottom: 50px;
 }
 
 .contact-us h1{
