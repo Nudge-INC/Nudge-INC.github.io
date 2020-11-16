@@ -710,7 +710,7 @@ figcaption{
 .searchbar-contour {
     position: absolute; 
     left: 33%;
-    transform: translate(-75%, 100px);
+    transform: translate(-75%, -100px);
     height: 40px;
     font-family: 'Raleway', sans-serif;
     background: #ffffff;
@@ -745,6 +745,61 @@ figcaption{
         transform: translate(-75%, 750%);
         width: 40% ;
     }
+}
+/* ------------------------------------------------Contact Us Section ------------------------------------------------------*/
+.contact-us {
+  width : 85;
+  max-width: 600px;
+  background: #171717;
+  position:  absolute;
+  transform: translate(40%, 20%);
+  padding: 30px 40px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: center;
+
+}
+
+.contact-us h1{
+  color: yellow;
+  margin-top: 0;
+  font-weight: 200;
+}
+
+.contact-us .contact-textb{
+  border: 1px solid gray;
+  margin: 8px 0;
+  padding: 12px 18px;
+  border-radius: 8px;
+}
+
+.contact-us .contact-textb label{
+  display:block;
+  text-align: left;
+  color: yellow;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.contact-us .contact-textb input, .contact-us .contact-textb textarea{
+  color: yellow;
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 18px;
+  margin-top: 6px;
+}
+
+.contact-us .contact-button{
+  display: block;
+  background: yellow;
+  padding: 14px 0;
+  color: #171717;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 8px;
+  width: 100%;
 }
 /* $$$$$ Section */
 }
