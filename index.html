@@ -39,29 +39,27 @@
         <!-- HOME -->
 
         <div class = "home" id="home">
-            <div class = "home-background">
-                <div class = "text">
+            <div class = "home-background"></div>
+            <div class = "home-text">
                 <h1>WELCOME TO NUDGE!</h1>
-                <h2>By Commuters, For Commuters</h2>
-                </div>
-                <div><a href="#features"><i class = "arrow"></i></a></div>
+                <h2>AI based application that wakes you up upon arrival to your destination.</h2>
             </div>
+            <div><a href="#features"><i class = "arrow"></i></a></div>
         </div>
        
         <!-- Features Section-->
 
        <div class="blog-post" id="features">
             <div class="blog-post__img">
-              <img src="images/map.png" alt="">
+              <img src="images/asleep.jpg" alt="">
               </div>
-              <div class="blog-post__info">
+              <div class="blog-post__info" data-aos="fade-right">
                 <div class="blog-post__date">
                 </div>
                 <h1 class="blog-post__title">GPS Alarm Functionality</h1>
                 <p class="blog-post__text">
                   Fell asleep and missed your stop? Say no more! With the Nudge app, you can pre-program your bus route and get the app to wake you up at your destination.<span id="dots"></span><span id="more">
-                     <br><br>
-                    
+                     <br><br> 
                           Nudge's GPS alarm clock gives you the ability to set your route on the app and will notify you on approach. It can be used as a general GPS to give you the recommended routes that will take you to your destination in the fastest and easiest way possible.
                           Nudge's most popular feature wakes you up if you dozed off and you're nearing your stop! Perfect for everyday commuters.
                   </span></p>
@@ -73,7 +71,7 @@
           <div class="blog-post__img">
             <img src="images/jogging.jpg" alt="">
             </div>
-            <div class="blog-post__info">
+            <div class="blog-post__info" data-aos="fade-right">
               <div class="blog-post__date">
               </div>
               <h1 class="blog-post__title">Speedometer</h1>
@@ -81,17 +79,16 @@
                   You don't have to wait for New Year's Day to start exercising. Enhance your fitness routine with Nudge's speedometer function!<span id="dots2"></span><span id="more2">
                   <br><br>    
                  
-                           Nudge's GPS alarm clock gives you the ability to set your route on the app and will notify you on approach. It can be used as a general GPS to give you the recommended routes that will take you to your destination in the fastest and easiest way possible.
-                           Nudge's most popular feature wakes you up if you dozed off and you're nearing your stop! Perfect for everyday commuters.
+                           Getting fit just got easier with Nudge's built-in speedometer! Track your speed while running, biking or any other physical activity with your phone or smartwatch.
                    </span></p>
                    <button onclick="myFunction2()" id="myBtn2">Read more</button>
             </div>
           </div>
           <div class="blog-post">
               <div class="blog-post__img">
-                <img src="images/passport-map-world-trip-preview.jpg" alt="">
+                <img src="images/travellers.jpg" alt="">
                 </div>
-                <div class="blog-post__info">
+                <div class="blog-post__info" data-aos="fade-right">
                   <div class="blog-post__date">
                   </div>
                   <h1 class="blog-post__title">Standard GPS Function</h1>
@@ -126,14 +123,29 @@
                     </div>          
                 </div> 
                 <div class="bottom-dots">
-                    <i class="material-icons" id="dot1">stop_circle</i>
-                    <i class="material-icons" id="dot2">stop_circle</i>
-                    <i class="material-icons" id="dot3">stop_circle</i>
+                    <button onclick="dot1()"><i class="material-icons" id="dot1">stop_circle</i></button>
+                    <button onclick="dot2()"><i class="material-icons" id="dot2">stop_circle</i></button>
+                    <button onclick="dot3()"><i class="material-icons" id="dot3">stop_circle</i></button>
+                    <button onclick="dot4()"><i class="material-icons" id="dot4">stop_circle</i></button>
+                    <button onclick="dot5()"><i class="material-icons" id="dot5">stop_circle</i></button>
+                    <button onclick="dot6()"><i class="material-icons" id="dot6">stop_circle</i></button>
                 </div>                           
             </div>
         </div>
 
       <!-- $$$$$ Section -->
+    <div class="pricing-h2" style="padding:20px;background-color:#171717">
+        <div data-aos="zoom-in-right">
+            <h2 id="pricingH2" style="font-size:2em;color:#F1F119;font-size:2em;margin-bottom:10px;">
+                Subscription Plans
+            </h2>
+            <p style="color:#F4F8FD;font-family:'Raleway', sans-serif;font-size:24px;">
+                Here are our payment plans!
+            </p>
+        </div>
+        
+    </div>
+    
         <div class="pricing-table" id="pricing-table"> 
     <div class="pricing-card table1">
       <h3 class="pricing-card-header table1">Basic</h3>
@@ -142,111 +154,97 @@
         </div>
       <div class="price"><sup>$</sup>0.00<span>/Month</span></div>
       <ul>
-        <li><strong>1</strong> 1</li>
-        <li><strong>1</strong> 1</li>
-        <li><strong>1</strong> 1</li>
-        <li><strong>1</strong> 1</li>
-        <li><strong>1</strong> 1</li>
+        <li><strong></strong>Limited Nudge Features </li>
+        <li><strong></strong>No custumization </li>
+        <li><strong></strong>Unlimited  programmable routes</li>
+        <li><strong></strong>With Ads</li>
+        <li><strong></strong>Tech support between office hours</li>
       </ul>
       <a href="#" class="order-btn">Get Nudge Now</a>
       </div>
     <div class="pricing-card table2">
-      <h3 class="pricing-card-header table2">Gold</h3>
-      <div class="price"><sup>$</sup>4.99<span>/Month</span></div>
-      <ul>
-        <li><strong>1</strong> 1</li>
-        <li><strong>1</strong> 1</li>
-        <li><strong>1</strong> 1</li>
-        <li><strong>1</strong> 1</li>
-        <li><strong>1</strong> 1</li>
-      </ul>
-      <a href="#" class="order-btn">Get Nudge Now</a>
-    </div>
-    <div class="pricing-card table3">
-      <h3 class="pricing-card-header table3">Diamond</h3>
+      <h3 class="pricing-card-header table2">Premium</h3>
         <div class="ribbon">
        <div class="label">Best Deal</div>
         </div>
-      <div class="price"><sup>$</sup>9.99<span>/Month</span></div>
+      <div class="price"><sup>$</sup>4.99<span>/Month</span></div>
       <ul>
-        <li><strong>1</strong> 1</li>
-        <li><strong>1</strong> 1</li>
-        <li><strong>1</strong> 1</li>
-        <li><strong>1</strong> 1</li>
-        <li><strong>1</strong> 1</li>
+        <li>All Nudge Features Unlocked</li>
+        <li>Full custumization</li>
+        <li>Unlimited programmable routes</li>
+        <li>No Ads</li>
+        <li>24/7 Premium Tech support</li>
       </ul>
       <a href="#" class="order-btn">Get Nudge Now</a>
     </div>
+   
        </div>
 
       <!-- About Us Section -->
 
-        <div style="background-color: white;" id="about-us">
-          <h1>About Team Nudge</h1>
-           <p class="introinfo">We are some university students who came with an idea for a product and decided to develop it into a project!</p>
+    <div class="about_us" id="about-us">
+        <div data-aos="zoom-in-right">
+            <h1>About Team Nudge</h1>
+            <p class="introinfo">
+                We are some university students who came with an idea for a product and decided to develop it into a project!
+            </p>
+        </div>
+        <!-- <h1 data-aos="fade-left">About Team Nudge</h1>
+         <p class="introinfo" data-aos="fade-left">We are some university students who came with an idea for a product and decided to develop it into a project!</p> -->
 
 
         <section class="people r1">
         
             <figure>
-                <img src="images/baby-yoda.jpg" alt="Nicholas Turbide">
+                <img src="images/Nick1.jpg" alt="Nicholas Turbide">
                 <figcaption>Nicholas Turbide</figcaption>
                 <caption><em>Costumer Service</em><br></caption>
-                <p class="github link"><a href="https://github.com/NicholasTurbide">Github link</a></p>
-                <p class="linkedIn link"><a href="https://www.linkedin.com/">LinkedIn link</a></p>
+                <p class="github link" title="Github"><a href="https://github.com/NicholasTurbide">Github link</a></p>
+                <p class="linkedIn link" title="LinkedIn"><a href="https://www.linkedin.com/in/nicholas-turbide-62b3021b8/">LinkedIn link</a></p>
             </figure>
             <figure>
-                <img src="images/zak.png" alt="Zakaria Oulli">
+                <img src="images/zak-icon.png" alt="Zakaria Oulli">
                 <figcaption>Zakaria Oulli</figcaption>
                 <caption><em>Arts and Design</em><br></caption>
-                <p class="github link"><a href="https://github.com/zakariaoulli">Github link</a></p>
-                <p class="linkedIn link"><a href="https://www.linkedin.com/">LinkedIn link</a></p>
+                <p class="github link" title="Github"><a href="https://github.com/zakariaoulli">Github link</a></p>
+                <p class="linkedIn link" title="LinkedIn"><a href="https://www.linkedin.com/in/zakariaoulli/">LinkedIn link</a></p>
             </figure>
             <figure>
-                <img src="images/discord-pfp.png" alt="Mohanad Mohamed">
+                <img src="images/Mohanad1.png" alt="Mohanad Mohamed">
                 <figcaption>Mohanad Mohamed</figcaption>
                 <caption><em>User Experience</em><br></caption>
-                <p class="github link"><a href="https://github.com/MohanadAhmed123">Github link</a></p>
-                <p class="linkedIn link"><a href="https://www.linkedin.com/">LinkedIn link</a></p>
+                <p class="github link" title="Github"><a href="https://github.com/MohanadAhmed123">Github link</a></p>
+                <p class="linkedIn link" title="LinkedIn"><a href="https://www.linkedin.com/in/mohanad-mohamed-9563261bb/">LinkedIn link</a></p>
             </figure>    
         </section>
         
-        <section class=people>
+        <section class="people r2">
             <figure>
-                <img src="images/discord-pfp.png" alt="Christina Song">
+                <img src="images/Christina1.jpg" alt="Christina Song">
                 <figcaption>Christina Song</figcaption>
-                <caption><em>Features</em><br></caption>
-                <p class="github link"><a href="https://github.com/csong202">Github link</a></p>
-                <p class="linkedIn link"><a href="https://www.linkedin.com/in/christina-song202/">LinkedIn link</a></p>
+                <caption><em>Product Design</em><br></caption>
+                <p class="github link" title="Github"><a href="https://github.com/csong202">Github link</a></p>
+                <p class="linkedIn link" title="LinkedIn"><a href="https://www.linkedin.com/in/christina-song-555039193/">LinkedIn link</a></p>
             </figure>
             <figure>
-                <img src="images/discord-pfp.png" alt="Jessica Nguyen">
+                <img src="images/Jessica3.png" alt="Jessica Nguyen">
                 <figcaption>Jessica Nguyen</figcaption>
                 <caption><em>Business Manager</em><br></caption>
-                <p class="github link"><a href="https://github.com/jessicanguyenn">Github link</a></p>
-                <p class="linkedIn link"><a href="https://www.linkedin.com/in/jessnguyenn/">LinkedIn link</a></p>
+                <p class="github link" title="Github"><a href="https://github.com/jessicanguyenn">Github link</a></p>
+                <p class="linkedIn link" title="LinkedIn"><a href="https://www.linkedin.com/in/jessnguyenn/">LinkedIn link</a></p>
             </figure>
             <figure>
-                <img src="images/discord-pfp.png" alt="Diane Tsang">
+                <img src="images/Diane1.jpg" alt="Diane Tsang">
                 <figcaption>Diane Tsang</figcaption>
                 <caption><em>Creative Director</em><br></caption>
-                <p class="github link"><a href="https://github.com/dianetsang">Github link</a></p>
-                <p class="linkedIn link"><a href="https://www.linkedin.com/">LinkedIn link</a></p>
+                <p class="github link" title="Github"><a href="https://github.com/dianetsang">Github link</a></p>
+                <p class="linkedIn link" title="LinkedIn"><a href="https://www.linkedin.com/in/diane-tsang-4291731b9/">LinkedIn link</a></p>
             </figure>
         </section>
 
-        <button id="more-info">Learn more</button>
-        <ul>
-            <li class="more-info">Learn More</li>
-        </ul>
-
-        <input type='text' ... list='listid'>
-            <datalist id='listid'>
-             <option label='label1' value='value1'>
-             <option label='label2' value='value2'>
         
-        </datalist>  
-        </div>
+
+    </div>
         
       <!-- FAQ Section -->
         <div class="Faq-background">
@@ -280,12 +278,73 @@
                 </div>
             </div>
         </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="row">
+            <div class="column">
+                <!-- <img src="images/nudge-logo.png" alt="Nudge Logo"> -->
+                <h3>NUDGE</h3>
+                <p style="margin-bottom:10px">
+                    AI based application that wakes you up upon arrival to your destination.
+                </p>
+                <p style="font-weight:600; font-size:17px;"></p>
+            </div>
+            <div class="column">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <!-- <li><a href="#home">Home</a></li> -->
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#cust-reviews">Customer Satisfaction</a></li>
+                    <li><a href="#pricing-table">Pricing</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#faq">FAQ</a></li>                
+                </ul>
+            </div>
+            <div class="column">
+                <h4>DOWNLOAD</h4>
+                <div class="download-pics">
+                    <img src="images/download_on_app_store.png" alt="Download on the App Store">
+                    <img src="images/download_on_goog_play.png" alt="Get it on Google Play">
+                </div>   
+            </div>
+            
+        </div>
+        <div class="download">
+            <h4>DOWNLOAD</h4>
+            <div class="download-pics">
+                <a href="https://www.apple.com/ca/app-store/" target="_blank" title="Apple App Store">
+                    <img src="images/download_on_app_store.png" alt="Download on the App Store">
+                </a>
+                <a href="https://play.google.com/store/apps" target="_blank" title="Google Play Store">
+                    <img src="images/download_on_goog_play.png" alt="Get it on Google Play">
+                </a>
+            </div>      
+        </div>
+        <div class="follow-us">
+            <h4>FOLLOW US</h4>
+            <div class="socials w3-large">
+                <i class="fab fa-facebook-f fa-lg" title="Facebook"></i>
+                <i class="fab fa-twitter" title="Twitter"></i>
+                <i class="fab fa-linkedin-in" title="LinkedIn"></i>
+                <i class="fab fa-instagram" title="Instagram"></i>
+            </div>        
+        </div>
+    </div>
+    <div class="bottom-band">
+        <div class="copyright">
+            <p>Copyright © 2020 Nudge Inc. All rights reserved</p>
+        </div>
+        <div class="privacy">
+            <p title="Privacy & Terms">Privacy & Terms</p>
+        </div>
+    </div>
       
     <script src="main.js" language="JavaScript" type="text/javascript">
         </script>
     <script>
         // call function to display random customer testimonials when page is reloaded
-        window.onload = shiftReviews;
+        window.onload = displayReviews;
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.js">    
     </script>
@@ -294,7 +353,7 @@
         AOS.init(
             {
                 offset: 200,
-                duration: 1500,
+                duration: 1250,
             }
         );
     </script>

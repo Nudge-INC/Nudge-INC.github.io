@@ -23,10 +23,7 @@ var origReviewLinks = ["./images/tweet1.png",
     "./images/tweet3.png",
     "./images/tweet4.png",
     "./images/tweet5.png",
-    "./images/tweet6.png",
-    "./images/tweet7.png",
-    "./images/tweet8.png",
-    "./images/tweet9.png"];
+    "./images/tweet6.png"];
 var reviewLinks = origReviewLinks;
 var shift = 0;
 window.setInterval(shiftReviews, 10000);
@@ -39,8 +36,8 @@ function shiftReviews() {
         reviewLinks[i] = reviewLinks[i+1];
     }
     shift += 1;
-    if (shift > 8) {
-        shift -= 9;
+    if (shift > 5) {
+        shift -= 6;
     }
     console.log("shift = " + shift);
     reviewLinks[reviewLinks.length-1] = firstImage;
@@ -54,21 +51,99 @@ function displayReviews() {
     document.getElementById("custReview2").src=reviewLinks[1];
     document.getElementById("custReview3").src=reviewLinks[2];
 
-    if ((shift==0) || (shift==1) || (shift==2)) {
+    // set dots
+    document.getElementById("dot1").style.color = "rgba(255,255,255,0.3)";
+    document.getElementById("dot2").style.color = "rgba(255,255,255,0.3)";
+    document.getElementById("dot3").style.color = "rgba(255,255,255,0.3)";
+    document.getElementById("dot4").style.color = "rgba(255,255,255,0.3)";
+    document.getElementById("dot5").style.color = "rgba(255,255,255,0.3)";
+    document.getElementById("dot6").style.color = "rgba(255,255,255,0.3)";
+
+    if (shift == 0) {
         document.getElementById("dot1").style.color = "rgba(255,255,255,0.6)";
-        document.getElementById("dot2").style.color = "rgba(255,255,255,0.3)";
-        document.getElementById("dot3").style.color = "rgba(255,255,255,0.3)";
     }
-    else if ((shift==3) || (shift==4) || (shift==5)) {
-        document.getElementById("dot1").style.color = "rgba(255,255,255,0.3)";
+    else if (shift == 1) {
         document.getElementById("dot2").style.color = "rgba(255,255,255,0.6)";
-        document.getElementById("dot3").style.color = "rgba(255,255,255,0.3)";
     }
-    else if ((shift==6) || (shift==7) || (shift==8)) {
-        document.getElementById("dot1").style.color = "rgba(255,255,255,0.3)";
-        document.getElementById("dot2").style.color = "rgba(255,255,255,0.3)";
+    else if (shift == 2) {
         document.getElementById("dot3").style.color = "rgba(255,255,255,0.6)";
     }
+    else if (shift == 3) {
+        document.getElementById("dot4").style.color = "rgba(255,255,255,0.6)";
+    }
+    else if (shift == 4) {
+        document.getElementById("dot5").style.color = "rgba(255,255,255,0.6)";
+    }
+    else if (shift == 5) {
+        document.getElementById("dot6").style.color = "rgba(255,255,255,0.6)";
+    }
+}
+
+function dot1() {
+    console.log("dot1 clicked");
+    reviewLinks = ["./images/tweet1.png",
+    "./images/tweet2.png",
+    "./images/tweet3.png",
+    "./images/tweet4.png",
+    "./images/tweet5.png",
+    "./images/tweet6.png"];
+    shift = 0;
+    displayReviews();
+}
+function dot2() {
+    console.log("dot2 clicked");
+    reviewLinks = ["./images/tweet2.png",
+    "./images/tweet3.png",
+    "./images/tweet4.png",
+    "./images/tweet5.png",
+    "./images/tweet6.png",
+    "./images/tweet1.png"];
+    shift = 1;
+    displayReviews();
+}
+function dot3() {
+    console.log("dot3 clicked");
+    reviewLinks = ["./images/tweet3.png",
+    "./images/tweet4.png",
+    "./images/tweet5.png",
+    "./images/tweet6.png",
+    "./images/tweet1.png",
+    "./images/tweet2.png"];
+    shift = 2;
+    displayReviews();
+}
+function dot4() {
+    console.log("dot4 clicked");
+    reviewLinks = ["./images/tweet4.png",
+    "./images/tweet5.png",
+    "./images/tweet6.png",
+    "./images/tweet1.png",
+    "./images/tweet2.png",
+    "./images/tweet3.png"];
+    shift = 3;
+    displayReviews();
+}
+function dot5() {
+    console.log("dot5 clicked");
+    reviewLinks = ["./images/tweet5.png",
+    "./images/tweet6.png",
+    "./images/tweet1.png",
+    "./images/tweet2.png",
+    "./images/tweet3.png",
+    "./images/tweet4.png"];
+    shift = 4;
+    displayReviews();
+}
+function dot6() {
+    console.log("dot6 clicked");
+    reviewLinks = ["./images/tweet6.png",
+    "./images/tweet1.png",
+    "./images/tweet2.png",
+    "./images/tweet3.png",
+    "./images/tweet4.png",
+    "./images/tweet5.png"];
+    shift = 5;
+    displayReviews();
 }
 /* ---- Customer Testimonials end ---- */
 
