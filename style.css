@@ -388,8 +388,8 @@ button:hover{
     transition: transform .2s;
 }
 .cust-reviews .zoom:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
     transform: scale(1.2); 
 }
 .cust-reviews .bottom-dots {
@@ -486,6 +486,11 @@ button:hover{
   .cust-reviews .row {
     min-height: 350px;
   }
+  .cust-reviews .zoom:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
   .cust-reviews .bottom-dots i {
     font-size: 13px;
   }
@@ -503,6 +508,12 @@ button:hover{
   .cust-reviews .row .columns .column {
     width: 280px;
     min-height: 250px;
+  }
+  .cust-reviews .zoom:hover {
+    /* disable zoom */
+    -ms-transform: scale(1); /* IE 9 */
+    -webkit-transform: scale(1); /* Safari 3-8 */
+    transform: scale(1); 
   }
   .cust-reviews .bottom-dots {
     min-width: 150px;
