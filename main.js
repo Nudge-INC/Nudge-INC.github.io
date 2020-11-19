@@ -18,15 +18,14 @@ $(window).scroll(function() {
 // main
 /* ------------CUSTOMER TESTIMONIALS------------------- */
 // declare global variables
-var origReviewLinks = ["./images/tweet1.png",
+var reviewLinks = ["./images/tweet1.png",
     "./images/tweet2.png",
     "./images/tweet3.png",
     "./images/tweet4.png",
     "./images/tweet5.png",
     "./images/tweet6.png"];
-var reviewLinks = origReviewLinks;
 var shift = 0;
-window.setInterval(shiftReviews, 10000);
+window.setInterval(shiftReviews, 7500);
 
 // function to shift reviews 
 function shiftReviews() {
@@ -46,37 +45,18 @@ function shiftReviews() {
 
 // function to display reviews
 function displayReviews() {
-    
-    document.getElementById("custReview1").src=reviewLinks[0];
-    document.getElementById("custReview2").src=reviewLinks[1];
-    document.getElementById("custReview3").src=reviewLinks[2];
+
+    // set photos
+    for (i = 1; i < 4; i++) {
+        document.getElementById("custReview" + i).src=reviewLinks[i-1];
+    }
 
     // set dots
-    document.getElementById("dot1").style.color = "rgba(255,255,255,0.3)";
-    document.getElementById("dot2").style.color = "rgba(255,255,255,0.3)";
-    document.getElementById("dot3").style.color = "rgba(255,255,255,0.3)";
-    document.getElementById("dot4").style.color = "rgba(255,255,255,0.3)";
-    document.getElementById("dot5").style.color = "rgba(255,255,255,0.3)";
-    document.getElementById("dot6").style.color = "rgba(255,255,255,0.3)";
+    for (i = 1; i < reviewLinks.length+1; i++) {
+        document.getElementById("dot" + i).style.color = "rgba(255,255,255,0.3)";
+    }
 
-    if (shift == 0) {
-        document.getElementById("dot1").style.color = "rgba(255,255,255,0.6)";
-    }
-    else if (shift == 1) {
-        document.getElementById("dot2").style.color = "rgba(255,255,255,0.6)";
-    }
-    else if (shift == 2) {
-        document.getElementById("dot3").style.color = "rgba(255,255,255,0.6)";
-    }
-    else if (shift == 3) {
-        document.getElementById("dot4").style.color = "rgba(255,255,255,0.6)";
-    }
-    else if (shift == 4) {
-        document.getElementById("dot5").style.color = "rgba(255,255,255,0.6)";
-    }
-    else if (shift == 5) {
-        document.getElementById("dot6").style.color = "rgba(255,255,255,0.6)";
-    }
+    document.getElementById("dot" + (shift + 1)).style.color = "rgba(255,255,255,0.6)";
 }
 
 function dot1() {
@@ -145,7 +125,6 @@ function dot6() {
     shift = 5;
     displayReviews();
 }
-/* ---- Customer Testimonials end ---- */
 
 function myFunction() {
     var dots = document.getElementById("dots");
