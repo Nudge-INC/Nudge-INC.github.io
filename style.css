@@ -774,27 +774,31 @@ figcaption{
     }
 }
 /* Contact Us Section*/
-
+.contact-us-background{
+  background-color: #171717;
+  height: 50%;
+  width: 100%;
+}
 .contact-us {
-  width : 85;
-  max-width: 600px;
+  background-color: #171717;
+  width : 50%;
   position:  absolute;
-  transform: translate(100%, 50%);
+  transform: translate(45%, 0%);
+  margin: 50px 50px 50px 50px;
   padding: 30px 40px 30px 40px;
   box-sizing: border-box;
   border-radius: 8px;
   text-align: center;
-  margin-bottom: 50px;
 }
 
 .contact-us h1{
-  color: darkslategray;
+  color: yellow;
   margin-top: 0;
   font-weight: 200;
 }
 
 .contact-us .contact-textb{
-  border: 1px solid darkslategray;
+  border: 1px solid yellow;
   margin: 8px 0;
   padding: 12px 18px;
   border-radius: 8px;
@@ -803,13 +807,13 @@ figcaption{
 .contact-us .contact-textb label{
   display:block;
   text-align: left;
-  color: darkslategray;
+  color: yellow;
   text-transform: uppercase;
   font-size: 14px;
 }
 
 .contact-us .contact-textb input, .contact-us .contact-textb textarea{
-  color: darkslategray;
+  color: yellow;
   width: 100%;
   border: none;
   background: none;
