@@ -668,7 +668,7 @@ figcaption{
 /* /////////////////////////////////////////////////////////////////////////FAQ Section////////////////////////////////////////////////////////////////////////////////////// */
 .Faq-background{
     background-color:#171717;
-
+    
 }
 .FAQ-Section{
     background: 
@@ -676,7 +676,6 @@ figcaption{
         max-width: 50%;
         background-position: -600px -500px;
         color:#171717;
-
 }
 .FAQ-H2{
     text-align: center;
@@ -690,7 +689,8 @@ figcaption{
 .container-questions {
     transform: translate(110%,0%);
     width: 95%;
-    height: 420px
+    height: 420px;
+    padding-bottom: 50px;
 }
 .container-questions ul{
     margin: 0px 0px 0px 0px;
@@ -737,7 +737,7 @@ figcaption{
 .searchbar-contour {
     position: absolute; 
     left: 33%;
-    transform: translate(-75%, 100px);
+    transform: translate(-75%, -112px);
     height: 40px;
     font-family: 'Raleway', sans-serif;
     background: #ffffff;
@@ -769,10 +769,12 @@ figcaption{
 }
 @media screen and (max-width: 1440px){
     .searchbar-contour{
-        transform: translate(-75%, 750%);
+        transform: translate(-75%, 50%);
         width: 40% ;
+    
     }
 }
+
 /* Contact Us Section*/
 .contact-us-background{
   background-color: #171717;
@@ -789,6 +791,7 @@ figcaption{
   box-sizing: border-box;
   border-radius: 8px;
   text-align: center;
+
 }
 
 .contact-us h1{
@@ -809,6 +812,7 @@ figcaption{
 .contact-us .contact-textb label{
   display:block;
   text-align: left;
+
   color: yellow;
   text-transform: uppercase;
   font-size: 14px;
@@ -823,10 +827,14 @@ figcaption{
   outline: none;
   font-size: 18px;
   margin-top: 6px;
+
   font-family: 'Raleway', sans-serif;
 }
 
 .contact-us .contactbutton{
+
+}
+
   display: block;
   background: yellow;
   padding: 14px 0;
