@@ -21,14 +21,14 @@
 
         <header>
             
-            <img class="logo" src="./images/logo.png" alt="nudge" width="15%" height="15%">
+            <a href="#home"><img class="logo" src="./images/logo.png" alt="Nudge"></a>
 
             <nav>
                 <ul class="nav__links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#features">Features</a></li>
                     <li><a href="#cust-reviews">Customer Satisfaction</a></li>
-                    <li><a href="#pricing-table">Pricing</a></li>                 
+                    <li><a href="#pricing">Pricing</a></li>                 
                     <li><a href="#about-us">About Us</a></li>
                     <li><a href="#faq">FAQ</a></li>    
                 </ul>
@@ -53,7 +53,7 @@
             <div class="blog-post__img">
               <img src="images/asleep.jpg" alt="">
               </div>
-              <div class="blog-post__info">
+              <div class="blog-post__info" data-aos="fade-right">
                 <div class="blog-post__date">
                 </div>
                 <h1 class="blog-post__title">GPS Alarm Functionality</h1>
@@ -71,7 +71,7 @@
           <div class="blog-post__img">
             <img src="images/jogging.jpg" alt="">
             </div>
-            <div class="blog-post__info">
+            <div class="blog-post__info" data-aos="fade-right">
               <div class="blog-post__date">
               </div>
               <h1 class="blog-post__title">Speedometer</h1>
@@ -88,7 +88,7 @@
               <div class="blog-post__img">
                 <img src="images/travellers.jpg" alt="">
                 </div>
-                <div class="blog-post__info">
+                <div class="blog-post__info" data-aos="fade-right">
                   <div class="blog-post__date">
                   </div>
                   <h1 class="blog-post__title">Standard GPS Function</h1>
@@ -134,7 +134,19 @@
         </div>
 
       <!-- $$$$$ Section -->
-        <div class="pricing-table" id="pricing-table"> 
+    <div class="pricing-h2" style="padding:20px;background-color:#171717" id="pricing">
+        <div data-aos="zoom-in-right">
+            <h2 id="pricingH2" style="font-size:2em;color:#F1F119;font-size:2em;margin-bottom:10px;">
+                Subscription Plans
+            </h2>
+            <p style="color:#F4F8FD;font-family:'Raleway', sans-serif;font-size:24px;">
+                Here are our payment plans!
+            </p>
+        </div>
+        
+    </div>
+    
+        <div class="pricing-table"> 
     <div class="pricing-card table1">
       <h3 class="pricing-card-header table1">Basic</h3>
         <div class="ribbon">
@@ -142,48 +154,43 @@
         </div>
       <div class="price"><sup>$</sup>0.00<span>/Month</span></div>
       <ul>
-        <li><strong>999</strong> Nudge</li>
-        <li><strong>999</strong> Nudge</li>
-        <li><strong>999</strong> Nudge</li>
-        <li><strong>999</strong> Nudge</li>
-        <li><strong>999</strong> Nudge</li>
+        <li><strong></strong>Limited Nudge Features </li>
+        <li><strong></strong>No custumization </li>
+        <li><strong></strong>Unlimited  programmable routes</li>
+        <li><strong></strong>With Ads</li>
+        <li><strong></strong>Tech support between office hours</li>
       </ul>
       <a href="#" class="order-btn">Get Nudge Now</a>
       </div>
     <div class="pricing-card table2">
-      <h3 class="pricing-card-header table2">Gold</h3>
-      <div class="price"><sup>$</sup>4.99<span>/Month</span></div>
-      <ul>
-        <li><strong>999</strong> Nudge</li>
-        <li><strong>999</strong> Nudge</li>
-        <li><strong>999</strong> Nudge</li>
-        <li><strong>999</strong> Nudge</li>
-        <li><strong>999</strong> Nudge</li>
-      </ul>
-      <a href="#" class="order-btn">Get Nudge Now</a>
-    </div>
-    <div class="pricing-card table3">
-      <h3 class="pricing-card-header table3">Diamond</h3>
+      <h3 class="pricing-card-header table2">Premium</h3>
         <div class="ribbon">
        <div class="label">Best Deal</div>
         </div>
-      <div class="price"><sup>$</sup>9.99<span>/Month</span></div>
+      <div class="price"><sup>$</sup>4.99<span>/Month</span></div>
       <ul>
-        <li><strong>999</strong> Nudge</li>
-        <li><strong>999</strong> Nudge</li>
-        <li><strong>999</strong> Nudge</li>
-        <li><strong>999</strong> Nudge</li>
-        <li><strong>999</strong> Nudge</li>
+        <li>All Nudge Features Unlocked</li>
+        <li>Full custumization</li>
+        <li>Unlimited programmable routes</li>
+        <li>No Ads</li>
+        <li>24/7 Premium Tech support</li>
       </ul>
       <a href="#" class="order-btn">Get Nudge Now</a>
     </div>
+   
        </div>
 
       <!-- About Us Section -->
 
     <div class="about_us" id="about-us">
-        <h1>About Team Nudge</h1>
-         <p class="introinfo">We are some university students who came with an idea for a product and decided to develop it into a project!</p>
+        <div data-aos="zoom-in-right">
+            <h1>About Team Nudge</h1>
+            <p class="introinfo">
+                We are some university students who came with an idea for a product and decided to develop it into a project!
+            </p>
+        </div>
+        <!-- <h1 data-aos="fade-left">About Team Nudge</h1>
+         <p class="introinfo" data-aos="fade-left">We are some university students who came with an idea for a product and decided to develop it into a project!</p> -->
 
 
         <section class="people r1">
@@ -191,23 +198,23 @@
             <figure>
                 <img src="images/Nick1.jpg" alt="Nicholas Turbide">
                 <figcaption>Nicholas Turbide</figcaption>
-                <caption><em>Costumer Service</em><br></caption>
-                <p class="github link"><a href="https://github.com/NicholasTurbide">Github link</a></p>
-                <p class="linkedIn link"><a href="https://www.linkedin.com/in/nicholas-turbide-62b3021b8/">LinkedIn link</a></p>
+                <caption><em>Customer Service</em><br></caption>
+                <p class="github link" title="Github"><a href="https://github.com/NicholasTurbide">Github link</a></p>
+                <p class="linkedIn link" title="LinkedIn"><a href="https://www.linkedin.com/in/nicholas-turbide-62b3021b8/">LinkedIn link</a></p>
             </figure>
             <figure>
                 <img src="images/zak-icon.png" alt="Zakaria Oulli">
                 <figcaption>Zakaria Oulli</figcaption>
                 <caption><em>Arts and Design</em><br></caption>
-                <p class="github link"><a href="https://github.com/zakariaoulli">Github link</a></p>
-                <p class="linkedIn link"><a href="https://www.linkedin.com/in/zakariaoulli/">LinkedIn link</a></p>
+                <p class="github link" title="Github"><a href="https://github.com/zakariaoulli">Github link</a></p>
+                <p class="linkedIn link" title="LinkedIn"><a href="https://www.linkedin.com/in/zakariaoulli/">LinkedIn link</a></p>
             </figure>
             <figure>
                 <img src="images/Mohanad1.png" alt="Mohanad Mohamed">
                 <figcaption>Mohanad Mohamed</figcaption>
                 <caption><em>User Experience</em><br></caption>
-                <p class="github link"><a href="https://github.com/MohanadAhmed123">Github link</a></p>
-                <p class="linkedIn link"><a href="https://www.linkedin.com/in/mohanad-mohamed-9563261bb/">LinkedIn link</a></p>
+                <p class="github link" title="Github"><a href="https://github.com/MohanadAhmed123">Github link</a></p>
+                <p class="linkedIn link" title="LinkedIn"><a href="https://www.linkedin.com/in/mohanad-mohamed-9563261bb/">LinkedIn link</a></p>
             </figure>    
         </section>
         
@@ -216,22 +223,22 @@
                 <img src="images/Christina1.jpg" alt="Christina Song">
                 <figcaption>Christina Song</figcaption>
                 <caption><em>Product Design</em><br></caption>
-                <p class="github link"><a href="https://github.com/csong202">Github link</a></p>
-                <p class="linkedIn link"><a href="https://www.linkedin.com/in/christina-song-555039193/">LinkedIn link</a></p>
+                <p class="github link" title="Github"><a href="https://github.com/csong202">Github link</a></p>
+                <p class="linkedIn link" title="LinkedIn"><a href="https://www.linkedin.com/in/christina-song-555039193/">LinkedIn link</a></p>
             </figure>
             <figure>
                 <img src="images/Jessica3.png" alt="Jessica Nguyen">
                 <figcaption>Jessica Nguyen</figcaption>
                 <caption><em>Business Manager</em><br></caption>
-                <p class="github link"><a href="https://github.com/jessicanguyenn">Github link</a></p>
-                <p class="linkedIn link"><a href="https://www.linkedin.com/in/jessnguyenn/">LinkedIn link</a></p>
+                <p class="github link" title="Github"><a href="https://github.com/jessicanguyenn">Github link</a></p>
+                <p class="linkedIn link" title="LinkedIn"><a href="https://www.linkedin.com/in/jessnguyenn/">LinkedIn link</a></p>
             </figure>
             <figure>
-                <img src="images/Diane1.JPG" alt="Diane Tsang">
+                <img src="images/Diane1.jpg" alt="Diane Tsang">
                 <figcaption>Diane Tsang</figcaption>
                 <caption><em>Creative Director</em><br></caption>
-                <p class="github link"><a href="https://github.com/dianetsang">Github link</a></p>
-                <p class="linkedIn link"><a href="https://www.linkedin.com/in/diane-tsang-4291731b9/">LinkedIn link</a></p>
+                <p class="github link" title="Github"><a href="https://github.com/dianetsang">Github link</a></p>
+                <p class="linkedIn link" title="LinkedIn"><a href="https://www.linkedin.com/in/diane-tsang-4291731b9/">LinkedIn link</a></p>
             </figure>
         </section>
 
@@ -279,10 +286,18 @@
                 <!-- <img src="images/nudge-logo.png" alt="Nudge Logo"> -->
                 <h3>NUDGE</h3>
                 <p style="margin-bottom:10px">
-                    Nudge.... is cool. 
-                    [insert one sentence summary of what nudge is]
+                    AI based application that wakes you up upon arrival to your destination.
                 </p>
-                <p style="font-weight:600; font-size:17px;">slogan??</p>
+                <p style="font-weight:600; font-size:17px;"></p>
+            </div>
+            <div class="column">
+                <h4>COMPANY</h4>
+                <ul>
+                    <li><a href="#">Brand Center</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>           
+                </ul>
             </div>
             <div class="column">
                 <h4>QUICK LINKS</h4>
@@ -298,8 +313,12 @@
             <div class="column">
                 <h4>DOWNLOAD</h4>
                 <div class="download-pics">
-                    <img src="images/download_on_app_store.png" alt="Download on the App Store">
-                    <img src="images/download_on_goog_play.png" alt="Get it on Google Play">
+                    <a href="https://www.apple.com/ca/app-store/" target="_blank">
+                        <img src="images/download_on_app_store.png" alt="Download on the App Store" title="Apple App Store">
+                    </a>
+                    <a href="https://play.google.com/store/apps" target="_blank">
+                        <img src="images/download_on_goog_play.png" alt="Get it on Google Play" title="Google Play Store">
+                    </a>
                 </div>   
             </div>
             
@@ -307,26 +326,30 @@
         <div class="download">
             <h4>DOWNLOAD</h4>
             <div class="download-pics">
-                <img src="images/download_on_app_store.png" alt="Download on the App Store">
-                <img src="images/download_on_goog_play.png" alt="Get it on Google Play">
+                <a href="https://www.apple.com/ca/app-store/" target="_blank">
+                    <img src="images/download_on_app_store.png" alt="Download on the App Store" title="Apple App Store">
+                </a>
+                <a href="https://play.google.com/store/apps" target="_blank">
+                    <img src="images/download_on_goog_play.png" alt="Get it on Google Play" title="Google Play Store">
+                </a>
             </div>      
         </div>
         <div class="follow-us">
             <h4>FOLLOW US</h4>
             <div class="socials w3-large">
-                <i class="fab fa-facebook-f fa-lg" title="Facebook"></i>
-                <i class="fab fa-twitter" title="Twitter"></i>
-                <i class="fab fa-linkedin-in" title="LinkedIn"></i>
-                <i class="fab fa-instagram" title="Instagram"></i>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f fa-lg" title="Facebook"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter" title="Twitter"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in" title="LinkedIn"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" title="Instagram"></i></a>
             </div>        
         </div>
     </div>
     <div class="bottom-band">
         <div class="copyright">
-            <p>2020 © Nudge Inc.</p>
+            <p>Copyright © 2020 Nudge Inc. All rights reserved.</p>
         </div>
         <div class="privacy">
-            <p>Privacy & Terms</p>
+            <p><a href="#" title="Privacy & Terms">Privacy & Terms</a></p>
         </div>
     </div>
       
