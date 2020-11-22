@@ -795,6 +795,7 @@ figcaption{
   color: yellow;
   margin-bottom: 25px;
   font-weight: 200;
+  font-family: 'Raleway', sans-serif;
 }
 
 .contact-us .contact-textb{
@@ -802,6 +803,7 @@ figcaption{
   margin: 8px 0;
   padding: 12px 18px;
   border-radius: 8px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .contact-us .contact-textb label{
@@ -810,6 +812,7 @@ figcaption{
   color: yellow;
   text-transform: uppercase;
   font-size: 14px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .contact-us .contact-textb input, .contact-us .contact-textb textarea{
@@ -820,9 +823,10 @@ figcaption{
   outline: none;
   font-size: 18px;
   margin-top: 6px;
+  font-family: 'Raleway', sans-serif;
 }
 
-.contact-us .contact-button{
+.contact-us .contactbutton{
   display: block;
   background: yellow;
   padding: 14px 0;
@@ -833,6 +837,11 @@ figcaption{
   width: 40%;
   transform: translate(75%, 0%);
   border-radius: 8px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.contact-us .contactbutton:hover{
+  opacity: 50%;
 }
 @media screen and (max-width: 1440px){
   .contact-us{
@@ -842,6 +851,46 @@ figcaption{
 }
 
 
+.contact-us-background .contact-us .contactbutton .Supportpop{
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;  
+  
+}
+.contact-us-background .contact-us .contactbutton .Supportpop::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent; 
+}
+.contact-us-background .contact-us .contactbutton .show{
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
 /* $$$$$ Section */
 }
 
