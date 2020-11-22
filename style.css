@@ -373,24 +373,24 @@ button:hover{
     display: table;
     clear: both;
 }
-.cust-reviews .columns {
+.cust-reviews .row .columns {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
 }
-.cust-reviews .columns .column {  
+.cust-reviews .row .columns .column {  
     /* width: 360px; */
     width: 25vw;
     height: 45vh;
     min-height: 300px;             
 }
-.cust-reviews .column img {
+.cust-reviews .row .columns .column img {
     width: inherit;
     height: auto;
     border: 2px solid #171717;
     outline: 0.5px solid #F4F8FD;
-    box-shadow: 4px 5px 5px black;
+    box-shadow: 5px 6px 6px rgba(0,0,0,0.7);
 }
 .cust-reviews .zoom {
     transition: transform .2s;
@@ -509,7 +509,7 @@ button:hover{
     min-height: 400px;
   }
   .cust-reviews .row .columns .column {
-    min-width: 280px;
+    width: 280px;
     min-height: 250px;
   }
   .cust-reviews .bottom-dots {
@@ -517,6 +517,15 @@ button:hover{
   }
   .cust-reviews .bottom-dots i {
     font-size: 12px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .cust-reviews .row {
+    min-height: 350px;
+  }
+  .cust-reviews .row .columns .column {
+    width: 250px;
+    min-height: 220px;
   }
 }
 
@@ -997,7 +1006,7 @@ body{
   width: 70%;
   height: auto;
 }
-.footer .column img:hover {
+.footer img:hover {
   cursor: pointer;
 }
 
@@ -1082,13 +1091,10 @@ body{
     width: 48%;
     height: auto;
     min-width: 120px;
-    margin-bottom: 11px;
-  }
-  .footer .download .download-pics img:hover {
-    cursor: pointer;
+    margin-bottom: 9px;
   }
 }
-@media screen and (max-width:400px) {
+@media screen and (max-width:430px) {
   .footer {
     padding: 30px;
   }
