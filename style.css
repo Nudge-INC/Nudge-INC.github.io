@@ -776,7 +776,7 @@ figcaption{
 /* Contact Us Section*/
 .contact-us-background{
   background-color: #171717;
-  height: 50%;
+  height: 55%;
   width: 100%;
 }
 .contact-us {
@@ -793,7 +793,7 @@ figcaption{
 
 .contact-us h1{
   color: yellow;
-  margin-top: 0;
+  margin-bottom: 25px;
   font-weight: 200;
 }
 
@@ -829,12 +829,15 @@ figcaption{
   color: #171717;
   text-transform: uppercase;
   cursor: pointer;
-  margin-top: 8px;
-  width: 100%;
+  margin-top: 40px;
+  width: 40%;
+  transform: translate(75%, 0%);
+  border-radius: 8px;
 }
 @media screen and (max-width: 1440px){
   .contact-us{
-    width: 60%;
+    width: 50%;
+    height: 50%
   }
 }
 
