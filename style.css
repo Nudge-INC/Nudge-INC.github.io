@@ -804,6 +804,129 @@ figcaption{
         width: 40% ;
     }
 }
+
+
+/* Contact Us Section*/
+.contact-us-background{
+  background-color: #171717;
+  height: 55%;
+  width: 100%;
+}
+.contact-us {
+  background-color: #171717;
+  width : 50%;
+  position:  absolute;
+  transform: translate(45%, 0%);
+  margin: 50px 50px 50px 50px;
+  padding: 30px 40px 30px 40px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: center;
+
+}
+
+.contact-us h1{
+  color: yellow;
+  margin-bottom: 25px;
+  font-weight: 200;
+  font-family: 'Raleway', sans-serif;
+}
+
+.contact-us .contact-textb{
+  border: 1px solid yellow;
+  margin: 8px 0;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.contact-us .contact-textb label{
+  display:block;
+  text-align: left;
+
+  color: yellow;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.contact-us .contact-textb input, .contact-us .contact-textb textarea{
+  color: yellow;
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 18px;
+  margin-top: 6px;
+
+  font-family: 'Raleway', sans-serif;
+}
+
+.contact-us .contactbutton{
+  display: block;
+  background: yellow;
+  padding: 14px 0;
+  color: #171717;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 40px;
+  width: 40%;
+  transform: translate(75%, 0%);
+  border-radius: 8px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.contact-us .contactbutton:hover{
+  opacity: 50%;
+}
+@media screen and (max-width: 1440px){
+  .contact-us{
+    width: 50%;
+    height: 50%
+  }
+}
+
+
+.contact-us-background .contact-us .contactbutton .Supportpop{
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;  
+  
+}
+.contact-us-background .contact-us .contactbutton .Supportpop::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent; 
+}
+.contact-us-background .contact-us .contactbutton .show{
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
 /* $$$$$ Section */
 }
 
