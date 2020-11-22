@@ -175,3 +175,9 @@ function myFunction3() {
       moreText.style.display = "inline";
     }
 }
+
+// Contact Us
+function ThankYou(){
+    var contactbutton = document.getElementById("SupportPopup");
+    contactbutton.classList.toggle("show");
+}
