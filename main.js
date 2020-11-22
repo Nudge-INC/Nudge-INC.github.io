@@ -15,6 +15,10 @@ $(window).scroll(function() {
     });
 });
 
+$(".home-text").delay(1500).animate({"opacity": "1"}, 1000);
+
+$(".arrow").delay(2500).animate({"opacity": "1"}, 1000);
+
 // main
 /* ------------CUSTOMER TESTIMONIALS------------------- */
 // declare global variables
