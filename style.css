@@ -138,6 +138,7 @@ button:hover{
   display: inline-block;
   bottom: 35%;
   right: 25%;
+  opacity: 0;
 }
 
 .home-text h1{
@@ -160,6 +161,7 @@ button:hover{
   bottom:8%;
   right:48%;
   border-radius: 5px;
+  opacity: 0;
 }
 
 .arrow:hover{
