@@ -649,10 +649,6 @@ figcaption{
         max-width: 50%;
         background-position: -600px -500px;
         color:#171717;
-        
-        
-    
-
 }
 .FAQ-H2{
     text-align: center;
@@ -755,7 +751,7 @@ figcaption{
 .contact-us {
   width : 85;
   max-width: 600px;
-  background: #171717;
+  background: white;
   position:  absolute;
   transform: translate(32%, 20%);
   padding: 30px 40px 30px 40px;
@@ -766,13 +762,13 @@ figcaption{
 }
 
 .contact-us h1{
-  color: yellow;
+  color: darkslategray;
   margin-top: 0;
   font-weight: 200;
 }
 
 .contact-us .contact-textb{
-  border: 1px solid gray;
+  border: 1px solid darkslategray;
   margin: 8px 0;
   padding: 12px 18px;
   border-radius: 8px;
@@ -781,13 +777,13 @@ figcaption{
 .contact-us .contact-textb label{
   display:block;
   text-align: left;
-  color: yellow;
+  color: darkslategray;
   text-transform: uppercase;
   font-size: 14px;
 }
 
 .contact-us .contact-textb input, .contact-us .contact-textb textarea{
-  color: yellow;
+  color: darkslategray;
   width: 100%;
   border: none;
   background: none;
@@ -806,6 +802,12 @@ figcaption{
   margin-top: 8px;
   width: 100%;
 }
+@media screen and (max-width: 1440px){
+  .contact-us{
+    width: 60%;
+  }
+}
+
 /* $$$$$ Section */
 }
 
