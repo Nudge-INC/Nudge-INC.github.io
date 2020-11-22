@@ -809,7 +809,7 @@ figcaption{
 /* Contact Us Section*/
 .contact-us-background{
   background-color: #171717;
-  height: 55%;
+  height: 550px;
   width: 100%;
 }
 .contact-us {
@@ -885,8 +885,6 @@ figcaption{
     height: 50%
   }
 }
-
-
 .contact-us-background .contact-us .contactbutton .Supportpop{
   visibility: hidden;
   width: 160px;
