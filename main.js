@@ -15,9 +15,9 @@ $(window).scroll(function() {
     });
 });
 
-$(".home-text").delay(1500).animate({"opacity": "1"}, 1000);
+$(".home-text").delay(2000).animate({"opacity": "1"}, 1000);
 
-$(".arrow").delay(2500).animate({"opacity": "1"}, 1000);
+$(".arrow").delay(3000).animate({"opacity": "1"}, 1000);
 
 
 // CUSTOMER TESTIMONIALS
