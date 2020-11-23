@@ -170,7 +170,27 @@ button:hover{
   border-color: #F4F8FD;
 }
 
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 500px) {
+  .arrow {
+    padding: 8px;
+    height: 30px;
+    width: 30px;
+    border-width: 0 4px 4px 0;
+  }
+
+  .home-text{
+    padding: 30px 30px 30px 30px;
+  }
+  .home-text h1{
+    font-size: 25px;
+  }
+  
+  .home-text h2{
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-height: 500px) and (max-height: 600px) {
   .home-text{
     padding: 40px 40px 40px 40px;
   }
