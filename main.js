@@ -92,5 +92,12 @@ function myFunction3() {
 // Contact Us
 function ThankYou(){
     var contactbutton = document.getElementById("SupportPopup");
+    contactbutton.style.display = "inline-block";
     contactbutton.classList.toggle("show");
+    setTimeout(hideThankYou, 4000);
+}
+function hideThankYou(){
+    var contactbutton = document.getElementById("SupportPopup");  
+    contactbutton.style.display = "none";
+    contactbutton.classList.toggle("hide");
 }
