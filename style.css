@@ -481,6 +481,19 @@ Off Black: #171717
     transform: scale(1); 
   }
 }
+@media screeb and (max-width: 470px) {
+  .cust-reviews .wrapper {
+    padding-left:0;
+    padding-right:0;
+  }
+  .cust-reviews .wrapper .carousel{
+    padding-left:10px;
+    padding-right:10px;
+  }
+  .cust-reviews .wrapper .carousel .card {
+    width: 200px;
+  }
+}
 
 /* /////////////////////////////////////////////////////////////////////////ABOUT US Section////////////////////////////////////////////////////////////////////////////////////// */
 
