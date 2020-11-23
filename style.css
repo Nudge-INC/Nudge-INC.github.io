@@ -304,8 +304,9 @@ button:hover{
   
     
     .blog-post_img{
-      min-width: 30rem;
-      max-width: 30rem;
+      width: 25vw;
+      min-width: 200px;
+      max-width: 500px;
       transform: translate(0, -8rem);
     }
     /* End of Features */
